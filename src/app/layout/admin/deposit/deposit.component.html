@@ -11,38 +11,41 @@
       <table #dataTable class="display table-striped table-hover">
         <thead>
           <tr>
+            <th>sn</th>
             <th>Email</th>
-            <th>Username</th>
-            <th>Plan</th>
+            <th>Date</th>
+            <th>Entered amount</th>
+            <th>Paid</th>
             <th>Pay_mode</th>
-            <th>Amount</th>
-            <th>Profit</th>
-            <th>Deposit ID</th>
-            <th>Confirm</th>
+            <th>Status</th>
+            <th>id</th>
+            <th>Delete</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let deposits of deposit" (click)="select(deposits)">
-            <td>{{deposits.email}}</td>
-            <td>{{deposits.username}}</td>
-            <td>{{deposits.plan}}</td>
-            <td>{{deposits.pay_mode}}</td>
-            <td>{{deposits.amount}}</td>
-            <td>{{deposits.expected_roi}}</td>
-            <td>{{deposits.deposite_id}}</td>
-            <td><button class="btn btn-secondary" (click)="confirm(deposits.deposite_id)">confirm</button></td>
+          <tr *ngFor="let deposits of deposit" [id]="deposits.deposite_id">
+            <td (click)="select(deposits)">{{deposits.sn}}</td>
+            <td (click)="select(deposits)">{{deposits.email}}</td>
+            <td (click)="select(deposits)">{{deposits.depositDate}}</td>
+            <td (click)="select(deposits)">${{deposits.amount}}</td>
+            <td (click)="select(deposits)">{{deposits.pay_mode}}</td>
+            <td (click)="select(deposits)">{{deposits.expected_roi}}</td>
+            <td (click)="select(deposits)">{{deposits.status}}</td>
+            <td (click)="select(deposits)">{{deposits.deposite_id}}</td>
+            <td><button (click)="deleteDep(deposits.deposite_id)" class="btn btn-danger">Delete</button></td>
           </tr>
         </tbody>
         <tfoot>
           <tr>
+            <th>sn</th>
             <th>Email</th>
-            <th>Username</th>
-            <th>Plan</th>
+            <th>Date</th>
+            <th>Entered amount</th>
+            <th>Paid</th>
             <th>Pay_mode</th>
-            <th>Amount</th>
-            <th>Profit</th>
-            <th>Deposit ID</th>
-            <th>Confirm</th>
+            <th>Status</th>
+            <th>id</th>
+            <th>Delete</th>
           </tr>
         </tfoot>
       </table>

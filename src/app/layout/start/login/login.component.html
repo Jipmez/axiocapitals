@@ -1,129 +1,191 @@
-<!-- <section class="header  header-shot 
-     ">
-  <div class="container-fluid imgyu"
-    style="background-image: url(../../../assets/images/background/15.png); height: 246px; min-height: 246px; background-repeat: no-repeat; background-size: cover;">
-
+<!-- <header class="sc-jmnVvD inQOrq">
+  <div class="sc-jdAMXn sc-iXxrte jKUKiE fWDBZl d-flex">
+    <div class="sc-hZgfyJ jClwwi">
+      <a routerLink="/">
+        <img
+          src="../../../../assets/images/fundtrade.png"
+          alt=""
+          height="50px"
+        />
+      </a>
+      <nav class="sc-hKpBwk zQAIp">
+        <a id="menu__marketplace" routerLink="/">Fundbasepro</a>
+      </nav>
+    </div>
   </div>
+</header>
+<div class="body" style="height: 100vh">
+  <div
+    class="sc-jdAMXn sc-bZnhIo jKUKiE idQPIC"
+    style="
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 52px 22px 0px;
+    "
+  >
+    <div class="box">
+      <div class="loginc">
+        <h2>Log in</h2>
+      </div>
 
-
-  <section class="main-page">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="clearfix"></div>
-          <br>
-          <br>
-          <div class="box-text">
-            <div class="title"><span>Info</span></div>
-            <p>
-              With the advent of cryptocurrency many entrepreneurs have noticed that this is not only a convenient
-              payment method but also great source of income in the area of online investment. Today, you can find
-              dozens of tempting offers, but you should carefully consider each of them. First of all, pay attention to
-              the legality of the company work as well as the previous experience and their history.
-            </p>
-
-          </div>
-          <div class="box-text">
-            <div class="title"><span>Loan Services</span></div>
-            <h4>Daily</h4>
-            <p style="font-weight: bolder;">$500 Maximum</p>
-            <h4>Weekly</h4>
-            <p style="font-weight: bolder;">$500 - $5000</p>
-            <h4>Monthly</h4>
-            <p style="font-weight: bolder;">$10000 - UNLIMITED</p>
-            <br>
-            <p>To access loans, please contact our customer care representative</p>
+      <form action="" class="css-1j7wnfo" (ngSubmit)="logIn(so)" #so="ngForm">
+        <div class="MuiFormControl-root MuiTextField-root css-s66jtp">
+          <label
+            class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-standard MuiFormLabel-root MuiFormLabel-colorPrimary css-526znj"
+            data-shrink="true"
+            for="login__username"
+            id="login__username-label"
+            >Email address:</label
+          >
+          <div
+            class="MuiInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-fbem6r"
+          >
+            <input
+              aria-invalid="false"
+              id="login__username"
+              name="email"
+              ngModel
+              required
+              autocomplete="off"
+              placeholder="Email address"
+              type="text"
+              class="MuiInput-input MuiInputBase-input css-1jhxu0"
+            />
           </div>
         </div>
-        <div class="col-md-8">
-          <div class="box-signup">
 
-            <ul class="error-list">
-
-              <form class="form-on-dark" (ngSubmit)='logIn(so)' #so='ngForm'>
-                <div class="col-md-12">
-                  <div class="field">
-                    <label>
-                      <span>Your Email</span>
-                      <input type="email" class="inpts" size="30" required ngModel name="email">
-                    </label>
-                  </div>
-                  <div class="field ">
-                    <label>
-                      <span>Your Password</span>
-                      <input type="password" class="inpts" id="me" size="30" required ngModel name="password">
-                      <a>
-                        <i class="fa fa-eye toggle-password" style="position: absolute;
-                        right: 40px;
-                        font-size: 24px;
-                        bottom: 10px;
-                        color: black;"></i>
-                      </a>
-
-                    </label>
-                  </div>
+        <div class="MuiFormControl-root MuiTextField-root css-s66jtp">
+          <label
+            class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-standard MuiFormLabel-root MuiFormLabel-colorPrimary css-526znj"
+            data-shrink="true"
+            for="login__password"
+            id="login__password-label"
+            >Password:<button
+              class="sc-fWjsSh cbNwuk"
+              color="links"
+              id="login__forgot-password"
+              type="button"
+              tabindex="-1"
+              routerLink="/forgot_pass"
+            >
+              <div class="sc-lkwKjF hcKsTc">
+                <div class="sc-hsOonA fNFoyb">
+                  <span color="links" class="sc-fLlhyt tffoT h4"
+                    >Forgot password?</span
+                  >
                 </div>
-                <div class="col-md-12" style="padding:15px 30px 0 30px;">
-                  <div class="block-checkbox">
-                    <input type="submit" value="Login" [disabled]='!so.valid' class="sbmt form-control btn btn-primary">
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-
-                <div class="none">
-                </div>
-
-
-
-              </form>
-            </ul>
-            <br>
-            <a routerLink="/forgot_pass" class="recovery-link">Forgot password?</a>
+              </div>
+            </button></label
+          >
+          <div
+            class="MuiInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-fbem6r"
+          >
+            <input
+              aria-invalid="false"
+              id="login__password"
+              name="password"
+              ngModel
+              required
+              autocomplete="off"
+              placeholder="Password"
+              type="password"
+              class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd css-1jhxu0"
+            />
           </div>
-
-
         </div>
+
+        <div class="css-1292087">
+          <button
+            id="login__submit"
+            color="grey"
+            type="submit"
+            [disabled]="!so.valid"
+            class="sc-brCFrO hIiwQy"
+          >
+            <div class="sc-grREDI eieBnK">
+              <div class="sc-fvNpTx inWRvj">
+                <div class="sc-fctJkW ikxNCI">
+                  <div
+                    data-testid="button-caption-element"
+                    class="sc-jQHtVU cmXBzK"
+                  >
+                    LOG IN
+                  </div>
+                </div>
+              </div>
+            </div></button
+          ><button
+            class="sc-fWjsSh cbNwuk"
+            color="links"
+            id="login__signup"
+            type="button"
+            routerLink="/signup"
+          >
+            <div class="sc-lkwKjF hcKsTc">
+              <div class="sc-hsOonA fNFoyb">
+                <span color="links" class="sc-fLlhyt tffoT h4">Sign up</span>
+              </div>
+            </div>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div> -->
+
+<div class="get-started-modal_component">
+  <div class="get-started_container is-get-started-page" style="min-height: 0 !important; padding-bottom: 30px">
+    <div class="get-started-modal_content-wrapper">
+      <div id="w-node-_9e440854-b74f-e736-2244-e4d84bbd4abe-85ce9fb4" class="form-block is-get-started-page w-form">
+        <div id="w-node-_9e440854-b74f-e736-2244-e4d84bbd4abf-85ce9fb4" class="get-started-modal_left">
+          <h2 class="heading-xlarge">Login to FrontStand</h2>
+          <p class="get-started-modal_text">Your financial future renewed</p>
+        </div>
+        <form id="wf-form-Get-Started-Hubspot-Form" (ngSubmit)="logIn(so)" #so="ngForm">
+          <div class="form-field-wrapper">
+            <label for="first-name-get-started" class="form-label">Email</label><input name="email" ngModel required
+              autocomplete="off" placeholder="Email address" type="email" class="form-input w-input" maxlength="256"
+              id="first-name-get-started" />
+          </div>
+          <div class="form-field-wrapper">
+            <label for="last-name-get-started" class="form-label">password*</label><input name="password" ngModel
+              required autocomplete="off" placeholder="*******" type="password" class="form-input w-input"
+              maxlength="256" />
+          </div>
+          <div>
+            <a routerLink="/forgot_pass" style="font-size: 15px; text-decoration: none;">Forgot password</a>
+          </div>
+          <div id="w-node-_9e440854-b74f-e736-2244-e4d84bbd4afd-85ce9fb4" class="button-wrapper is-get-started-page">
+            <button type="submit" [disabled]="!so.valid" class="button is-form-submit w-button w-100">
+              Login
+            </button>
+          </div>
+        </form>
+        <div class="get-started-success w-form-done" tabindex="-1" role="region"
+          aria-label="Get Started Hubspot Form success">
+          <div class="get-started-success-content">
+            <div class="heading-xlarge">Thank You</div>
+            <div class="get-started-success-text">
+              You're all set! A Farther team member will reach out to you soon.
+            </div>
+          </div>
+        </div>
+        <div id="w-node-_9e440854-b74f-e736-2244-e4d84bbd4b05-85ce9fb4"
+          class="error-message is-get-started heading-eyebrow w-form-fail" tabindex="-1" role="region"
+          aria-label="Get Started Hubspot Form failure">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+      <div class="get-started_image-wrapper desktop-hidden">
+        <img src="https://uploads-ssl.webflow.com/62ab7e7c514f17e3141fcd70/62ab7e7c514f1745ae1fce69_Ripple-tinified.png"
+          loading="lazy" alt="" class="get-started_image" />
       </div>
     </div>
-  </section>
-
-
-</section> -->
-
-
-<div class="unix-login" style="background: #062863;">
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-lg-4">
-        <div class="login-content card">
-          <div class="login-form">
-            <h4>Log in to Upstash</h4>
-            <form (ngSubmit)='logIn(so)' #so='ngForm'>
-              <div class="form-group">
-                <label>Email address</label>
-                <input type="email" class="form-control" placeholder="Email" required ngModel name="email">
-              </div>
-              <div class="form-group">
-                <label>Password</label>
-                <input type="password" class="form-control" placeholder="Password" required ngModel name="password">
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Remember Me
-                </label>
-                <label class="pull-right">
-                  <a href="#">Forgotten Password?</a>
-                </label>
-              </div>
-              <button type="submit" [disabled]='!so.valid' class="btn btn-primary btn-flat m-b-30 m-t-30">Sign
-                in</button>
-              <div class="register-link m-t-15 text-center">
-                <p>Don't have account ? <a href="#"> Sign Up Here</a></p>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+    <div class="get-started_image-wrapper hide-mobile-landscape">
+      <img src="https://uploads-ssl.webflow.com/62ab7e7c514f17e3141fcd70/62ab7e7c514f1745ae1fce69_Ripple-tinified.png"
+        loading="lazy" alt="" class="get-started_image" />
     </div>
   </div>
 </div>

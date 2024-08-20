@@ -43,26 +43,83 @@
 
 
     <div class="box shadow">
+      <div class="box-header with-border d-flex" style="justify-content: space-between;">
+        <h3 class="box-title">Add Crypto address</h3>
+        <button (click)="upi()" class="btn btn-outline-primary mb-10" style="margin-bottom: 10px;">Activate/Deactivate
+          Upi</button>
+      </div>
+      <div class="box-body">
+        <form action="" (ngSubmit)="adCryp(sot)" #sot='ngForm'>
+          <!-- Color Picker -->
+          <div class="form-group" *ngIf="address != 'UPI'">
+            <label>Address:</label>
+            <input type="text" ngModel name="address" required class="form-control my-colorpicker1 colorpicker-element">
+          </div>
+          <!-- /.form group -->
+
+
+
+          <div class="form-group" *ngIf="address == 'UPI'">
+            <label>UPI ID:</label>
+            <input type="text" ngModel name="upid" required class="form-control my-colorpicker1 colorpicker-element">
+          </div>
+
+
+          <div class="form-group" *ngIf="address == 'UPI'">
+            <label>UPI Name</label>
+            <input type="text" ngModel name="upname" required class="form-control my-colorpicker1 colorpicker-element">
+          </div>
+
+
+          <!-- Color Picker -->
+          <div class="form-group">
+            <label>Type</label>
+
+            <div class="input-group my-colorpicker2 colorpicker-element">
+              <select name="type" id="" class="form-control" required ngModel [(ngModel)]='address'>
+                <option value="" disabled selected>_select address type</option>
+                <option value="BTC">Bitcoin</option>
+                <option value="ETH">Ethereum</option>
+                <option value="USDT(ERC20)">USDT(ERC20)</option>
+                <option value="USDT(BEP20)">USDT(BEP20 BSC)</option>
+                <option value="UPI">Upi address</option>
+              </select>
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-bitcoin"></i>
+                </div>
+              </div>
+            </div>
+            <!-- /.input group -->
+          </div>
+          <!-- /.form group -->
+
+          <!-- time Picker -->
+          <div class="form-group">
+            <div class="input-group my-colorpicker2 colorpicker-element">
+              <input type="submit" class="form-control btn btn-info" [disabled]='!sot.valid'>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /.box-body -->
+    </div>
+
+
+    <div class="box shadow">
       <div class="box-header with-border">
-        <h3 class="box-title">Add Portfolio</h3>
+        <h3 class="box-title">Add bank</h3>
       </div>
       <div class="box-body">
         <form (ngSubmit)="adBank(pd)" #pd='ngForm'>
           <!-- Color Picker -->
           <div class="form-group">
-            <label>Stock name:</label>
+            <label>Bank name:</label>
             <input type="text" ngModel name="bank" required class="form-control my-colorpicker1 colorpicker-element">
           </div>
 
           <div class="form-group">
-            <label>Stock Category:</label>
-            <select name="" id="" required class="form-control my-colorpicker1 colorpicker-element">
-              <option value=""></option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label>Stock unit price:</label>
+            <label>Account name:</label>
             <input type="text" ngModel name="accountname" required
               class="form-control my-colorpicker1 colorpicker-element">
           </div>
@@ -71,7 +128,7 @@
 
           <!-- Color Picker -->
           <div class="form-group">
-            <label>Stock Roi:</label>
+            <label>Account no:</label>
 
             <div class="input-group my-colorpicker2 colorpicker-element">
               <input type="number" ngModel name="account" required class="form-control">
@@ -86,13 +143,7 @@
 
 
           <div class="form-group">
-            <label>Stock duration:</label>
-            <input type="text" ngModel name="branch" required class="form-control my-colorpicker1 colorpicker-element">
-          </div>
-          <!-- /.form group -->
-
-          <div class="form-group">
-            <label>Stock picture:</label>
+            <label>IFSC code:</label>
             <input type="text" ngModel name="branch" required class="form-control my-colorpicker1 colorpicker-element">
           </div>
           <!-- /.form group -->
@@ -110,8 +161,8 @@
 
     <div class="box shadow">
       <div class="box-header with-border">
-        <h3 class="box-title">All</h3>
-        <h6 class="box-subtitle">stop/delete any Portfolio</h6>
+        <h3 class="box-title">Delete Bank</h3>
+        <h6 class="box-subtitle">Delete any bank</h6>
       </div>
       <div class="box table-responsive">
         <table #dataTable class="display table-striped">
@@ -120,7 +171,7 @@
               <th>Bank name</th>
               <th>Accountname</th>
               <th>Accountnumber</th>
-              <th>Branch</th>
+              <th>IFSC code</th>
               <th>Delete</th>
             </tr>
           </thead>
@@ -133,15 +184,15 @@
               <td><button class="btn btn-secondary" (click)="deleteBank(deposits.Account)">Delete</button></td>
             </tr>
           </tbody>
-          <tfoot>
+          <!--   <tfoot>
             <tr>
               <th>Bank name</th>
               <th>Accountname</th>
               <th>Accountnumber</th>
-              <th>Branch</th>
+              <th>IFSC code</th>
               <th>Delete</th>
             </tr>
-          </tfoot>
+          </tfoot> -->
         </table>
       </div>
     </div>

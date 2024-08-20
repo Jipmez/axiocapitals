@@ -9,6 +9,8 @@ import {
   SessionStorage,
 } from 'angular-web-storage';
 
+import { ToastrManager } from 'ng6-toastr-notifications';
+
 declare var $;
 @Component({
   selector: 'app-dashboard',
@@ -20,43 +22,43 @@ export class DashboardComponent implements OnInit {
   cookieValue: string;
   sidebarVisible: boolean;
   user: any;
-  payed: any;
+  location: string;
+  profileId: any;
+  acc: any;
+  full: any;
+  status: any;
+  menu: any;
+  men: boolean = false;
+  email: any;
 
   constructor(
     private server: DataService,
     vcr: ViewContainerRef,
     private cookieService: CookieService,
     public session: SessionStorageService,
+    public toastr: ToastrManager,
     private activate: ActivatedRoute,
     private route: Router
   ) {
     route.events.subscribe((_: NavigationEnd) => (this.currentUrl = _.url));
-    this.sidebarVisible = true;
+    this.sidebarVisible = false;
+    this.location = window.location.origin;
   }
 
   ngOnInit() {
     this.cookieValue = this.session.get('sessionID');
 
     let data = this.activate.snapshot.data;
-    this.user = data['news'].dep['message'][0]['fullname'];
-    this.payed = data['news'].dep['message'][0]['payed'];
-    if (this.payed == '0') {
-      this.route.navigate(['/memberaccess']);
-    }
+    this.user = data['news'].dep['message']?.[0]['username'];
+    this.email = data['news'].dep['message']?.[0]['email'];
+    this.profileId = data['news'].dep['message']?.[0]['profileId'];
+    this.acc = data['news'].dep['message']?.[0]['mainaccountbal'];
+    this.full = data['news'].dep['message']?.[0]['fullname'];
+    this.status = data['news'].dep['message']?.[0]['status'];
   }
 
   toggleme() {
-    if (window.innerWidth > 920) {
-      if (this.sidebarVisible === true) {
-        this.sidebarCloseLap();
-        this.sidebarVisible = false;
-      } else {
-        this.sidebarOpenLap();
-        this.sidebarVisible = true;
-      }
-    }
-
-    if (window.innerWidth <= 920) {
+    if (window.innerWidth <= 920 || window.innerWidth > 920) {
       if (this.sidebarVisible === true) {
         this.sidebarCloseMob();
         this.sidebarVisible = false;
@@ -79,18 +81,45 @@ export class DashboardComponent implements OnInit {
   }
 
   sidebarCloseMob() {
-    $('.sidenav').css('margin-left', '-70px');
-    $('.main-content').css({ 'margin-left': '0px', width: '100%' });
-    $('.our-nav').css('margin-left', '0px');
+    console.log('sdojweqweqw');
+    $('.app-wrap').removeClass('sidebar-toggled');
+    // $('.simplebar-content-wrapper').css({ height: 'auto', overflow: 'scroll' });
+    // $('.simplebar-placeholder').css({ width: '0px', height: '0px' });
+    // $('.left-side-menu').removeClass('d-block');
   }
 
   sidebarOpenMob() {
-    $('.sidenav').css('margin-left', '0');
-    $('.main-content').css({ 'margin-left': '73px', width: '80.5%' });
-    $('.our-nav').css('margin-left', '73px');
+    console.log('aadssdoj');
+    $('.app-wrap').addClass('sidebar-toggled');
+    // $('.simplebar-content-wrapper').css({ height: '100%', overflow: 'scroll' });
+    // $('.simplebar-placeholder').css({ width: 'auto', height: '451px' });
+    // $('.left-side-menu').addClass('d-block');
   }
 
   logOut() {
     this.server.logOut();
+  }
+
+  togmenu(x) {
+    this.men = !this.men;
+    if (this.men) {
+      this.menu = x;
+    } else {
+      this.menu = 0;
+    }
+  }
+
+  copy() {
+    /* Get the text field */
+    console.log('me');
+    var copyText = $('#yu');
+
+    console.log(copyText);
+    /* Select the text field */
+    copyText.select();
+    // copyText.setSelectionRange(0, 99999); /*For mobi
+    /* Copy the text inside the text field */
+    document.execCommand('copy');
+    this.toastr.successToastr('Link copied');
   }
 }

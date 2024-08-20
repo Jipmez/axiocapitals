@@ -72,7 +72,7 @@
   .session {
     max-width: 560px;
     margin: 0px auto 40px auto;
-    padding-top: 90px;
+    padding-top: 50px;
     padding-bottom: 90px;
     form {
       input,
@@ -92,7 +92,7 @@
         font-weight: 500;
         color: #8a92a5;
         border-bottom: 1px solid #d9dde5;
-        border-top: 5px solid teal;
+        border-top: 5px solid #02112a;
         p {
           position: relative;
           margin: 1em 0;
@@ -159,4 +159,18 @@
       }
     }
   }
+}
+
+.body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(255, 254, 245, 0.886);
+  //background-image: url("https://app.zignaly.com/background-dark.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 100%;
+  color: rgb(255, 255, 255);
+  overflow: overlay;
+  height: 100vh;
 }

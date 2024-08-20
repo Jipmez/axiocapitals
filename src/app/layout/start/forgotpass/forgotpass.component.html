@@ -1,29 +1,45 @@
-<div id="preloder">
+<!-- <div id="preloder">
   <div class="loader"></div>
 </div>
-
-<section class="page-section categories-page main-page">
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-atom"
+  [fullScreen]="true"
+>
+  <p style="color: white">Fundbasepro...</p>
+</ngx-spinner> -->
+<section
+  class="page-section categories-page main-page body"
+  style="padding-top: 100px"
+>
   <div class="container">
     <div class="session">
       <form (ngSubmit)="forgotPass(ad)" #ad="ngForm">
-
         <div id="middle">
           <h1 id="top" class="forgot-password-header">Forgot your password?</h1>
           <p class="message">
-
-            Don’t worry!
-            Just fill in your email and we’ll help you reset your password.
-
+            Don’t worry! Just fill in your email and we’ll help you reset your
+            password.
           </p>
           <p>
             <label for="id_email">Email address:</label>
-            <br>
-            <input type="text" name="email" ngModel autofocus="true" required class="reqblue" id="id_email">
+            <br />
+            <input
+              type="text"
+              name="email"
+              ngModel
+              autofocus="true"
+              required
+              class="reqblue"
+              id="id_email"
+            />
           </p>
         </div>
         <div id="bottom">
           <a routerLink="/login">Back to login</a>
-          <input type="submit" [disabled]="!ad.valid" value="Send email">
+          <input type="submit" [disabled]="!ad.valid" value="Send email" />
         </div>
       </form>
     </div>

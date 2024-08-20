@@ -7,26 +7,29 @@ import {
   ViewChild,
   ElementRef,
   ChangeDetectorRef,
-} from "@angular/core";
-import { DOCUMENT } from "@angular/common";
-import { CookieService } from "ngx-cookie-service";
-import { NgForm } from "@angular/forms";
-import { ToastrManager } from "ng6-toastr-notifications";
-import { DataService } from "../../../data.service";
-import { Router, NavigationEnd, ActivatedRoute } from "@angular/router";
-import { SessionStorageService } from "angular-web-storage";
+} from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { CookieService } from 'ngx-cookie-service';
+import { NgForm } from '@angular/forms';
+import { ToastrManager } from 'ng6-toastr-notifications';
+import { DataService } from '../../../data.service';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { SessionStorageService } from 'angular-web-storage';
+import { ThrowStmt } from '@angular/compiler';
 declare let $;
 @Component({
-  selector: "app-content",
-  templateUrl: "./content.component.html",
-  styleUrls: ["./content.component.scss"],
+  selector: 'app-content',
+  templateUrl: './content.component.html',
+  styleUrls: ['./content.component.scss'],
 })
 export class ContentComponent implements OnInit {
-  @ViewChild("dataTable") table: ElementRef;
+  @ViewChild('dataTable') table: ElementRef;
   dataTable: any;
   currentUrl: string;
   dep = [];
   q: number;
+  stocks = {};
+  /*  stocks: any; */
 
   constructor(
     private _renderer2: Renderer2,
@@ -44,26 +47,27 @@ export class ContentComponent implements OnInit {
   }
 
   ngOnInit() {
-    $("meta[name=viewport]").attr(
-      "content",
-      "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    );
-
     let data = this.activate.snapshot.data;
+    console.log(data);
+    this.dep = data['content'].users['message'];
 
-    this.dep = data["content"].users["message"];
-    console.log(this.dep);
     this.chRef.detectChanges();
     this.dataTable = $(this.table.nativeElement);
     this.dataTable.dataTable({
       responsive: true,
+      order: [[0, 'desc']],
     });
   }
 
+  ngAfterContentInit(): void {
+    //Called after ngOnInit when the component's or directive's content has been initialized.
+    //Add 'implements AfterContentInit' to the class.
+  }
+
   select(deposits) {
-    console.log("me");
+    console.log('me');
     this.route.navigate([
-      "hkgjiinif684080ngi98084g06/proid",
+      'hkgjiinif684080ngi98084g06/proid',
       deposits.profileId,
     ]);
   }
@@ -74,13 +78,12 @@ export class ContentComponent implements OnInit {
     let simDep = {
       username: x.value.username,
       amount: x.value.amount,
-      key: "simdep",
+      key: 'simdep',
     };
 
     this.server.Api(simDep).subscribe(
       (res) => {
-        console.log(res);
-        this.toastr.successToastr(res["message"], "Security center");
+        this.toastr.successToastr(res['message'], 'Security center');
       },
       () => {},
       () => {}
@@ -93,15 +96,41 @@ export class ContentComponent implements OnInit {
     let simWith = {
       username: x.value.username,
       amount: x.value.amount,
-      key: "simwith",
+      key: 'simwith',
     };
 
     this.server.Api(simWith).subscribe(
       (res) => {
-        this.toastr.successToastr(res["message"], "Security center");
+        this.toastr.successToastr(res['message'], 'Security center');
       },
       () => {},
       () => {}
     );
+  }
+  refresh() {
+    let addS = {
+      key: 'startpromo',
+    };
+    this.server.Api(addS).subscribe((res) => {
+      this.toastr.successToastr(res['message'], 'Security center');
+    });
+  }
+
+  refreshCoin() {
+    let addS = {
+      key: 'addCoin',
+    };
+    this.server.Api(addS).subscribe((res) => {
+      this.toastr.successToastr(res['message'], 'Security center');
+    });
+  }
+
+  refreshPerday() {
+    let addS = {
+      key: 'refPer',
+    };
+    this.server.Api(addS).subscribe((res) => {
+      this.toastr.successToastr(res['message'], 'Security center');
+    });
   }
 }

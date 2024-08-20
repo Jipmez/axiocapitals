@@ -7,7 +7,6 @@ import {
   ChangeDetectorRef,
 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { FormsModule } from '@angular/Forms';
 import { NgForm } from '@angular/forms';
 import { DataService } from '../../../data.service';
 import { Router } from '@angular/router';
@@ -22,7 +21,7 @@ declare var $;
 export class AdcontentComponent implements OnInit {
   bitcoin: any;
   deposit: any;
-
+  address: any;
   constructor(
     private route: ActivatedRoute,
     private chRef: ChangeDetectorRef,
@@ -75,6 +74,34 @@ export class AdcontentComponent implements OnInit {
         this.toastr.warningToastr(res['message'], 'Security center');
         x.reset();
       }
+    });
+  }
+
+  adCryp(x: NgForm) {
+    let admin = {
+      address: x.value.address,
+      type: x.value.type,
+      upid: this.address == 'UPI' ? x.value.upid : '',
+      upname: this.address == 'UPI' ? x.value.upname : '',
+      key: 'addCryp',
+    };
+
+    this.server.Api(admin).subscribe((res) => {
+      if (res['message']) {
+        this.toastr.successToastr(res['message'], 'Security center');
+        x.reset();
+      }
+    });
+
+    x.reset();
+  }
+
+  upi() {
+    let addS = {
+      key: 'startUpi',
+    };
+    this.server.Api(addS).subscribe((res) => {
+      this.toastr.successToastr(res['message'], 'Security center');
     });
   }
 

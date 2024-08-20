@@ -1,11 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Resolve } from '@angular/router';
 import { DataService } from '../../../data.service';
-import { CookieService } from 'ngx-cookie-service';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { forkJoin } from 'rxjs/observable/forkJoin';
-import { catchError } from 'rxjs/operators';
 import {
   LocalStorageService,
   SessionStorageService,
@@ -24,7 +22,6 @@ export class DashcontentserviceService implements Resolve<any> {
   constructor(
     public session: SessionStorageService,
     private server: DataService,
-    private cookieService: CookieService,
     private httpClient: HttpClient
   ) {
     this.path = this.server.Getpath();
@@ -43,9 +40,21 @@ export class DashcontentserviceService implements Resolve<any> {
       key: 'user',
     };
 
+    let mte = {
+      val: this.cookieValue,
+      key: 'depN',
+    };
+
+    let upi = {
+      Id: this.cookieValue,
+      key: 'upi',
+    };
+
     return forkJoin([
       this.httpClient.post(this.path, load),
-      this.httpClient.post(this.path, me).catch((error) => {
+      this.httpClient.post(this.path, me),
+      this.httpClient.post(this.path, mte),
+      this.httpClient.post(this.path, upi).catch((error) => {
         /* if(error.status === 404) {
               this.router.navigate(['subscription-create']);
           } */
@@ -53,10 +62,11 @@ export class DashcontentserviceService implements Resolve<any> {
         return Observable.throw(error);
       }),
     ]).map((result) => {
-      console.log(result);
       return {
         types: result[0],
         dep: result[1],
+        his: result[2],
+        upi: result[3],
       };
     });
 

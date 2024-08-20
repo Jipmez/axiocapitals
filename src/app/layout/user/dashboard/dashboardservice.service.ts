@@ -1,17 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Resolve } from '@angular/router';
 import { DataService } from '../../../data.service';
-import { CookieService } from 'ngx-cookie-service';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { catchError, map } from 'rxjs/operators';
 import { forkJoin } from 'rxjs/observable/forkJoin';
-import {
-  LocalStorageService,
-  SessionStorageService,
-  LocalStorage,
-  SessionStorage,
-} from 'angular-web-storage';
+import { SessionStorageService } from 'angular-web-storage';
+
 @Injectable({
   providedIn: 'root',
 })
@@ -21,13 +15,15 @@ export class DashboardserviceService implements Resolve<any> {
   cookieValue: string;
   //  path: string = "http://localhost/street/baseApi.php";
   path;
+  stock;
   constructor(
     private server: DataService,
     public session: SessionStorageService,
-    private cookieService: CookieService,
+
     private httpClient: HttpClient
   ) {
     this.path = this.server.Getpath();
+    // this.stock = this.server.stockApi();
     this.cookieValue = this.session.get('sessionID');
   }
 
@@ -47,19 +43,44 @@ export class DashboardserviceService implements Resolve<any> {
       Id: this.cookieValue,
       key: 'user',
     };
+
+    let promo = {
+      Id: this.cookieValue,
+      key: 'promo',
+    };
+
+    let ref = {
+      val: this.cookieValue,
+      key: 'reff',
+    };
+
+    let mte = {
+      val: this.cookieValue,
+      key: 'depN',
+    };
+
+    let upis = {
+      Id: this.cookieValue,
+      key: 'upi',
+    };
+
     return forkJoin([
       this.httpClient.post(this.path, load),
-      this.httpClient.post(this.path, me).catch((error) => {
-        /* if(error.status === 404) {
-            this.router.navigate(['subscription-create']);
-        } */
-
+      this.httpClient.post(this.path, me),
+      this.httpClient.post(this.path, promo),
+      this.httpClient.post(this.path, ref),
+      this.httpClient.post(this.path, mte),
+      this.httpClient.post(this.path, upis).catch((error) => {
         return Observable.throw(error);
       }),
     ]).map((result) => {
       return {
         types: result[0],
         dep: result[1],
+        promo: result[2],
+        ref: result[3],
+        his: result[4],
+        upi: result[5],
       };
     });
   }

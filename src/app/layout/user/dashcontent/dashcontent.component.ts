@@ -4,8 +4,6 @@ import {
   Component,
   OnInit,
   ViewContainerRef,
-  ViewChild,
-  ElementRef,
   ChangeDetectorRef,
 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
@@ -31,10 +29,12 @@ export class DashcontentComponent implements OnInit {
   total: any;
   monthpro: any;
   sta: boolean;
-  ref: string;
-  title: any;
-  val: any;
-  naira: any;
+  created: any;
+  login: any;
+  loan: any;
+  plan = [];
+  email: any;
+  status: any;
 
   constructor(
     private _renderer2: Renderer2,
@@ -49,6 +49,11 @@ export class DashcontentComponent implements OnInit {
     vcr: ViewContainerRef
   ) {
     route.events.subscribe((_: NavigationEnd) => (this.currentUrl = _.url));
+    if ($('.app-wrap')?.[0]) {
+      $('#tog').click();
+    }
+
+    $('.app-wrap').removeClass('sidebar-toggled');
   }
   stat: any;
   dep = [];
@@ -63,62 +68,39 @@ export class DashcontentComponent implements OnInit {
   Chart;
   per;
   cookieValue = this.session.get('sessionID');
-  /* 
-  ngAfterViewInit() {
-    //   new TradingView.widget({
-    //      'container_id': 'technical-analysis',
-    //      'autosize': true,
-    //      'symbol': "NASDAQ:AAPL",
-    //      'interval': '120',
-    //      'timezone': 'exchange',
-    //      'theme': 'Dark',
-    //      'style': '1',
-    //      'toolbar_bg': '#f1f3f6',
-    //      'withdateranges': true,
-    //      'hide_side_toolbar': false,
-    //      'allow_symbol_change': true,
-    //      'save_image': false,
-    //      'hideideas': true,
-    //      'studies': [
-    //      'MASimple@tv-basicstudies' ],
-    //      'show_popup_button': true,
-    //      'popup_width': '1000',
-    //      'popup_height': '650'
-    //    });
 
-    const s = this._renderer2.createElement("script");
-    s.type = "text/javascript";
-    const t = new TradingView.widget({
-      autosize: true,
-      symbol: "COINBASE:BTCUSD",
-      interval: "120",
-      timezone: "exchange",
-      theme: "light",
-      style: "3",
-      toolbar_bg: "#f1f3f6",
-      withdateranges: true,
-      hide_side_toolbar: false,
-      allow_symbol_change: true,
-      save_image: false,
-      hideideas: true,
-      studies: ["MASimple@tv-basicstudies"],
-      show_popup_button: true,
-      popup_width: "1000",
-      popup_height: "650",
-      container_id: "tradingview_c7dc2"
-    });
-    this._renderer2.appendChild(this._document.body, s);
+  /*  ngAfterViewInit() {
+    $('[data-toggle="popover"]').popover();
   } */
   ngOnInit() {
-    this.ref = `ref-${Math.ceil(Math.random() * 10e13)}`;
+    $('meta[name=viewport]').attr(
+      'content',
+      'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'
+    );
+    let dep = {
+      val: this.cookieValue,
+      key: 'dep',
+    };
+    this.server.Api(dep).subscribe(
+      (res) => {
+        if (res['code'] == 1) {
+          this.plan = res['plan'];
+        }
+      },
+      () => {},
+      () => {}
+    );
 
     let data = this.activate.snapshot.data;
     this.dep = data['news'].types['message'];
-    this.username = data['news'].dep['message'][0]['username'];
-    this.earn = data['news'].dep['message'][0]['earning'];
-    this.acc = data['news'].dep['message'][0]['mainaccountbal'];
-    this.naira = data['news'].dep['message'][0]['naira_balance'];
-    this.stat = data['news'].dep['message'][0]['status'];
+    this.username = data['news'].dep['message']?.[0]['username'];
+    this.earn = data['news'].dep['message']?.[0]['earning'];
+    this.acc = data['news'].dep['message']?.[0]['mainaccountbal'];
+    this.status = data['news'].dep['message']?.[0]['status'];
+    this.loan = data['news'].dep['message']?.[0]['loan_bal'];
+    this.created = data['news'].dep['message']?.[0]['date_created'];
+    this.login = data['news'].dep['message']?.[0]['last_login'];
+    this.stat = data['news'].dep['message']?.[0]['status'];
     this.pwith = data['news'].dep['pwith'];
     this.lastwith = data['news'].dep['lastwith'];
     this.totwith = data['news'].dep['totwith'];
@@ -127,6 +109,7 @@ export class DashcontentComponent implements OnInit {
     this.lastdep = data['news'].dep['lastdep'];
     this.monthpro = data['news'].dep['monthpro'];
     this.total = data['news'].dep['add'];
+    this.email = data['news'].dep['message']?.[0]['email'];
   }
 
   redirectTo(uri) {
@@ -151,42 +134,11 @@ export class DashcontentComponent implements OnInit {
 
         let v = document.getElementById(x);
         $(v).remove();
-        /* 
+        /*
         this.route
           .navigateByUrl("dashboard", { skipLocationChange: true })
           .then(() => this.route.navigate(["/dashboard/dashcontent"])); */
       }
     });
-  }
-
-  me(res) {
-    console.log(res);
-    if (res.status == 'success') {
-      alert('success');
-    }
-  }
-
-  generateReference(): string {
-    let text = '';
-    const possible =
-      'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    for (let i = 0; i < 20; i++) {
-      text += possible.charAt(Math.floor(Math.random() * possible.length));
-    }
-
-    return text;
-  }
-
-  paymentInit() {
-    console.log('Payment initialized');
-  }
-
-  paymentDone(ref: any) {
-    this.title = 'Payment successfull';
-    console.log(this.title, ref);
-  }
-
-  paymentCancel() {
-    console.log('payment failed');
   }
 }

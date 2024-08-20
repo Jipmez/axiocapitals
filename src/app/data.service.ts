@@ -1,25 +1,23 @@
-import { Injectable, Renderer2, Inject } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Injectable, Renderer2 } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { CookieService } from 'ngx-cookie-service';
-import { Observable } from 'rxjs';
 import 'rxjs/Rx';
 import { SessionStorageService } from 'angular-web-storage';
-import { DOCUMENT } from '@angular/common';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
+  _document: any;
   constructor(
     private serviceBoy: HttpClient,
     public session: SessionStorageService,
-    private nav: Router,
-    private cookieService: CookieService,
-    @Inject(DOCUMENT) private _document: Document
+    private nav: Router
   ) {}
-  Coinpath: string = 'http://localhost/street/generate.php';
-  path: string = 'http://localhost/street/baseApi.php';
+  Coinpath: string = 'https://frontstandonline.com/streetits/generate.php';
+  path: string = 'https://frontstandonline.com/street/baseApi.php';
+  stock: string =
+    'https://financialmodelingprep.com/api/v3/profile/AAPL,YELP?apikey=78860d8e8216c2d4c543065759b604de';
 
   Api(x) {
     return this.serviceBoy.post(this.path, x);
@@ -29,8 +27,23 @@ export class DataService {
     return this.serviceBoy.post(this.Coinpath, x);
   }
 
+  Sms(x, h) {
+    return this.serviceBoy.post(
+      'https://d7sms.p.rapidapi.com/secure/send',
+      x,
+      h
+    );
+  }
+
+  getStock() {
+    return this.serviceBoy.get(this.stock);
+  }
   Getpath() {
     return this.path;
+  }
+
+  stockApi() {
+    return this.stock;
   }
 
   CheckLogin() {
@@ -66,11 +79,11 @@ export class DataService {
     }
   }
 
-  public render(renderer2: Renderer2, path: string): void {
+  public render(renderer2: Renderer2, path: string, _document: Document): void {
     let x = renderer2.createElement('script');
     x.type = 'text/javascript';
     //script.text = `${JSON.stringify(data)}`;
     x.src = path;
-    renderer2.appendChild(this._document.body, x);
+    renderer2.appendChild(_document.body, x);
   }
 }

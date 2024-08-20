@@ -1,159 +1,340 @@
-<!-- <section class="header  header-shot 
-     ">
-  <div class="container-fluid imgyu"
-    style="background-image: url(../../../assets/images/background/15.png); height: 246px; min-height: 246px; background-repeat: no-repeat; background-size: cover;">
-
-  </div>
-
-
-  <section class="main-page">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="clearfix"></div>
-          <br>
-          <br>
-          <div class="box-text">
-            <div class="title"><span>Info</span></div>
-            <p>
-              With the advent of cryptocurrency many entrepreneurs have noticed that this is not only a convenient
-              payment method but also great source of income in the area of online investment. Today, you can find
-              dozens of tempting offers, but you should carefully consider each of them. First of all, pay attention to
-              the legality of the company work as well as the previous experience and their history.
-            </p>
-
-          </div>
+<div class="get-started-modal_component">
+  <div class="get-started_container is-get-started-page">
+    <div class="get-started-modal_content-wrapper">
+      <div
+        id="w-node-_9e440854-b74f-e736-2244-e4d84bbd4abe-85ce9fb4"
+        class="form-block is-get-started-page w-form"
+      >
+        <div
+          id="w-node-_9e440854-b74f-e736-2244-e4d84bbd4abf-85ce9fb4"
+          class="get-started-modal_left"
+        >
+          <h2 class="heading-xlarge">Your financial future starts here</h2>
+          <p class="get-started-modal_text">
+            Simply fill out this commitment-free form to begin. We look forward
+            to getting to know you.
+          </p>
         </div>
-        <div class="col-md-8">
-          <div class="box-signup">
-
-            <ul class="error-list">
-              <form class="form-on-dark" (ngSubmit)='Reg(we)' #we='ngForm'>
-                <div class="col-md-6">
-                  <div class="field">
-                    <label>
-                      <span>Your Full Name</span>
-                      <input type="text" class="inpts" required ngModel name="fullname" placeholder="FULL NAME*"
-                        (change)="analyzeFullname($event.target.value)" id="id_full">
-                    </label>
-                  </div>
-                  <div class="field">
-                    <label>
-                      <span>Define Password</span>
-                      <input type="password" class="inpts" required ngModel name="password"
-                        (change)="analyze($event.target.value)" id="id_pass" placeholder="PASSWORD*">
-                      <a>
-                        <i class="fa fa-eye toggle-password" style="position: absolute;
-                        right: 40px;
-                        font-size: 24px;
-                        color: black;"></i>
-                      </a>
-                    </label>
-                  </div>
-                  <div class="field">
-                    <label>
-                      <span>Your E-mail Address</span>
-                      <input type="email" class="inpts" required email ngModel name="email" id="id_email"
-                        (change)=" checkMail($event.target.value)" placeholder="EMAIL*">
-                    </label>
-                  </div>
-
-                  <div class="field">
-                    <label>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="field">
-                    <label>
-                      <span>Your Username</span>
-                      <input type="text" class="inpts" required ngModel name="username"
-                        (change)="analyzeUsername($event.target.value)" placeholder="USERNAME*" id="id_user">
-                    </label>
-                  </div>
-                  <div class="field">
-                    <label>
-                      <span>Retype Password</span>
-                      <input type="password" class="inpts" id="c_pass" required ngModel name="cpass"
-                        placeholder="CONFIRM PASSWORD*">
-                      <a>
-                        <i class="fa fa-eye toggle-pasword" style="position: absolute;
-                          right: 40px;
-                          font-size: 24px;
-                          color: black;" (click)="show()"></i>
-                      </a>
-                    </label>
-                  </div>
-                  <div class="field">
-                    <label>
-                      <span>Your Wallet Address:</span>
-                      <input type="text" class="inpts" ngModel name="bitcoin" placeholder="Wallet Address">
-                    </label>
-                  </div>
-                </div>
-                <div class="none">
-                </div>
-                <div class="col-md-12" style="padding:15px 30px 0 30px;">
-                  <div class="block-checkbox">
-                    <label class="active" id="met" (click)="tog()">
-                      <input type="checkbox" name="agree" checked="checked" value="1"> I agree with <a
-                        routerLink="/Faq">Terms and conditions</a>
-                    </label>
-                    <input type="submit" [disabled]="!we.valid" name="commit" value="Register" class="sbmt">
-
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-
-                <div class="none">
-                </div>
-
-
-
-              </form>
-            </ul>
+        <form
+          id="wf-form-Get-Started-Hubspot-Form"
+          name="wf-form-Get-Started-Hubspot-Form"
+          data-name="Get Started Hubspot Form"
+          (ngSubmit)="Reg(so)"
+          #so="ngForm"
+          class="get-started-modal_form"
+        >
+          <div class="form-field-wrapper">
+            <label for="first-name-get-started" class="form-label"
+              >username*</label
+            ><input
+              type="text"
+              class="form-input w-input"
+              maxlength="256"
+              ngModel
+              name="username"
+              autocomplete="off"
+              id="first-name-get-started"
+              required=""
+            />
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-</section> -->
-
-
-<div class="unix-login" style="background: #062863; height: 100vh;">
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-lg-4">
-        <div class="login-content card">
-          <div class="login-form">
-            <h4>Register</h4>
-            <form>
-              <div class="form-group">
-                <label>User Name</label>
-                <input type="email" class="form-control" placeholder="User Name">
-              </div>
-              <div class="form-group">
-                <label>Email address</label>
-                <input type="email" class="form-control" placeholder="Email">
-              </div>
-              <div class="form-group">
-                <label>Password</label>
-                <input type="password" class="form-control" placeholder="Password">
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Agree the terms and policy
-                </label>
-              </div>
-              <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Register</button>
-              <div class="register-link m-t-15 text-center">
-                <p>Already have account ? <a href="#"> Sign in</a></p>
-              </div>
-            </form>
+          <div class="form-field-wrapper">
+            <label for="email-get-started" class="form-label"
+              >email address*</label
+            ><input
+              type="email"
+              class="form-input w-input"
+              maxlength="256"
+              ngModel
+              name="email"
+              autocomplete="off"
+              id="email-get-started"
+              required=""
+            />
           </div>
-        </div>
+          <div class="form-field-wrapper">
+            <label for="asset-level-get-started" class="form-label"
+              >Country*</label
+            ><select
+              ngModel
+              name="country"
+              required=""
+              id="asset-level-get-started"
+              class="get-started_select w-select"
+            >
+              <option value="">Select Country</option>
+              <option value="United States">United States</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option>Albania</option>
+              <option>Algeria</option>
+              <option>Americann samoa</option>
+              <option>Andorra</option>
+              <option>Angolla</option>
+              <option>Anguilla</option>
+              <option>Antarctica</option>
+              <option>Antigua and Barbuda</option>
+              <option>Argentina</option>
+              <option>Armenia</option>
+              <option>Aruba</option>
+              <option>Australia</option>
+              <option>Austria</option>
+              <option>Azerbaidjan</option>
+              <option>Bahamas</option>
+              <option>Bahrain</option>
+              <option>Bangladesh</option>
+              <option>Barbados</option>
+              <option>Belarus</option>
+              <option>Belgium</option>
+              <option>Belize</option>
+              <option>Benin</option>
+              <option>Bermuda</option>
+              <option>Bhutan</option>
+              <option>Bolivia</option>
+              <option>Bosnia-Herzegovina</option>
+              <option>Botswana</option>
+              <option>Bouvet Island</option>
+              <option>Brazil</option>
+              <option>British Indian Ocean Territory</option>
+              <option>Brunei Darussalam</option>
+              <option>Bulgaria</option>
+              <option>Burkina Faso</option>
+              <option>Burundi</option>
+              <option>Cambodia</option>
+              <option>Cameroon</option>
+              <option>Canada</option>
+              <option>Cape Verde</option>
+              <option>Cayman Islands</option>
+              <option>Central African Republic</option>
+              <option>Chad</option>
+              <option>Chile</option>
+              <option>China</option>
+              <option>Christmas Island</option>
+              <option>Cocos (Keeling) Islands</option>
+              <option>Colombia</option>
+              <option>Comoros</option>
+              <option>Congo</option>
+              <option>Congo (Democratic Republic)</option>
+              <option>Cook Islands</option>
+              <option>Costa Rica</option>
+              <option>Croatia</option>
+              <option>Cuba</option>
+              <option>Cyprus</option>
+              <option>Czech Republic</option>
+              <option>Denmark</option>
+              <option>Djibouti</option>
+              <option>Dominica</option>
+              <option>Dominican Republic</option>
+              <option>East Timor</option>
+              <option>Ecuador</option>
+              <option>Egypt</option>
+              <option>El Salvador</option>
+              <option>Equatorial Guinea</option>
+              <option>Eritrea</option>
+              <option>Estonia</option>
+              <option>Ethiopia</option>
+              <option>Falkland Islands</option>
+              <option>Faroe Islands</option>
+              <option>Fiji</option>
+              <option>Finland</option>
+              <option>France</option>
+              <option>France (European Territory)</option>
+              <option>French Guiana</option>
+              <option>French Southern Territories</option>
+              <option>Gabon</option>
+              <option>Gambia</option>
+              <option>Georgia</option>
+              <option>Germany</option>
+              <option>Ghana</option>
+              <option>Gibraltar</option>
+              <option>Great Britain</option>
+              <option>Greece</option>
+              <option>Greenland</option>
+              <option>Grenada</option>
+              <option>Guadeloupe</option>
+              <option>Guam</option>
+              <option>Guatemala</option>
+              <option>Guinea</option>
+              <option>Guinea Bissau</option>
+              <option>Guyana</option>
+              <option>Haiti</option>
+              <option>Heard and McDonald Islands</option>
+              <option>Holy See (Vatican City State)</option>
+              <option>Honduras</option>
+              <option>Hong Kong</option>
+              <option>Hungary</option>
+              <option>Iceland</option>
+              <option>India</option>
+              <option>Indonesia</option>
+              <option>Iran</option>
+              <option>Iraq</option>
+              <option>Ireland</option>
+              <option>Israel</option>
+              <option>Italy</option>
+              <option>Ivory Coast (Cote D`Ivoire)</option>
+              <option>Jamaica</option>
+              <option>Japan</option>
+              <option>Jordan</option>
+              <option>Kazakhstan</option>
+              <option>Kenya</option>
+              <option>Kiribati</option>
+              <option>Kuwait</option>
+              <option>Kyrgyz Republic (Kyrgyzstan)</option>
+              <option>Laos</option>
+              <option>Latvia</option>
+              <option>Lebanon</option>
+              <option>Lesotho</option>
+              <option>Liberia</option>
+              <option>Libya</option>
+              <option>Liechtenstein</option>
+              <option>Lithuania</option>
+              <option>Luxembourg</option>
+              <option>Macau</option>
+              <option>Macedonia</option>
+              <option>Madagascar</option>
+              <option>Malawi</option>
+              <option>Malaysia</option>
+              <option>Maldives</option>
+              <option>Mali</option>
+              <option>Malta</option>
+              <option>Marshall Islands</option>
+              <option>Martinique</option>
+              <option>Mauritania</option>
+              <option>Mauritius</option>
+              <option>Mayotte</option>
+              <option>Mexico</option>
+              <option>Micronesia</option>
+              <option>Moldavia</option>
+              <option>Monaco</option>
+              <option>Mongolia</option>
+              <option>Montserrat</option>
+              <option>Morocco</option>
+              <option>Mozambique</option>
+              <option>Myanmar</option>
+              <option>Namibia</option>
+              <option>Nauru</option>
+              <option>Nepal</option>
+              <option>Netherlands</option>
+              <option>Netherlands Antilles</option>
+              <option>New Caledonia</option>
+              <option>New Zealand</option>
+              <option>Nicaragua</option>
+              <option>Niger</option>
+              <option value="Nigerian">Nigeria</option>
+              <option>Niue</option>
+              <option>Norfolk Island</option>
+              <option>North Korea</option>
+              <option>Northern Mariana Islands</option>
+              <option>Norway</option>
+              <option>Oman</option>
+              <option>Pakistan</option>
+              <option>Palau</option>
+              <option>Panama</option>
+              <option>Papua New Guinea</option>
+              <option>Paraguay</option>
+              <option>Peru</option>
+              <option>Philippines</option>
+              <option>Pitcairn Island</option>
+              <option>Poland</option>
+              <option>Polynesia</option>
+              <option>Portugal</option>
+              <option>Puerto Rico</option>
+              <option>Qatar</option>
+              <option>Reunion</option>
+              <option>Romania</option>
+              <option>Russian Federation</option>
+              <option>Rwanda</option>
+              <option>S. Georgia &amp; S. Sandwich Isls.</option>
+              <option>Saint Helena</option>
+              <option>Saint Kitts &amp; Nevis Anguilla</option>
+              <option>Saint Lucia</option>
+              <option>Saint Pierre and Miquelon</option>
+              <option>Saint Vincent &amp; Grenadines</option>
+              <option>Samoa</option>
+              <option>San Marino</option>
+              <option>Sao Tome and Principe</option>
+              <option>Saudi Arabia</option>
+              <option>Senegal</option>
+              <option>Seychelles</option>
+              <option>Sierra Leone</option>
+              <option>Singapore</option>
+              <option>Slovak Republic</option>
+              <option>Slovenia</option>
+              <option>Solomon Islands</option>
+              <option>Somalia</option>
+              <option>South Africa</option>
+              <option>South Korea</option>
+              <option>Spain</option>
+              <option>Sri Lanka</option>
+              <option>Sudan</option>
+              <option>Suriname</option>
+              <option>Svalbard and Jan Mayen Islands</option>
+              <option>Swaziland</option>
+              <option>Sweden</option>
+              <option>Switzerland</option>
+              <option>Syria</option>
+              <option>Taiwan</option>
+              <option>Tajikistan</option>
+              <option>Tanzania</option>
+              <option>Thailand</option>
+              <option>Togo</option>
+              <option>Tokelau</option>
+              <option>Tonga</option>
+              <option>Trinidad and Tobago</option>
+              <option>Tunisia</option>
+              <option>Turkey</option>
+              <option>Turkmenistan</option>
+              <option>Turks and Caicos Islands</option>
+              <option>Tuvalu</option>
+              <option>USA Minor Outlying Islands</option>
+              <option>Uganda</option>
+              <option>Ukraine</option>
+              <option>United Arab Emirates</option>
+              <option>United Kingdom</option>
+              <option>Uruguay</option>
+              <option>Uzbekistan</option>
+              <option>Vanuatu</option>
+              <option>Venezuela</option>
+              <option>Vietnam</option>
+              <option>Virgin Islands (British)</option>
+              <option>Virgin Islands (USA)</option>
+              <option>Wallis and Futuna Islands</option>
+              <option>Weather Stations</option>
+              <option>Western Sahara</option>
+              <option>Yemen</option>
+              <option>Yugoslavia</option>
+              <option>Zaire</option>
+              <option>Zambia</option>
+              <option>Zimbabwe</option>
+            </select>
+          </div>
+
+          <div class="form-field-wrapper">
+            <label for="zip-get-started" class="form-label">password*</label
+            ><input
+              type="password"
+              class="form-input w-input"
+              maxlength="256"
+              name="password"
+              ngModel
+              data-name="Zip Code"
+              placeholder="*****"
+              autocomplete="off"
+              id="zip-get-started"
+              required
+            />
+          </div>
+          <div
+            id="w-node-_9e440854-b74f-e736-2244-e4d84bbd4afd-85ce9fb4"
+            class="button-wrapper is-get-started-page"
+          >
+            <button
+              type="submit"
+              [disabled]="!so.valid"
+              class="button is-form-submit w-button"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

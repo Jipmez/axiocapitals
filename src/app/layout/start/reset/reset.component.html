@@ -1,46 +1,58 @@
 <div id="preloder">
   <div class="loader"></div>
 </div>
-
-<div class="container-fluid imgyu"
-  style="background-image: url(../../../assets/images/background/15.png); height: 246px; min-height: 246px; background-repeat: no-repeat; background-size: cover;">
-
-</div>
-<section class="page-section categories-page">
+<section class="page-section categories-page body">
   <div class="container">
     <div class="session">
-      <form (ngSubmit)="ChangePass(ad)" #ad="ngForm" id="form" *ngIf="this.visible == '1'">
-
+      <form
+        (ngSubmit)="ChangePass(ad)"
+        #ad="ngForm"
+        id="form"
+        *ngIf="this.visible == '1'"
+      >
         <div id="middle">
           <h1 id="top" class="forgot-password-header">Reset your password</h1>
-          <p class="message">
-
-            Use the form below to change your password
-
-          </p>
+          <p class="message">Use the form below to change your password</p>
           <p>
             <label for="id_email">Password:</label>
-            <br>
-            <input type="password" name="Password" ngModel autofocus="true" (change)="analyze($event.target.value)"
-              required class="reqblue" id="id_pass">
-
+            <br />
+            <input
+              type="password"
+              name="Password"
+              ngModel
+              autofocus="true"
+              (change)="analyze($event.target.value)"
+              required
+              class="reqblue"
+              id="id_pass"
+            />
           </p>
 
           <p>
             <label for="id_email">Confirm Password:</label>
-            <br>
-            <input type="password" name="CPassword" ngModel autofocus="true" required class="reqblue" id="id_cpass">
+            <br />
+            <input
+              type="password"
+              name="CPassword"
+              ngModel
+              autofocus="true"
+              required
+              class="reqblue"
+              id="id_cpass"
+            />
           </p>
         </div>
         <div id="bottom">
-
-          <input type="submit" value="Change">
+          <input type="submit" value="Change" />
         </div>
       </form>
 
       <div id="notify" class="alert alert-warning" *ngIf="this.visible == '2'">
-        <strong>Error!</strong> Either the provided token does not match that on file or your time has expired. Please
-        resubmit the <a routerLink="/forgot_pass" class="alert-link">“Forgot your password?”</a>form.
+        <strong>Error!</strong> Either the provided token does not match that on
+        file or your time has expired. Please resubmit the
+        <a routerLink="/forgot_pass" class="alert-link"
+          >“Forgot your password?”</a
+        >form.
       </div>
     </div>
   </div>

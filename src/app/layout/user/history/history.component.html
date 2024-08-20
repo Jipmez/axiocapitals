@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class=" mb-5">
+    <div class="container d-flex justify-content-center">
+      <ul class="nav nav-pills alternate nav-lg border-bottom-0">
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="{ active: step === 1 }" href="javascript:void(0);"
+            (click)="this.step = 1">Deposits
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0);" [ngClass]="{ active: step === 2 }"
+            (click)="this.step = 2">Withdrawals</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div *ngIf="step == 1">
+    <div class="mgmt notification" id="notification-1" *ngFor="let item of dep">
+      <div class="txt" style="color: black">
+        <strong>{{ item.username }}</strong> Deposited
+        <strong>${{ item.amount | number }}</strong> in
+        <strong>{{ item.plan }} {{ item.type }}</strong> to earn
+        <strong>${{ item.expected_roi | number }}</strong> <br /><br />
+        <strong>{{ item.depositDate }}</strong>
+      </div>
+    </div>
+
+    <div class="mgmt notification" id="notification-1" *ngIf="dep.length == 0">
+      <div class="txt" style="color: black">
+        <strong>No Deposits Yet</strong>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="step == 2">
+    <div class="mgmt notification" id="notification-1" *ngFor="let item of with">
+      <div class="txt" style="color: black">
+        <strong>{{ item.username }}</strong> withdrew
+        <strong>${{ item.withdrawamount | number }}</strong> <br /><br />
+        <strong>{{ item.date }}</strong>
+      </div>
+    </div>
+
+    <div class="mgmt notification" id="notification-1" *ngIf="with.length == 0">
+      <div class="txt" style="color: black">
+        <strong>No Withdrawals Yet</strong>
+      </div>
+    </div>
+  </div>
+</div>

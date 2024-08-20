@@ -20,12 +20,21 @@ export class ResetComponent implements OnInit {
     private nav: Router,
     private toastr: ToastrManager,
     private session: SessionStorageService
-  ) {}
+  ) {
+    $('meta[name=viewport]').attr(
+      'content',
+      'width=device-width,height=device-height,initial-scale=1,maximum-scale=1'
+    );
+  }
   ngOnInit() {
     $('.loader').fadeOut();
     $('#preloder').delay(400).fadeOut('slow');
 
-    this.token = this.route.snapshot.paramMap.get('id');
+    this.route.queryParams
+      .filter((params) => params.verify)
+      .subscribe((params) => {
+        this.token = params.verify; // popular
+      });
     if (this.token.length == 64) {
       let token = {
         token: this.token,

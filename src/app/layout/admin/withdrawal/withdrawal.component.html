@@ -20,7 +20,7 @@
               <td>{{withdraws.date}}</td>
               <button (click)="confirm(withdraws.withdrawId)">confirm</button>
             </tr>
-            
+
           </tbody>
         </table>
         <pagination-controls (pageChange)="q = $event "></pagination-controls>
@@ -46,17 +46,18 @@
             <th scope="col">amount</th>
             <th scope="col">return</th>
             <th scope="col">id</th>
+            <th scope="col">Reverse</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let withdraws of withdraw" (click)="select(withdraws)">
-            <td>{{withdraws.email}}</td>
-            <td>{{withdraws.username}}</td>
-            <td>${{withdraws.withdrawamount}}</td>
-            <td>{{withdraws.withdrawId}}</td>
-            <td>{{withdraws.withdrawtime}}</td>
-            <td>{{withdraws.date}}</td>
-            <!--  <button class="btn btn-primary" (click)="confirm(withdraws.withdrawId)">confirm</button> -->
+          <tr *ngFor="let withdraws of withdraw" [id]="withdraws.withdrawId">
+            <td (click)="select(withdraws)">{{withdraws.email}}</td>
+            <td (click)="select(withdraws)">{{withdraws.username}}</td>
+            <td (click)="select(withdraws)">${{withdraws.withdrawamount}}</td>
+            <td (click)="select(withdraws)">{{withdraws.withdrawId}}</td>
+            <td (click)="select(withdraws)">{{withdraws.withdrawtime}}</td>
+            <td (click)="select(withdraws)">{{withdraws.date}}</td>
+            <td v><button class="btn btn-primary" (click)="deleteWith(withdraws.withdrawId)">Reverse</button></td>
           </tr>
         </tbody>
         <tfoot>
@@ -67,6 +68,7 @@
             <th scope="col">amount</th>
             <th scope="col">return</th>
             <th scope="col">id</th>
+            <th scope="col">Reverse</th>
           </tr>
         </tfoot>
       </table>

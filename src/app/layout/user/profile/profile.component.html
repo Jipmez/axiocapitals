@@ -1,80 +1,114 @@
-<div class="nk-content nk-content-lg nk-content-fluid">
-  <div class="container-xl ">
+<div class="" style="padding-bottom: 74px !important" *ngIf="form == 0">
+  <div class="">
     <div class="nk-content-inner">
       <div class="nk-content-body">
-        <div class="nk-block-head">
-          <div class="nk-block-head-content">
-            <div class="nk-block-head-sub"><span>My Profile</span></div>
-            <h2 class="nk-block-title fw-normal">Account Info</h2>
-            <div class="nk-block-des">
-              <p>You have full control to manage your own account setting. <span class="text-primary"><em
-                    class="icon fa fa-info"></em></span></p>
-            </div>
-          </div>
-        </div>
-        <!--   <ul class="nk-nav nav nav-tabs">
-          <li class="nav-item"><a class="nav-link" href="profile.html">Personal</a></li>
-          <li class="nav-item"><a class="nav-link" href="profile-setting.html">Security<span class="d-none s-sm-inline">
-                Setting</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="profile-notify.html">Notifications</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="profile-connected.html">Connect
-              Social</a></li>
-        </ul> -->
-        <div class="nk-block">
-          <div class="nk-block-head">
-            <div class="nk-block-head-content">
-              <h5 class="nk-block-title">Personal Information</h5>
-              <div class="nk-block-des">
-                <p>Basic info, like your name, affiliate link, bitcoin address, that you use on Cryptofinancer Platform.
-                </p>
+        <div class="page-account-profil pt-5">
+          <div class="profile-img text-center rounded-circle">
+            <div class="pt-5">
+              <div class="bg-img m-auto">
+                <img
+                  src="https://investx-admin-template.multipurposethemes.com/New_InvestX-main-files/html/images/avatar/avatar-13.png"
+                  class="img-fluid" width="200px" height="200px" alt="users-avatar" />
+              </div>
+              <div class="profile pt-4">
+                <h4 class="mb-1">{{ username }}</h4>
+                <p>FrontStand Investor</p>
               </div>
             </div>
           </div>
+
+          <div class="py-5 profile-counter">
+            <ul class="nav justify-content-center text-center">
+              <li class="nav-item px-3">
+                <div>
+                  <h4 class="mb-0">{{ acc | currency }}</h4>
+                  <p>Available balance</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 
+          <div class="profile-btn text-center">
+            <div>
+              <button class="btn btn-light text-primary mb-2">
+                Upload New Avatar
+              </button>
+            </div>
+            <div><button class="btn btn-danger">Delete</button></div>
+          </div> -->
+        </div>
+        <div class="nk-block">
           <div class="card card-bordered">
             <div class="nk-data data-list">
               <div class="data-item" data-toggle="modal" data-target="#profile-edit">
-                <div class="data-col"><span class="data-label">Full Name</span><span
-                    class="data-value">{{fullname}}</span></div>
-                <div class="data-col data-col-end"><span class="data-more"><em
-                      class="icon fa fa-caret-right"></em></span></div>
-              </div>
-              <div class="data-item" data-toggle="modal" data-target="#profile-edit">
-                <div class="data-col"><span class="data-label">Username</span><span class="data-value">{{username}}
-                  </span></div>
-                <div class="data-col data-col-end"><span class="data-more"><em
-                      class="icon fa fa-caret-right"></em></span></div>
-              </div>
-              <div class="data-item">
-                <div class="data-col"><span class="data-label">Email</span><span class="data-value">{{email}}</span>
+                <div class="data-col">
+                  <span class="data-label">Username</span><span class="data-value">{{ username }} </span>
                 </div>
-                <div class="data-col data-col-end"><span class="data-more disable"><em
-                      class="icon fa fa-caret-right"></em></span></div>
-              </div>
-              <div class="data-item">
-                <div class="data-col"><span class="data-label">Log time</span><span class="data-value">{{log}}</span>
+                <div class="data-col data-col-end">
+                  <span class="data-more"><em class="icon fa fa-caret-right"></em></span>
                 </div>
-                <div class="data-col data-col-end"><span class="data-more disable"><em
-                      class="icon fa fa-caret-right"></em></span></div>
               </div>
               <div class="data-item">
-                <div class="data-col"><span class="data-label">Signup date</span><span
-                    class="data-value">{{sign}}</span></div>
-                <div class="data-col data-col-end"><span class="data-more disable"><em
-                      class="icon fa fa-caret-right"></em></span></div>
-              </div>
-              <div class="data-item">
-                <div class="data-col"><span class="data-label">Affiliate Link</span><span
-                    class="data-value">{{location}}/#/signup?ref={{username}}</span></div>
-                <div class="data-col data-col-end"><span class="data-more disable"><em
-                      class="icon fa fa-caret-right"></em></span></div>
-              </div>
-              <div class="data-item" data-toggle="modal" data-target="#profile-edit" data-tab-target="#address">
-                <div class="data-col"><span class="data-label">Bitcoin Address</span><span
-                    class="data-value"><b>{{bitad}}</b></span>
+                <div class="data-col">
+                  <span class="data-label">Email</span><span class="data-value">{{ email }}</span>
                 </div>
-                <div class="data-col data-col-end"><span class="data-more"><em
-                      class="icon fa fa-caret-right"></em></span></div>
+                <div class="data-col data-col-end">
+                  <span class="data-more disable"><em class="icon fa fa-caret-right"></em></span>
+                </div>
+              </div>
+              <div class="data-item">
+                <div class="data-col">
+                  <span class="data-label">Log time</span><span class="data-value">{{ log }}</span>
+                </div>
+                <div class="data-col data-col-end">
+                  <span class="data-more disable"><em class="icon fa fa-caret-right"></em></span>
+                </div>
+              </div>
+              <div class="data-item">
+                <div class="data-col">
+                  <span class="data-label">Signup date</span><span class="data-value">{{ sign }}</span>
+                </div>
+                <div class="data-col data-col-end">
+                  <span class="data-more disable"><em class="icon fa fa-caret-right"></em></span>
+                </div>
+              </div>
+              <div class="data-item">
+                <div class="data-col">
+                  <span class="data-label">Affiliate Link</span><span class="data-value" (click)="copy()">
+                    <input class="form-control" type="text" readonly value="{{ location }}/signup?ref={{ profileId }} "
+                      id="refUrl" /></span>
+                </div>
+                <div class="data-col data-col-end">
+                  <span class="data-more disable"><em class="icon fa fa-caret-right"></em></span>
+                </div>
+              </div>
+              <div class="data-item" (click)="form = 1; address = 'Crypto'">
+                <div class="data-col">
+                  <span class="data-label">Update Crypto Address</span><span class="data-value"
+                    style="font-size: 11px !important"><b>{{ bitad }}</b></span>
+                </div>
+                <div class="data-col data-col-end">
+                  <span class="data-more"><em class="icon fa fa-caret-right"></em></span>
+                </div>
+              </div>
+
+              <div class="data-item" (click)="form = 1; address = 'upi'" *ngIf="country == 'India'">
+                <div class="data-col">
+                  <span class="data-label">UPI</span><span class="data-value" style="font-size: 11px !important"><b>ID:
+                      {{ upi }}, NAME : {{ upname }}</b></span>
+                </div>
+                <div class="data-col data-col-end">
+                  <span class="data-more"><em class="icon fa fa-caret-right"></em></span>
+                </div>
+              </div>
+              <div class="data-item" (click)="form = 1; address = 'Bank'" *ngIf="country == 'India'">
+                <div class="data-col">
+                  <span class="data-label">Bank</span><span class="data-value" style="font-size: 15px !important"><b>{{
+                      bank }}</b></span>
+                </div>
+                <div class="data-col data-col-end">
+                  <span class="data-more"><em class="icon fa fa-caret-right"></em></span>
+                </div>
               </div>
             </div>
           </div>
@@ -84,72 +118,109 @@
   </div>
 </div>
 
-<form (ngSubmit)='update(so)' #so='ngForm'>
-  <div class="modal fade" tabindex="-1" role="dialog" id="profile-edit">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content"><a href="#" class="close" data-dismiss="modal"><em
-            class="icon ni ni-cross-sm"></em></a>
-        <div class="modal-body modal-body-lg">
-          <h5 class="title">Update Profile</h5>
-          <ul class="nk-nav nav nav-tabs">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#personal">Personal</a>
-            </li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-pane active" id="personal">
-              <div class="row gy-4">
-                <div class="col-md-12">
-                  <div class="form-group"><label class="form-label" for="full-name">Change bitaddress
-                    </label><input class="form-control form-control-lg" [value]="bitad" ngModel name="bitad"
-                      placeholder="update bitcoin address" type="text"></div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group"><label class="form-label" for="birth-day">New Password</label><input
-                      class="form-control form-control-lg" name="newpass" ngModel placeholder="New Password"
-                      type="password"></div>
-                </div>
-                <div class="col-12">
-                  <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
-                    <li><a href="#" class="btn btn-lg btn-primary" data-dismiss="modal" data-toggle="modal"
-                        data-target="#pass-edit">Update
-                        Profile</a></li>
-                    <li><a href="#" data-dismiss="modal" class="link link-light">Cancel</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+<form (ngSubmit)="update(so)" #so="ngForm" class="card card-bordered p-3">
+  <div class="">
+    <div class="row gy-4">
+      <div class="col-md-12" [style.display]="address == 'Bank' ? 'block' : 'none'" *ngIf="country == 'India'">
+        <div class="form-group">
+          <label class="form-label" for="full-name">Bank input (Bank name) </label><input
+            class="form-control form-control-lg" name="bankname" ngModel placeholder="HDFC Bank" type="search"
+            [value]="bank" autocomplete="new-password" />
         </div>
+        <div class="form-group">
+          <label class="form-label" for="full-name">Bank input (Account name) </label><input
+            class="form-control form-control-lg" name="bankacc" ngModel placeholder="Acc Name" type="search"
+            [value]="bank" autocomplete="new-password" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="full-name">Bank input (Account no) </label><input
+            class="form-control form-control-lg" name="banknum" ngModel placeholder=" Acc Num" type="search"
+            [value]="bank" autocomplete="new-password" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="full-name">IFSC code </label><input class="form-control form-control-lg"
+            name="bankifsc" ngModel placeholder="IFSC code" type="search" [value]="bank" autocomplete="new-password" />
+        </div>
+      </div>
+      <div class="col-md-12" [style.display]="address == 'Crypto' ? 'block' : 'none'">
+        <div class="form-group">
+          <label class="form-label" for="full-name"> Bitcoin </label><input class="form-control form-control-lg"
+            [value]="bitad" ngModel name="bitad" placeholder="update address" type="text" autocomplete="new-password" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="full-name"> Ethereum </label><input class="form-control form-control-lg"
+            [value]="ether" ngModel name="ethad" placeholder="update address" type="text" autocomplete="new-password" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="full-name"> USDT(Erc20) address </label><input
+            class="form-control form-control-lg" [value]="usdterc" ngModel name="ltcad" placeholder="update address"
+            type="text" autocomplete="new-password" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="full-name"> USDT(Trc20) address </label><input
+            class="form-control form-control-lg" [value]="usdttrc" ngModel name="usdttrc" placeholder="update address"
+            type="text" autocomplete="new-password" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="full-name"> USDT(Bep20) address </label><input
+            class="form-control form-control-lg" [value]="usdt" ngModel name="usdt" placeholder="update address"
+            type="text" autocomplete="new-password" />
+        </div>
+      </div>
+
+      <div class="col-md-12" [style.display]="address == 'upi' ? 'block' : 'none'">
+        <div class="form-group">
+          <label class="form-label" for="full-name"> UPI Id </label><input class="form-control form-control-lg"
+            [value]="upi" ngModel name="upi" placeholder="id" type="text" autocomplete="new-password" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="full-name"> UPI Username </label><input class="form-control form-control-lg"
+            [value]="upi" ngModel name="upiU" placeholder="username" type="text" autocomplete="new-password" />
+        </div>
+      </div>
+
+      <div class="col-md-12" [style.display]="address == 'password' ? 'block' : 'none'">
+        <div class="form-group">
+          <label class="form-label" for="birth-day"> Password</label><input class="form-control form-control-lg"
+            name="newpass" ngModel placeholder="New Password" autocomplete="new-password" type="password" />
+        </div>
+      </div>
+
+      <div class="col-12" [style.display]="address != 'pass' && form == '1' ? 'block' : 'none'">
+        <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+          <li>
+            <a class="btn btn-lg btn-primary" (click)="address = 'pass'">Update Profile</a>
+          </li>
+          <li>
+            <a (click)="form = 0; address = 0" data-dismiss="modal" class="link link-light">Cancel</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 
-
-  <div class="modal fade" tabindex="-1" id="pass-edit">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-      <div class="modal-content">
-        <div class="modal-body modal-body-md text-center">
-          <div class="nk-modal">
-            <h4 class="nk-modal-title">Confirm Your Update</h4>
-            <div class="nk-modal-text">
-              <p>To confirm your profile update.Please enter your Current Pass code in order
-                complete the update of your profile or cancel.</p>
-            </div>
-            <div class="nk-modal-form">
-              <div class="form-group">
-                <input class="form-control form-control-password-big text-center" name="cpass" ngModel type="password">
-              </div>
-            </div>
-            <div class="nk-modal-action"><button [disabled]='!so.valid'
-                class="btn btn-lg btn-mw btn-primary">Submit</button>
-              <br>
-              <a href="#" class="link link-soft" data-dismiss="modal">Cancel and
-                return</a>
-            </div>
-          </div>
+  <div class="" [style.display]="address == 'pass' ? 'block' : 'none'">
+    <div class="nk-modal">
+      <h4 class="nk-modal-title">Confirm Your Update</h4>
+      <div class="nk-modal-text">
+        <p>
+          To confirm this transaction.Please enter your Current Password in
+          order complete the update of your profile or cancel.
+        </p>
+      </div>
+      <div class="nk-modal-form">
+        <div class="form-group">
+          <input class="form-control form-control-password-big text-center" name="cpass" ngModel type="password" />
         </div>
+      </div>
+      <div class="nk-modal-action">
+        <button [disabled]="!so.valid" class="btn btn-lg btn-mw btn-primary">
+          Submit
+        </button>
+        <br />
+        <a (click)="form = 0; address = 0" class="link link-soft" data-dismiss="modal" id="close">Cancel and return</a>
       </div>
     </div>
   </div>
-
 </form>

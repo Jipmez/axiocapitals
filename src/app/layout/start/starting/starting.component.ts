@@ -1,14 +1,15 @@
-import { Component, OnInit } from "@angular/core";
-declare let $;
+import { Component, OnInit } from '@angular/core';
+
 @Component({
-  selector: "app-starting",
-  templateUrl: "./starting.component.html",
-  styleUrls: ["./starting.component.scss"]
+  selector: 'app-starting',
+  templateUrl: './starting.component.html',
+  styleUrls: ['./starting.component.scss']
 })
 export class StartingComponent implements OnInit {
-  constructor() {
-    $("meta[name=viewport]").attr("content", "width=1100");
+
+  constructor() { }
+
+  ngOnInit(): void {
   }
 
-  ngOnInit() {}
 }

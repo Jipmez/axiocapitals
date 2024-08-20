@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { DataService } from 'src/app/data.service';
-import { Router } from '@angular/router';
 import { ToastrManager } from 'ng6-toastr-notifications';
+import { NgxSpinnerService } from 'ngx-spinner';
 declare let $;
 @Component({
   selector: 'app-forgotpass',
@@ -12,9 +12,14 @@ declare let $;
 export class ForgotpassComponent implements OnInit {
   constructor(
     private server: DataService,
-    private route: Router,
+    private spinner: NgxSpinnerService,
     private toastr: ToastrManager
-  ) {}
+  ) {
+    $('meta[name=viewport]').attr(
+      'content',
+      'width=device-width,height=device-height,initial-scale=1,maximum-scale=1'
+    );
+  }
 
   ngOnInit() {
     $('.loader').fadeOut();
@@ -22,6 +27,7 @@ export class ForgotpassComponent implements OnInit {
   }
 
   forgotPass(x: NgForm) {
+    this.spinner.show();
     var emailRe = /^.+@.+\..{2,4}$/;
     if (x.value.email.match(emailRe)) {
       let forgot = {
@@ -32,11 +38,14 @@ export class ForgotpassComponent implements OnInit {
         if (res['code'] == 1) {
           this.toastr.successToastr('Message sent successfully', 'Security');
           x.reset();
+          this.spinner.hide();
         } else if (res['code'] == 2) {
           this.toastr.warningToastr('Input a correct email', 'Security');
           x.reset();
+          this.spinner.hide();
         }
         x.reset();
+        this.spinner.hide();
       });
     }
   }

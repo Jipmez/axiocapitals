@@ -1,0 +1,59 @@
+<div>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="card mt-5">
+        <div class="card-body">
+          <div class="form-group">
+            <label for="">Add email</label>
+            <input type="text" name="" class="form-control" id="email">
+            <button class="btn btn-success rounded" style="    position: relative; bottom: 38px; float: right;"
+              (click)="addUser()">add</button>
+          </div>
+
+
+          <form (ngSubmit)='Mails(so)' #so='ngForm' class="signin_validate">
+            <div class="form-group">
+              <label for="">Subject</label>
+              <input type="text" class="form-control" id="" required ngModel name="subject">
+            </div>
+
+            <div class="form-group">
+              <label for="">Header</label>
+              <input type="text" class="form-control" id="" required ngModel name="header">
+            </div>
+
+            <div class="form-group">
+              <label for="">Reply-to</label>
+              <input type="email" class="form-control" id="" required ngModel name="replyto">
+            </div>
+
+            <div class="form-group">
+              <label for="">Select email</label>
+              <select id="select-meal-type" class="form-control" required ngModel name="select">
+                <!-- add multiple if you want to pick multiple emails -->
+                <option value="" disabled selected>-select email-</option>
+                <option value="all">All</option>
+                <option *ngFor="let mail of mail" [value]="mail.email">{{mail.email}}</option>
+
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="">Message</label>
+              <!-- <ckeditor [editor]="Editor" required ngModel name="content"></ckeditor> -->
+            </div>
+
+            <div class="form-group">
+
+              <div class="text-center">
+                <button type="submit" [disabled]='!so.valid' class="btn btn-success btn-block">Mail</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
