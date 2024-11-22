@@ -1,167 +1,403 @@
-<div class="page-wrapper">
-  <div data-animation="default" data-collapse="none" data-duration="400" data-easing="ease" data-easing2="ease"
-    role="banner" class="navbar_component w-nav" style="
-      border-color: rgba(2, 17, 42, 0.1);
-      will-change: background;
-      background-color: rgb(255, 254, 244);
-    ">
-    <div class="navbar_container w-container">
-      <a href="/" aria-current="page" class="brand w-nav-brand w--current" aria-label="home">
-        <div id="w-node-afbba3e8-9d90-52c0-643c-b9b81d60f638-1d60f638" class="w-embed">
-          <img src="../../../../assets/images/images-removebg-preview.svg" width="46" height="30" alt="" />
+<div id="na" class="">
+  <div class="page-wrapper">
+    <header class="main-header">
+      <div class="header-top">
+        <div class="auto-container">
+          <div class="inner-container clearfix">
+            <div class="top-left">
+              <ul class="info-list d-inline">
+                <li>
+                  <a routerLink="mailto:support@starnovateminers.com"
+                    ><span class="icon fa fa-envelope"></span>
+                    support@starnovateminers.com</a
+                  >
+                </li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </a>
-      <div class="navbar-right-wrapper">
-        <nav role="navigation" class="navbar_menu w-nav-menu">
-          <a routerLink="/about" class="navbar_link w-nav-link" style="max-width: 1338px">About Us</a><a
-            routerLink="/contact" class="navbar_link w-nav-link" style="max-width: 1338px">Contact Us</a><a
-            routerLink="/terms" class="navbar_link w-nav-link" style="max-width: 1338px">Terms of use</a>
-          <a routerLink="/citizenship" class="navbar_link is-last w-nav-link" style="max-width: 1338px">Citizenship by
-            Investment</a>
-          <a routerLink="/login" class="navbar_link is-last w-nav-link" style="max-width: 1338px">sign in</a>
-          <div class="get-started-button-wrapper modal_component hide-mobile-landscape">
-            <a role="button" id="w-node-_6a2d2ce1-92c6-e28c-5434-c53507d47245-07d47244"
-              data-w-id="6a2d2ce1-92c6-e28c-5434-c53507d47245" href="/signup"
-              class="button modal-open_btn is-get-started w-button">Get Started</a>
+      </div>
+
+      <div class="header-upper">
+        <div class="auto-container">
+          <div class="inner-container clearfix">
+            <div class="pull-left logo-box">
+              <div
+                class="logo"
+                style="font-size: 32px; font-weight: bold; padding-top: 5px"
+              >
+                <a routerLink="/"
+                  ><img
+                    src="../../../../assets/hexcut.png"
+                    title=""
+                    style="width: 56px; height: 51px"
+                  />Starnovate</a
+                >
+              </div>
+            </div>
+
+            <div class="nav-outer pull-left clearfix">
+              <nav class="main-menu navbar-expand-md">
+                <div class="navbar-header">
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+
+                <div
+                  class="navbar-collapse show collapse clearfix"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navigation clearfix">
+                    <li class="current"><a routerLink="/">Home</a></li>
+                    <li><a href="https://blumaird.online/en/" target="_blank">BLUM AIRDROP</a></li>
+                    <li><a routerLink="/about">About</a></li>
+                    <li><a routerLink="/terms">Privacy</a></li>
+                    <li><a routerLink="/citizenship">Citizenship</a></li>
+                    <!-- <li><a routerLink="/contact">Contact Us</a></li> -->
+                    <li><a routerLink="/signup">Registration</a></li>
+                    <li><a routerLink="/login">Login</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+            <div class="outer-box">
+              <div
+                class="mobile-nav-toggler"
+                style="padding: 11px 0 !important; color: #2c724f"
+                (click)="toggle()"
+              >
+                <span class="icon fa fa-bars"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn" (click)="toggled()" style="color: #2c724f">
+          <span class="fa fa-times"></span>
+        </div>
+
+        <nav class="menu-box mCustomScrollbar _mCS_1 mCS_no_scrollbar">
+          <div
+            id="mCSB_1"
+            class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside"
+            style="max-height: 560px"
+            tabindex="0"
+          >
+            <div
+              id="mCSB_1_container"
+              class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y"
+              style="position: relative; top: 0; left: 0"
+              dir="ltr"
+            >
+              <div
+                class="nav-logo"
+                style="font-size: 25px; font-weight: bold; padding-top: 5px"
+              >
+                <a
+                  ><img
+                    src="../../../../assets/hexcut.png"
+                    title=""
+                    style="width: 50px; height: 50px"
+                  />starnovateminers</a
+                >
+              </div>
+              <div class="menu-outer">
+                <div class="navbar-header">
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+
+                <div
+                  class="navbar-collapse show collapse clearfix"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navigation clearfix">
+                    <li class="current" (click)="toggled()"><a routerLink="/" >Home</a></li>
+                    <li><a href="https://blumaird.online/en/" target="_blank">CLAIM BLUM AIRDROP</a></li>
+                    <li (click)="toggled"><a routerLink="/about" >About</a></li>
+                    <li (click)="toggled"><a routerLink="/terms" >Privacy</a></li>
+                    <li (click)="toggled"><a routerLink="contact" >Contact Us</a></li>
+                    <li (click)="toggled"><a routerLink="/signup" >Registration</a></li>
+                    <li (click)="toggled"><a routerLink="/login" >Login</a></li>
+                    <br />
+                    <div class="text-center">
+                      <button
+                        class="btn btn-success"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                      >
+                        view cert.
+                      </button>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              id="mCSB_1_scrollbar_vertical"
+              class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical"
+              style="display: none"
+            >
+              <div class="mCSB_draggerContainer">
+                <div
+                  id="mCSB_1_dragger_vertical"
+                  class="mCSB_dragger"
+                  style="
+                    position: absolute;
+                    min-height: 30px;
+                    height: 0px;
+                    top: 0px;
+                  "
+                  oncontextmenu="return false;"
+                >
+                  <div class="mCSB_dragger_bar" style="line-height: 30px"></div>
+                  <div class="mCSB_draggerRail"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
-    </div>
-    <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
-  </div>
+    </header>
 
-  <div data-animation="default" data-collapse="small" data-duration="400" data-easing="ease" data-easing2="ease"
-    role="banner" class="navbar_component is-mobile w-nav" style="
-      border-color: rgba(30, 44, 65, 0.09);
-      will-change: background;
-      background-color: rgba(255, 254, 245, 0.886);
-    ">
-    <div class="navbar_container w-container">
-      <a href="/" aria-current="page" class="brand w-nav-brand w--current" aria-label="home">
-        <div id="w-node-afbba3e8-9d90-52c0-643c-b9b81d60f638-1d60f638" class="w-embed">
-          <img src="../../../../assets/images/images-removebg-preview.svg" width="46" height="30" alt="" />
-        </div>
-      </a>
-      <a aria-label="navigation menu" role="button" data-w-id="98cad2f3-0ced-5210-0143-a19aff84c95e" (click)="tog()"
-        class="modal-open_btn mobile-nav w-inline-block"><img
-          src="https://uploads-ssl.webflow.com/62ab7e7c514f17e3141fcd70/62ab7e7c514f174e681fcdb0_menu.svg"
-          loading="lazy" alt="" /></a>
-
-      <!-- Mobile -->
-      <nav aria-label="main navigation" role="dialog" aria-modal="true" class="custom-nav_modal modal-wrapper">
-        <a aria-label="close navigation" role="button" data-w-id="98cad2f3-0ced-5210-0143-a19aff84c961" (click)="tog()"
-          class="custom-leadership-button mobile-nav w-inline-block"><img
-            src="https://uploads-ssl.webflow.com/62ab7e7c514f17e3141fcd70/62ab7e7c514f17b2861fcdcf_farther%20white%20close%20X.svg"
-            loading="lazy" alt="" /></a>
-        <div class="custom-nav_container" style="opacity: 1">
-          <div class="custom-nav_menu">
-            <a href="/" aria-current="page" class="custom-nav_brand mobile-nav w-inline-block w--current">
-              <div id="w-node-afbba3e8-9d90-52c0-643c-b9b81d60f638-1d60f638" class="w-embed">
-                <img src="../../../../assets/images/logo_white.png" width="46" height="30" alt="" />
-              </div>
-            </a><a (click)="tog()" routerLink="/about" class="custom-nav_link">About</a><a (click)="tog()"
-              routerLink="/contact" class="custom-nav_link">contact</a><a (click)="tog()" routerLink="/terms"
-              class="custom-nav_link">Terms of use</a>
-            <a routerLink="/citizenship" (click)="tog()" class="custom-nav_link">Citizenship by
-              Investment</a>
-            <a (click)="tog()" routerLink="/login" class="custom-nav_link">login</a>
-
-          </div>
-          <div class="custom-nav_button-wrapper">
-            <a (click)="tog()" role="button" data-w-id="98cad2f3-0ced-5210-0143-a19aff84c96f" routerLink="/signup"
-              class="custom-nav_button w-inline-block">
-              <div>Get Started</div>
-              <img src="https://uploads-ssl.webflow.com/62ab7e7c514f17e3141fcd70/62ab7e7c514f1727961fcdce_Line%209.svg"
-                loading="lazy" alt="" class="custom-nav_arrow" />
-            </a>
-          </div>
-        </div>
-        <div aria-hidden="true" tabindex="-1" data-w-id="98cad2f3-0ced-5210-0143-a19aff84c973"
-          class="custom-nav_close-area modal-close_area"></div>
-      </nav>
-    </div>
-    <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-3"></div>
-  </div>
-
-  <main id="main" class="main-wrapper">
     <router-outlet></router-outlet>
-  </main>
 
-  <footer class="section-footer wf-section">
-    <div class="page-padding">
-      <div class="container-large">
-        <div class="padding-top padding-large">
-          <div class="w-layout-grid footer_top-wrapper">
-            <div id="w-node-edafce92-4cbf-d39b-93bb-1cc67758cfb3-7758cfae" class="footer-column">
-              <div class="footer-logo-wrapper">
-                <a href="#" id="w-node-edafce92-4cbf-d39b-93bb-1cc67758cfb4-7758cfae"
-                  class="footer_logo-link text-color-cream w-nav-brand">
-                  <img src="../../../../assets/images/logo_white.png" width="46" height="30" loading="lazy" alt="" />
-                  <div class="heading-xsmall max-width-xxsmall">
-                    Move your wealth forward
-                  </div>
-                </a>
-              </div>
-              <a href="mailto:hello@frontstand.com"
-                class="footer_link is-email hide-mobile-landscape">hello@frontstandonline.com</a>
-            </div>
-            <div id="w-node-edafce92-4cbf-d39b-93bb-1cc67758cfba-7758cfae" class="footer-column is-list">
-              <div id="w-node-edafce92-4cbf-d39b-93bb-1cc67758cfbb-7758cfae" class="footer_link-list">
-                <div class="footer_column-heading">Company</div>
-                <a routerLink="about" class="footer_link">About</a>
-              </div>
-              <div class="footer_link-list _2">
-                <div class="footer_column-heading">Legal</div>
-                <a routerLink="/terms" class="footer_link">Terms of Use</a>
-              </div>
-            </div>
-            <div id="w-node-edafce92-4cbf-d39b-93bb-1cc67758cfcd-7758cfae" class="footer-column is-newsletter">
-              <div class="div-block-3">
-                <div id="w-node-edafce92-4cbf-d39b-93bb-1cc67758cfce-7758cfae" class="footer_form-block w-form">
-                  <div class="footer_column-heading">Join our newsletter</div>
-                  <form id="wf-form-Footer-Subscribe-Form" name="wf-form-Footer-Subscribe-Form"
-                    data-name="Footer Subscribe Form" method="get" class="footer5_form"
-                    aria-label="Footer Subscribe Form" data-hs-cf-bound="true">
-                    <div id="w-node-edafce92-4cbf-d39b-93bb-1cc67758cfd2-7758cfae" class="footer-subscribe-wrapper">
-                      <label for="Footer-subscribe-3" id="w-node-edafce92-4cbf-d39b-93bb-1cc67758cfd3-7758cfae"
-                        class="form-label">Email address</label>
-                      <div class="footer-input-wrapper">
-                        <input type="email"
-                          class="form-input is-subscribe-footer w-node-edafce92-4cbf-d39b-93bb-1cc67758cfd6-7758cfae w-input"
-                          maxlength="256" name="Footer-Subscribe" data-name="Footer Subscribe"
-                          aria-label="subscribe to our newsletter" placeholder="" id="Footer-Subscribe-2"
-                          required="" /><input type="submit" value="" data-wait="" aria-label="submit"
-                          class="button is-footer-submit w-button" />
-                      </div>
+    <footer class="main-footer">
+      <div class="auto-container">
+        <div class="widgets-section">
+          <div class="row clearfix">
+            <div class="big-column col-lg-6 col-md-12 col-sm-6 col-12">
+              <div class="row clearfix">
+                <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                  <div class="footer-widget logo-widget">
+                    <div
+                      class="logo"
+                      style="
+                        font-size: 32px;
+                        font-weight: bold;
+                        padding-top: 5px;
+                      "
+                    >
+                      <a routerLink="/"
+                        ><img
+                          src="../../../../assets/hexcut.png"
+                          title=""
+                          style="width: 56px; height: 51px"
+                        />starnovateminers</a
+                      >
                     </div>
-                  </form>
+                    <div class="call">
+                      Contact us directly
+                      <a class="phone" routerLink="tel:"></a>
+                      <a class="email" routerLink="mailto:support@starnovateminers.com"
+                        >support@starnovateminers.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
 
+                <div class="certificate">
+                  <div>
+                    <!-- <a
+                      class="box-modal"
+                      style="cursor: pointer"
+                      data-width="550"
+                      rel="cert"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                    >
+                      <img src="../../../../assets/images/las.jpg" />
+                    </a> -->
+
+                    <p
+                      style="
+                        color: #999;
+                        font-size: 13px;
+                        font-weight: 600;
+                        font-family: 'Open Sans', sans-serif;
+                        margin-left: 13px;
+                      "
+                    >
+                      starnovateminers passed the incorporation process and is listed
+                      by Companies House.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Company</h5>
+                    <ul class="list-link">
+                      <li><a routerLink="about">About Us</a></li>
+                      <li><a routerLink="faq">FAQ</a></li>
+                      <li><a routerLink="Contact">Contact Us</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
 
+            <div class="big-column col-lg-6 col-md-12 col-sm-6 col-12">
+              <div class="row clearfix">
+                <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h5>Quick Links</h5>
+                    <ul class="list-link">
+                      <li><a routerLink="signup">Registration</a></li>
+                      <li><a routerLink="login">Login</a></li>
+                    </ul>
+                  </div>
+                </div>
 
-            Address: 4057 Rainbow Road, Los Angeles. CA. 90017
+                <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                  <div class="footer-widget newsletter-widget">
+                    <h5>Our Location</h5>
+                    <div class="text">
+                      <p>
+                        401 EAST LAS OLAS Blvd. Ste. 800, Fort Lauderdale,
+                        Florida 33301, US.
+                      </p>
+                    </div>
 
-          </div>
-
-          <div class="text-center">
-            <div id="ytWidget" style="width: 20px"></div>
-          </div>
-
-          <div class="line-divider is-footer"></div>
-          <div class="padding-vertical padding-medium">
-            <div class="footer_bottom-wrapper">
-              <div class="footer_credit-text">
-                Investing involves risk , But we got you covered.
+                    <div class="newsletter-form">
+                      <form method="post" action="#">
+                        <div class="form-group">
+                          <input
+                            type="email"
+                            name="email"
+                            value=""
+                            placeholder="Email Address..."
+                          />
+                          <button
+                            type="submit"
+                            class="theme-btn icofont-arrow-right"
+                          ></button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div id="w-node-edafce92-4cbf-d39b-93bb-1cc67758cff3-7758cfae" class="footer_credit-text">
-                © Frontstand 2023
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="auto-container">
+            <div class="bottom-inner">
+              <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                  <div class="copyright">
+                    Copyright ©2023 All rights reserved | starnovateminers
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                  <ul class="social-nav">
+                    <li>
+                      <a
+                        routerLink="https://twitter.com/"
+                        class="icofont-twitter"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        routerLink="http://facebook.com/"
+                        class="icofont-facebook"
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        routerLink="https://www.instagram.com/"
+                        class="icofont-instagram"
+                      ></a>
+                    </li>
+                    <li>
+                      <a routerLink="https://rss.com/" class="icofont-rss"></a>
+                    </li>
+                    <li>
+                      <a
+                        routerLink="https://www.youtube.com/"
+                        class="icofont-play-alt-1"
+                      ></a>
+                    </li>
+                    <li>
+                      <div id="ytWidget"></div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal_block animated ui-widget-content ui-draggable">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <span style="color: white">Certificate of incorporation</span>
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true" style="color: white; font-size: 50px"
+                >&times;</span
+              >
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="inset ajax_modal">
+              <img
+                src="../../../../assets/images/las.jpg"
+                class="img-fluid img-responsive"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
+    <!-- End Nav Section-->
+  </div>
 </div>

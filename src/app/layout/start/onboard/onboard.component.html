@@ -1,0 +1,35 @@
+<div id="UpdatePanel1">
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="card">
+      <div class="upper"></div>
+      <div class="user text-center">
+        <div class="profile">
+          <img
+            id="Image1"
+            src="../../../../assets/images/userimg.jpg"
+            class="rounded-circle"
+            width="80"
+          />
+        </div>
+      </div>
+      <div class="mt-cdl text-center">
+        <h4 class="mc-cdl">Welcome</h4>
+        <span class="text-muted d-block mc-cdl2"
+          ><span id="Lbl_name" style="font-weight: 900">{{ user }}</span></span
+        >
+        <button
+          routerLink="/dashboard"
+          id="Bt_Login"
+          type="button"
+          class="btn btn-primary btn-sm follow"
+        >
+          Continue Login&nbsp;»
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<audio class="win" controls preload="none" style="display: none"  #audioRef>
+  <source src="../../../../assets/audio/success_login.mp3" type="audio/wav" />
+</audio>

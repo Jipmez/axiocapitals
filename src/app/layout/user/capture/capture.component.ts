@@ -20,8 +20,8 @@ export class CaptureComponent implements OnInit {
     public session: SessionStorageService
   ) {
     this.token = this.session.get('sessionID');
-    if ($('.sidebar-toggled')[0]) {
-      $('#tog').click();
+    if ($(".toggled")) {
+      $("#tog").click();
     }
 
     $('.app-wrap').removeClass('sidebar-toggled');

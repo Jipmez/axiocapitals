@@ -1,10 +1,285 @@
-@import "../../../../assets/css/farther.scss";
-
-@media (max-width: 577px) {
-  .welcome-meter {
-    display: none;
-  }
+@import "../../../../assets/css/cbre.css";
+@import "../../../../assets/css/respon.css";
+iframe {
+  width: 100% !important;
 }
+
+.how_it_works_banner .htw_hero_video {
+  width: 100%;
+}
+.section-padding {
+  padding: 80px 0px;
+}
+.section-padding.how_it_sec_root {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.how_it_section_2 .how_it_tag_img__ {
+  padding-right: 80px;
+}
+.how_it_section_2 .how_it_tag_cnt__ p svg {
+  width: 30px;
+  color: #1dbdef;
+  height: 23px;
+}
+.how_it_section_3 .how_it_tag_cnt h2 {
+  text-align: center;
+}
+.how_it_section_3 .how_it_tag_cnt p {
+  padding-right: 0px;
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.how_it_section_3 .section_right {
+  padding-top: 50px;
+}
+.how_it_section_3 .section_right .how_it_tag_cnt__ h2 {
+  color: #28314a;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+}
+.how_it_section_3 .section_right .how_it_tag_cnt__ h3 {
+  text-align: center;
+  padding-top: 35px;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.how_it_section_7 .how_it_tag_cnt__ ul li {
+  line-height: 24px;
+  list-style: none;
+  margin-bottom: 17px;
+}
+.how_it_section_7 .how_it_tag_cnt__ ul li svg {
+  width: 23px;
+}
+.how_it_section_7 .how_it_tag_cnt__ ul li {
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.how_it_section_7 .how_it_tag_cnt__ ul li svg {
+  color: #1dbdef;
+  width: 30px;
+  vertical-align: top;
+}
+.how_it_section_7 .how_it_tag_cnt__ ul {
+  padding: 0;
+  list-style-type: none;
+}
+.how_it_section_7 .how_it_tag_cnt__ ul li:last-child {
+  margin-bottom: 0px;
+}
+
+/*Pricing Section*/
+.price_sec_price {
+  background-image: linear-gradient(
+    to right,
+    #54d0f9,
+    #36c3f9,
+    #18b5f9,
+    #07a6f7,
+    #1dbdef
+  );
+  border-radius: 12px 0 0 12px;
+  color: #fff;
+}
+.price_sec_price .price_sec_price_slide {
+  padding: 60px 15px;
+  margin: 0 auto;
+  padding-bottom: 0px;
+} /*width: 55%;*/
+.price_sec {
+  background-color: #f7f7f7;
+}
+.price_sec .price_sec_benefits {
+  background: #fff;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.price_sec_price__ h2 {
+  font-size: 70px;
+}
+.price_sec_price__ h2 span {
+  font-size: 19px;
+  letter-spacing: 0.7px;
+  color: #e1e1e1;
+}
+.price_sec_price__ h1 {
+  font-size: 33px;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+}
+.price_sec_price__ .price_sec_point li,
+.price_sec .price_sec_benefits__ li {
+  display: block;
+  list-style-type: none;
+  font-size: 17px;
+  letter-spacing: 0.7px;
+  font-weight: 300;
+}
+.price_sec_price__ .price_sec_point,
+.price_sec .price_sec_benefits__ ul {
+  padding-left: 0px;
+}
+.price_sec_price__ .price_sec_point li svg {
+  width: 32px;
+}
+.price_sec .price_sec_benefits__ {
+  padding: 50px 0;
+  width: 75%;
+  margin: 0 auto;
+}
+.price_sec .price_sec_benefits__ h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.price_sec .price_sec_benefits__ li svg {
+  color: #1dbdef;
+  width: 30px;
+  vertical-align: top;
+}
+.price_sec .price_sec_benefits__ li svg {
+  width: 18px !important;
+}
+.price_sec .price_sec_benefits__ li {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.price_sec .price_sec_benefits__ li span {
+  display: inline-block;
+  width: 91%;
+  padding-left: 9px;
+}
+.price_sec .price_sec_benefits__ li:last-child {
+  margin-bottom: 0px;
+}
+.price_sec .row {
+  box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
+  border-radius: 15px;
+}
+.price_sec_price .owl-dots .owl-dot {
+  width: 9px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 0 3px;
+}
+.price_sec_price .owl-dots .owl-dot.active {
+  background: #fff;
+}
+.price_sec_price .owl-dots {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+}
+.how_it_section_9 .how_it_tag_cnt__ p {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+.how_it_section_9 .how_it_tag_cnt h2.sub_head {
+  text-align: center;
+  margin: 0;
+}
+.how_it_section_9 .section-title h2 {
+  margin-bottom: 20px;
+}
+.how_it_section_9 .how_it_tag_cnt__ p {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.easy_step_box__ {
+  text-align: center;
+  box-shadow: 0 0.313rem 0.875rem rgba(45, 49, 54, 0.09);
+  padding: 45px 15px;
+  border: 1px solid #cccccc61;
+  margin: 0 15px;
+  border-radius: 5px;
+}
+.easy_step_box__ img {
+  width: 50px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.easy_step_box__ h4 {
+  font-size: 19px;
+  letter-spacing: 0.7px;
+  margin: 0;
+  min-height: 44px;
+  color: #000000;
+}
+
+/*End Pricing Section*/
+
+.easy_step_box__ {
+  margin: 0 50px;
+  padding: 40px 15px;
+  margin-bottom: 25px;
+}
+
+a.mt-2.btn.outline-button {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #058485;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #f9f9f9;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1.5;
+  margin: 0.5rem 0 0;
+  max-width: 300px;
+  padding: 10px 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+  user-select: none;
+  vertical-align: middle;
+  width: fit-content;
+  z-index: 2;
+}
+
+a.mt-2.btn.outline-button:hover {
+  background-color: #00a6a6;
+  box-shadow: none;
+  color: #fff;
+  outline: none;
+}
+
+a.mt-2.btn.outline-button:focus {
+  background-color: #00a6a6;
+  box-shadow: none;
+  color: #fff;
+  outline: none;
+}
+
+a.mt-2.btn.outline-button:disabled {
+  opacity: 0.65;
+}
+
 
 .nexo-notice em {
   font-weight: 400 !important;

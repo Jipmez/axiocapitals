@@ -44,8 +44,8 @@ export class ProfileComponent implements OnInit {
     private activate: ActivatedRoute
   ) {
     route.events.subscribe((_: NavigationEnd) => (this.currentUrl = _.url));
-    if ($('.app-wrap')?.[0]) {
-      $('#tog').click();
+    if ($(".toggled")) {
+      $("#tog").click();
     }
     $('.app-wrap').removeClass('sidebar-toggled');
     this.location = window.location.origin;

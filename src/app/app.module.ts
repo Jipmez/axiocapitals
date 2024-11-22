@@ -24,6 +24,9 @@ import { ProfileComponent } from './layout/user/profile/profile.component';
 import { CaptureComponent } from './layout/user/capture/capture.component';
 import { HistoryComponent } from './layout/user/history/history.component';
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,

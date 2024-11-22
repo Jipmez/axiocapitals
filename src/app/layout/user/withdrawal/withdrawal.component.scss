@@ -1,1 +1,80 @@
-@import "../../../../assets/css/storm.css";
+@import "../../../../assets/css/site.css";
+
+.crypt-dash-withdraw {
+}
+.crypt-withdraw-heading {
+  background: #e6eaef;
+  padding: 12px 0 12px 30px;
+}
+.crypt-withdraw-heading p {
+  margin-bottom: 0;
+}
+.icon-big {
+  font-size: 35px;
+  display: inline-block;
+  font-weight: 800;
+  vertical-align: middle;
+  margin-top: -10px;
+}
+.icon-big + p {
+  display: inline-block;
+  margin-top: 10px;
+}
+body.crypt-dark .crypt-withdraw-body {
+  background: #131722 !important;
+}
+.crypt-withdraw-body .nav-pills {
+  padding: 30px 7px;
+}
+.crypt-withdraw-body .nav-pills a {
+  font-weight: 600;
+  color: #555;
+  font-size: 13px;
+  font-weight: 500;
+}
+body.crypt-dark .crypt-withdraw-body .nav-pills a {
+  color: #fff;
+}
+body.crypt-dark .crypt-withdraw-body .nav-pills a.active {
+  color: #5e37ff;
+}
+.crypt-withdraw-body .nav-pills a.active {
+  background: transparent;
+  color: #5e37ff;
+}
+.crypt-withdraw-body .nav-pills a i {
+  font-weight: 600;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 8px;
+}
+.crypt-withdraw-body .tab-content {
+  border-left: 1px solid #f1f1f1;
+  padding: 30px;
+}
+
+body.crypt-dark .crypt-withdraw-body .tab-content {
+  border-left: 1px solid #242e3e;
+  padding: 30px;
+}
+
+.crypt-up {
+  color: #01aa78 !important;
+}
+
+.crypt-button-red-full {
+  background: #5e37ff !important;
+  border: none !important;
+  color: #fff;
+  padding: 9px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+
+.crypt-down {
+  color: #5e37ff !important;
+}

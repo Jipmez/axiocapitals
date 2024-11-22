@@ -1,0 +1,85 @@
+:root {
+  --oColor: rgba(44, 114, 79, 0.6);
+  --wbColor: #fff;
+  --d_Color: #1D, 4C, 35;
+}
+
+body {
+  background-color: #b7b7b7;
+}
+
+.container {
+  height: 100vh;
+}
+
+.card {
+  width: 390px;
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
+  background-color: #fff;
+  position: relative;
+  height: 370px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.upper {
+  border-radius: 10px;
+  background: #2c724f url("https://cbre-financials.com/images/pattern.png")
+    repeat top left;
+  position: absolute;
+  top: -13px;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  z-index: -1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.user {
+  position: relative;
+}
+
+.profile img {
+  height: 98%;
+  width: 98%;
+  margin-top: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile {
+  height: 160px;
+  width: 160px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 10px auto 0 auto;
+  border: 3px solid #ccc;
+}
+
+.mt-cdl {
+  margin-top: 2rem !important;
+}
+
+.mc-cdl {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.mc-cdl2 {
+  margin-bottom: 10pt;
+}
+
+.btn.follow {
+  width: 100%;
+  padding: 10pt 0;
+  font-weight: 700;
+  border-color: #2c724f;
+  color: #fff;
+  background: #2c724f url("https://cbre-financials.com/images/pattern.png")
+    repeat top;
+  outline: none !important;
+  box-shadow: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

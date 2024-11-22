@@ -1,399 +1,439 @@
-<div *ngIf="pucg == 0">
-  <div class="">
-    <div *ngIf="step == 1 && his != 'history'" class="row">
+
+<div class="container" *ngIf="pucg == 0">
+  <!-- <div class="sec-title text-center">
+      <span class="title">Get plan</span>
+      <h2>Choose a Plan</h2>
+  </div> -->
+
+  <div class="outer-box" *ngIf="step == 1 && his != 'history'">
 
 
-
-      <div class="col-md-12">
-        <div class="my-5 py-3 px-3 bg-light">
-          <div class=" d-sm-flex align-items-center justify-content-between" (click)="options = 'PRFM'; pucg = 1"
-            style="cursor: pointer">
-            <div class="d-md-flex justify-content-between align-items-center">
-              <div class="text-center">
-                <p><span class="text-primary"><img
-                      src="https://i0.wp.com/stockswhale.com/wp-content/uploads/2023/01/gold-bars-6748008-5553162.webp"
-                      loading="lazy" alt="" width="100px" height="100px" class="sticky-card_icon" /></span></p>
-                <h4 class="mb-0 fw-200 text-center">Prudential FMCG Fund - Growth</h4>
-              </div>
-            </div>
-            <div class="text-center text-uppercase text-secondary mb-2">
-              <small class="d-block my-3" style="font-weight: 600">12% interest after 12hrs</small>
-              <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
-              <small class="d-block" style="font-weight: 600">
-                <div class="mt-10 mt-md-0">
-                  <a href="javascript:void(0);" class="waves-effect waves-light btn btn-outline btn-primary">Invest
-                    Now</a>
-                </div>
-              </small>
-            </div>
-          </div>
-          <hr>
-          <div class="d-md-flex justify-content-between align-items-center">
-            <div class="d-flex justify-content-start align-items-center">
-              <div class="min-w-100">
-                <p class="mb-0 text-fade">Fund Size</p>
-                <h6 class="mb-0">$30 - $249</h6>
-              </div>
-              <div class="mx-lg-50 mx-20 min-w-70">
-                <p class="mb-0 text-fade">Return</p>
-                <h6 class="mb-0 text-success">+12%</h6>
-              </div>
-            </div>
-          </div>
+    <div *ngIf="promo == 1" class="col-md-12 " [class.order-first]="promo == 1">
+      <div class="my-5 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between border border-success"
+        (click)="options = 'PROMO'; pucg = 1">
+        <div class="text-center">
+          <span style="font-weight: 600">
+            <div class="icon-outer"><i class="fa fa-product-hunt " style="font-size: 70px; color: burlywood;"></i></div>PROMO
+          </span>
+          <h4 class="my-2 font-weight-bold">$1,000 - 2,999</h4>
+          <small class="text-uppercase text-secondary">4 days</small>
         </div>
-
-        <div class="my-5 py-3 px-3 bg-light">
-          <div class=" d-sm-flex align-items-center justify-content-between" (click)="options = 'INSD'; pucg = 1"
-            style="cursor: pointer">
-            <div class="d-md-flex justify-content-between align-items-center">
-              <div class="text-center">
-                <p><span class="text-primary"><img
-                      src="https://www.indonez.com/html-demo/liquid/img/in-liquid-icon-15.svg" loading="lazy" alt=""
-                      width="100px" height="100px" class="sticky-card_icon" /></span> </p>
-                <h4 class="mb-0 fw-200 text-center">Index Sensex Direct Plan - Growth</h4>
-              </div>
-            </div>
-            <div class="text-center text-uppercase text-secondary mb-2">
-              <small class="d-block my-3" style="font-weight: 600">35% interest after 4 days</small>
-              <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
-              <small class="d-block" style="font-weight: 600">
-                <div class="mt-10 mt-md-0">
-                  <a href="javascript:void(0);" class="waves-effect waves-light btn btn-outline btn-primary">Invest
-                    Now</a>
-                </div>
-              </small>
-            </div>
-          </div>
-          <hr>
-          <div class="d-md-flex justify-content-between align-items-center">
-            <div class="d-flex justify-content-start align-items-center">
-              <div class="min-w-100">
-                <p class="mb-0 text-fade">Fund Size</p>
-                <h6 class="mb-0">$250 - $999</h6>
-              </div>
-              <div class="mx-lg-50 mx-20 min-w-70">
-                <p class="mb-0 text-fade">Return</p>
-                <h6 class="mb-0 text-success">+35% <span class="text-dark">(4 days)</span></h6>
-              </div>
-            </div>
-          </div>
+        <div class="text-center text-uppercase text-secondary mb-2">
+          <small class="d-block my-3" style="font-weight: 600">400% interest in 4 days</small>
+          <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
+          <small class="d-block" style="font-weight: 600">24/7 Support</small>
         </div>
-
-
-        <div class="my-5 py-3 px-3 bg-light">
-          <div class=" d-sm-flex align-items-center justify-content-between" (click)="options = 'MAFD'; pucg = 1"
-            style="cursor: pointer">
-            <div class="d-md-flex justify-content-between align-items-center">
-              <div class="text-center">
-                <p><span class="text-primary">
-                    <img src="https://www.indonez.com/html-demo/liquid/img/in-liquid-icon-9.svg" loading="lazy"
-                      width="100px" height="100px" alt="" class="sticky-card_icon" />
-                  </span> </p>
-                <h4 class="mb-0 fw-200 text-center">Market Fund Direct - Growth</h4>
-              </div>
-            </div>
-            <div class="text-center text-uppercase text-secondary mb-2">
-              <small class="d-block my-3" style="font-weight: 600">120% interest after 6 days</small>
-              <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
-              <small class="d-block" style="font-weight: 600">
-                <div class="mt-10 mt-md-0">
-                  <a href="javascript:void(0);" class="waves-effect waves-light btn btn-outline btn-primary">Invest
-                    Now</a>
-                </div>
-              </small>
-            </div>
-          </div>
-          <hr>
-          <div class="d-md-flex justify-content-between align-items-center">
-            <div class="d-flex justify-content-start align-items-center">
-              <div class="min-w-100">
-                <p class="mb-0 text-fade">Fund Size</p>
-                <h6 class="mb-0">$1000 - $9999</h6>
-              </div>
-              <div class="mx-lg-50 mx-20 min-w-70">
-                <p class="mb-0 text-fade">Return</p>
-                <h6 class="mb-0 text-success">+120% <span class="text-dark">(6 days)</span></h6>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-        <div class="my-5 py-3 px-3 bg-light">
-          <div class=" d-sm-flex align-items-center justify-content-between" (click)="options = 'MASD'; pucg = 1"
-            style="cursor: pointer">
-            <div class="d-md-flex justify-content-between align-items-center">
-              <div class="text-center">
-                <p><span class="text-primary">
-                    <img
-                      src="https://png.pngtree.com/png-clipart/20220530/original/pngtree-premium-logo-simple-vector-illustration-png-image_7755767.png"
-                      loading="lazy" width="100px" height="100px" alt="" class="sticky-card_icon" />
-                  </span> </p>
-                <h4 class="mb-0 fw-200 text-center">Market Sensex Direct</h4>
-              </div>
-            </div>
-            <div class="text-center text-uppercase text-secondary mb-2">
-              <small class="d-block my-3" style="font-weight: 600">200% interest after 8 days</small>
-              <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
-              <small class="d-block" style="font-weight: 600">
-                <div class="mt-10 mt-md-0">
-                  <a href="javascript:void(0);" class="waves-effect waves-light btn btn-outline btn-primary">Invest
-                    Now</a>
-                </div>
-              </small>
-            </div>
-          </div>
-          <hr>
-          <div class="d-md-flex justify-content-between align-items-center">
-            <div class="d-flex justify-content-start align-items-center">
-              <div class="min-w-100">
-                <p class="mb-0 text-fade">Fund Size</p>
-                <h6 class="mb-0">$10000 - unlimited</h6>
-              </div>
-              <div class="mx-lg-50 mx-20 min-w-70">
-                <p class="mb-0 text-fade">Return</p>
-                <h6 class="mb-0 text-success">+200% <span class="text-dark">(8 days)</span></h6>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <div class="my-5 py-3 px-3 bg-light">
-          <div class=" d-sm-flex align-items-center justify-content-between" (click)="options = 'CIPs'; pucg = 1"
-            style="cursor: pointer">
-            <div class="d-md-flex justify-content-between align-items-center">
-              <div class="text-center">
-                <p><span class="text-primary">
-                    <img src="https://www.uscis.gov/sites/default/files/images/site/DHS_cis_W.svg" loading="lazy"
-                      width="170px" height="100px" alt="" class="sticky-card_icon" />
-                  </span> </p>
-                <h4 class="mb-0 fw-200 text-center">Citizenship by Investment (CIPs)</h4>
-              </div>
-            </div>
-            <div class="text-center text-uppercase text-secondary mb-2">
-              <small class="d-block my-3" style="font-weight: 600">Duration 1 month</small>
-              <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
-              <small class="d-block" style="font-weight: 600">
-                <div class="mt-10 mt-md-0">
-                  <a href="javascript:void(0);" class="waves-effect waves-light btn btn-outline btn-primary">Invest
-                    Now</a>
-                </div>
-              </small>
-            </div>
-          </div>
-          <hr>
-          <div class="d-md-flex justify-content-between align-items-center">
-            <div class="d-flex justify-content-start align-items-center">
-              <div class="min-w-100">
-                <p class="mb-0 text-fade">Fund Size</p>
-                <h6 class="mb-0">$10,000 - 50,000</h6>
-              </div>
-              <div class="mx-lg-50 mx-20 min-w-70">
-                <p class="mb-0 text-fade">Return</p>
-                <h6 class="mb-0 text-success">+500% <span class="text-dark">(1 month)</span></h6>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <div *ngIf="promo == 1" class="col-md-12 " [class.order-first]="promo == 1">
-        <div class="my-5 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between border border-danger"
-          (click)="options = 'PROMO'; pucg = 1">
-          <div class="text-center">
-            <span style="font-weight: 600">
-              <img src="https://png.pngtree.com/png-clipart/20220825/ourlarge/pngtree-promo-logo-png-image_6124323.png"
-                loading="lazy" width="100px" height="100px" alt="" class="sticky-card_icon" />
-            </span>
-            <h4 class="my-2 font-weight-bold">$1,000 - 2,999</h4>
-            <small class="text-uppercase text-secondary">4 days</small>
-          </div>
-          <div class="text-center text-uppercase text-secondary mb-2">
-            <small class="d-block my-3" style="font-weight: 600">400% interest in 4 days</small>
-            <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
-            <small class="d-block" style="font-weight: 600">24/7 Support</small>
-          </div>
+      <div class="my-5 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between border border-success"
+        (click)="options = 'SPECIAL PROMO'; pucg = 1">
+        <div class="text-center">
+          <span style="font-weight: 600">
+            <div class="icon-outer"><i class="fa fa-product-hunt " style="font-size: 70px; color: teal;"></i></div>SPECIAL PROMO</span>
+          <h4 class="my-2 font-weight-bold">$3,000 - 9,999</h4>
+          <small class="text-uppercase text-secondary">4 days</small>
         </div>
-
-        <div class="my-5 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between border border-danger"
-          (click)="options = 'SPECIAL PROMO'; pucg = 1">
-          <div class="text-center">
-            <span style="font-weight: 600">
-              <img
-                src="https://png.pngtree.com/png-vector/20220513/ourlarge/pngtree-premium-logo-blue-simple-vector-png-image_4584611.png"
-                loading="lazy" width="100px" height="100px" alt="" class="sticky-card_icon" /></span>
-            <h4 class="my-2 font-weight-bold">$3,000 - 9,999</h4>
-            <small class="text-uppercase text-secondary">4 days</small>
-          </div>
-          <div class="text-center text-uppercase text-secondary mb-2">
-            <small class="d-block my-3" style="font-weight: 600">4 days 400% + 5000</small>
-            <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
-            <small class="d-block" style="font-weight: 600">24/7 Support</small>
-          </div>
+        <div class="text-center text-uppercase text-secondary mb-2">
+          <small class="d-block my-3" style="font-weight: 600">4 days 400% + 5000</small>
+          <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
+          <small class="d-block" style="font-weight: 600">24/7 Support</small>
         </div>
+      </div>
 
-        <div class="my-5 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between border border-danger"
-          (click)="options = 'PROMO PRO'; pucg = 1">
-          <div class="text-center">
-            <span style="font-weight: 600">
-              <img
-                src="https://png.pngtree.com/png-vector/20220511/ourlarge/pngtree-grade-label-icon-simple-vector-png-image_4580366.png"
-                loading="lazy" width="100px" height="100px" alt="" class="sticky-card_icon" /></span>
-            <h4 class="my-2 font-weight-bold">Above $10,000</h4>
-            <small class="text-uppercase text-secondary">4 days</small>
-          </div>
-          <div class="text-center text-uppercase text-secondary mb-2">
-            <small class="d-block my-3" style="font-weight: 600">400% (+ 15000) 4 days</small>
-            <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
-            <small class="d-block" style="font-weight: 600">24/7 Support</small>
-          </div>
+      <div class="my-5 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between border border-success"
+        (click)="options = 'PROMO PRO'; pucg = 1">
+        <div class="text-center">
+          <span style="font-weight: 600">
+            <div class="icon-outer"><i class="fa fa-product-hunt " style="font-size: 70px; color: gold;"></i></div>PROMO GOLD</span>
+          <h4 class="my-2 font-weight-bold">Above $10,000</h4>
+          <small class="text-uppercase text-secondary">4 days</small>
+        </div>
+        <div class="text-center text-uppercase text-secondary mb-2">
+          <small class="d-block my-3" style="font-weight: 600">400% (+ 15000) 4 days</small>
+          <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
+          <small class="d-block" style="font-weight: 600">24/7 Support</small>
         </div>
       </div>
     </div>
 
-    <div *ngIf="his == 'history'">
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Plan</th>
-            <th scope="col">amount</th>
-            <th scope="col">ROI</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let item of tra; let i = index">
-            <th scope="row">{{ i + 1 }}</th>
-            <td>{{ item.plan }}</td>
-            <td>${{ item.amount | number }}</td>
-            <td>${{ item.expected_roi | number }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+
+      <div class="row">
+          <!-- Pricing Block -->
+          <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+              <div class="inner-box">
+                  <div class="icon-box">
+                      <div class="icon-outer"><i class="fa fa-paper-plane"></i></div>
+                  </div>
+                  <div class="price-box">
+                      <div class="title"> Emerald</div>
+                      <h4 class="price">$25 -  $249</h4>
+                  </div>
+                  <ul class="features">
+                      <li class="true">1 day</li>
+                      <li class="true">+12% Growth</li>
+                      <li class="true" style="font-weight: bold; font-size: 15px;"><strong v-if="emrd">{{  emrd }} Investor(s)</strong></li>
+                  </ul>
+                  <div class="btn-box" (click)="options = 'EMRD'; pucg = 1">
+                      <a href="javascript:void(0);" class="theme-btn">BUY plan</a>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+          <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+                <div class="icon-box">
+                    <div class="icon-outer"><i class="fa fa-paper-plane"></i></div>
+                </div>
+                <div class="price-box">
+                    <div class="title"> Ruby</div>
+                    <h4 class="price">$250 -  $999</h4>
+                </div>
+                <ul class="features">
+                    <li class="true">3 days</li>
+                    <li class="true">+30% Growth</li>
+                    <li class="true" style="font-weight: bold; font-size: 15px;"><strong v-if="ruby">{{  ruby }} Investor(s)</strong></li>
+                </ul>
+                <div class="btn-box" (click)="options = 'RUBY'; pucg = 1">
+                    <a href="javascript:void(0);" class="theme-btn">BUY plan</a>
+                </div>
+            </div>
+         </div>
+
+          <!-- Pricing Block -->
+          <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+              <div class="inner-box">
+                  <div class="icon-box">
+                      <div class="icon-outer"><i class="fa fa-diamond"></i></div>
+                  </div>
+                  <div class="price-box">
+                      <div class="title">Diamond</div>
+                      <h4 class="price">$1000.99 -  9999</h4>
+                  </div>
+                  <ul class="features">
+                      <li class="true">5 days</li>
+                      <li class="true">+100% Growth</li>
+                      <li class="true" style="font-weight: bold; font-size: 15px;"><strong v-if="dmd">{{  dmd }} Investor(s)</strong></li>
+                  </ul>
+                  <div class="btn-box" (click)="options = 'DMD'; pucg = 1">
+                      <a href="javascript:void(0);" class="theme-btn">BUY plan</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Pricing Block -->
+          <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+              <div class="inner-box">
+                  <div class="icon-box">
+                      <div class="icon-outer"><i class="fa fa-rocket"></i></div>
+                  </div>
+                  <div class="price-box">
+                      <div class="title">Rocket</div>
+                      <h4 class="price">$10000 - unlimited</h4>
+                  </div>
+                  <ul class="features">
+                      <li class="true">10 days</li>
+                      <li class="true">200% Growth</li>
+                      <li class="true" style="font-weight: bold; font-size: 15px;"><strong v-if="roct">{{  roct }} Investor(s)</strong></li>
+                  </ul>
+                  <div class="btn-box" (click)="options = 'ROCT'; pucg = 1">
+                      <a href="javascript:void(0);" class="theme-btn">BUY plan</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="my-5 py-3 px-3 bg-light">
+        <div class=" d-sm-flex align-items-center justify-content-between" (click)="options = 'CIPs'; pucg = 1"
+          style="cursor: pointer">
+          <div class="d-md-flex justify-content-between align-items-center">
+            <div class="text-center">
+              <p><span class="text-primary">
+                  <img src="https://www.uscis.gov/sites/default/files/images/site/DHS_cis_W.svg" loading="lazy"
+                    width="170px" height="100px" alt="" class="sticky-card_icon" />
+                </span> </p>
+              <h4 class="mb-0 fw-200 text-center">Citizenship by Investment (CIPs)</h4>
+            </div>
+          </div>
+          <div class="text-center text-uppercase text-secondary mb-2">
+            <small class="d-block my-3" style="font-weight: 600">Duration 1 month</small>
+             <small class="d-block my-3" style="font-weight: 600;" v-if="cip">{{  cip }} Investor(s)</small>
+            <small class="d-block" style="font-weight: 600">
+              <div class="mt-10 mt-md-0">
+                <a href="javascript:void(0);" class="waves-effect waves-light btn btn-outline btn-primary">Invest
+                  Now</a>
+              </div>
+            </small>
+          </div>
+        </div>
+        <hr>
+        <div class="d-md-flex justify-content-between align-items-center">
+          <div class="d-flex justify-content-start align-items-center">
+            <div class="min-w-100">
+              <p class="mb-0 text-fade">Fund Size</p>
+              <h6 class="mb-0">$10,000 - 50,000</h6>
+            </div>
+            <div class="mx-lg-50 mx-20 min-w-70">
+              <p class="mb-0 text-fade">Return</p>
+              <h6 class="mb-0 text-success">+500% <span class="text-dark">(1 month)</span></h6>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 
+
+
+
 <div *ngIf="pucg == 1">
   <div class="" *ngIf="bank == '0'">
-    <div class="">
-      <div class="nk-content-body">
-        <div class="page-dw wide-xs m-auto" id="axcon-pm">
-          <div class="nk-pps-apps">
-            <div class="nk-pps-title text-center">
-              <h3 class="title">Invest Funds</h3>
-              <p class="sub-text-sm">Secure and safely Invest money into your account.</p>
-            </div>
-            <form class="nk-pps-form form-validate is-alter" (ngSubmit)="calculate(so)" #so="ngForm" *ngIf="bank == '0'"
-              id="dpst-pm-frm" data-required_msg="To deposit, please select a payment method." novalidate="novalidate">
-              <div class="nk-pps-field form-group" *ngIf="money == 1">
-                <ul class="nk-pm-list" id="dpm-list" style="margin-bottom: 10px;">
-                  <li class="nk-pm-item" *ngIf="country == 'India'  && upi == 1 ">
-                    <input class="nk-pm-control" type="radio" name="spend" ngModel required value="UPI" id="paypal">
-                    <label class="nk-pm-label" for="paypal">
-                      <span class="pm-name">UPI</span>
-                      <span class="pm-icon"><em class="icon fa fa-id-card"></em></span>
-                    </label>
-                  </li>
-                  <li class="nk-pm-item" *ngIf="country == 'India'">
-                    <input class="nk-pm-control" type="radio" name="spend" ngModel required value="Bank"
-                      id="bank-transfer">
-                    <label class="nk-pm-label" for="bank-transfer">
-                      <span class="pm-name">Bank Transfer</span>
-                      <span class="pm-icon"><em class="icon fa fa-building"></em></span>
-                    </label>
-                  </li>
-                  <li class="nk-pm-item">
-                    <input class="nk-pm-control" type="radio" name="spend" ngModel required value="BTC" id="btc">
-                    <label class="nk-pm-label" for="btc">
-                      <span class="pm-name">BTC</span>
-                      <span class="pm-icon"><em class="icon fa fa-google-wallet"></em></span>
-                    </label>
-                  </li>
-                  <li class="nk-pm-item">
-                    <input class="nk-pm-control" type="radio" name="spend" ngModel required value="USDT(ERC20)"
-                      id="uset">
-                    <label class="nk-pm-label" for="uset">
-                      <span class="pm-name">USDT(ERC20)</span>
-                      <span class="pm-icon"><em class="icon fa fa-google-wallet"></em></span>
-                    </label>
-                  </li>
-                  <li class="nk-pm-item">
-                    <input class="nk-pm-control" type="radio" name="spend" ngModel required value="USDT(TRC20)"
-                      id="trc">
-                    <label class="nk-pm-label" for="trc">
-                      <span class="pm-name">USDT(TRC20)</span>
-                      <span class="pm-icon"><em class="icon fa fa-google-wallet"></em></span>
-                    </label>
-                  </li>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="buy-sell-widget">
+            <ul class="nav nav-tabs">
+              <li class="nav-item w-100">
+                <a
+                  class="nav-link active"
+                  data-toggle="tab"
+                  href="#buy"
+                  style="background-color: teal !important; border-radius: 30px;"
+                  >Deposit Invest</a
+                >
+              </li>
+            </ul>
 
-                  <li class="nk-pm-item">
-                    <input class="nk-pm-control" type="radio" name="spend" ngModel required value="USDT(BEP20)"
-                      id="bep">
-                    <label class="nk-pm-label" for="bep">
-                      <span class="pm-name">USDT(BEP20)</span>
-                      <span class="pm-icon"><em class="icon fa fa-google-wallet"></em></span>
-                    </label>
-                  </li>
+            <form
+              (ngSubmit)="calculate(so)"
+              #so="ngForm"
+              *ngIf="bank == '0'"
+              class="currency_validate"
+              novalidate="novalidate"
+            >
+              <div class="form-group" *ngIf="money == 1">
+                <label class="mr-sm-2">Currency</label>
 
-                  <li class="nk-pm-item">
-                    <input class="nk-pm-control" type="radio" name="spend" ngModel required value="Account"
-                      id="account">
-                    <label class="nk-pm-label" for="account">
-                      <span class="pm-name">Account</span>
-                      <span class="pm-icon"><em class="icon fa fa-google-wallet"></em></span>
+                <div class="row">
+                  <div class="col-md-3 col-6" *ngIf="country == 'India'">
+                    <input class="checkbox-tools" type="radio" name="spend" ngModel required id="tool-0" value="Bank" />
+                    <label class="for-checkbox-tools" for="tool-0">
+                      <div class="serv_icon">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/bank-transfer-1817143-1538011.png"
+                          style="width: 100%; height: 100%" alt="" />
+                      </div>
+                      <div class="service-content">
+                        <h6 class="d-blue bold">BANK</h6>
+                      </div>
                     </label>
-                  </li>
-                </ul>
+                  </div>
 
 
+                  <div class="col-md-3 col-6" *ngIf="country == 'India'">
+                    <input class="checkbox-tools" type="radio" name="spend" ngModel required id="tool-20" value="UPI" />
+                    <label class="for-checkbox-tools" for="tool-20">
+                      <div class="serv_icon">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/bank-transfer-1817143-1538011.png"
+                          style="width: 100%; height: 100%" alt="" />
+                      </div>
+                      <div class="service-content">
+                        <h6 class="d-blue bold">UPI</h6>
+                      </div>
+                    </label>
+                  </div>
 
-                <button type="submit" class="btn btn-primary btn-round btn-block" [disabled]="!so.valid">
-                  Proceed
-                </button>
+
+                  <div class="col-md-3 col-6">
+                    <input
+                      class="checkbox-tools"
+                      type="radio"
+                      ngModel
+                      required
+                      name="spend"
+                      id="tool-1"
+                      value="BTC"
+                    />
+                    <label class="for-checkbox-tools" for="tool-1">
+                      <div class="serv_icon">
+                        <img
+                          src="https://starnovateminers.com/assets/icon/btc.svg"
+                          style="width: 100%; height: 100%"
+                          alt=""
+                        />
+                      </div>
+                      <div class="service-content">
+                        <h6 class="d-blue bold">BITCOIN</h6>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="col-md-3 col-6">
+                    <input
+                      class="checkbox-tools"
+                      type="radio"
+                      name="spend"
+                      value="USDT(ERC20)"
+                      id="tool-4"
+                      ngModel
+                      required
+                    />
+                    <label class="for-checkbox-tools" for="tool-4">
+                      <div class="serv_icon">
+                        <img
+                          src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/256/Tether-USDT-icon.png"
+                          style="width: 100%; height: 100%"
+                          alt=""
+                        />
+                      </div>
+                      <div class="service-content">
+                        <h6 class="d-blue bold" style="font-size: 11px">
+                          USDT(ERC20)
+                        </h6>
+                      </div>
+                    </label>
+                  </div>
+
+
+                  <div class="col-md-3 col-6">
+                    <input class="checkbox-tools" type="radio" name="spend" value="USDT(TRC20)" id="tool-5" ngModel
+                      required />
+                    <label class="for-checkbox-tools" for="tool-5">
+                      <div class="serv_icon">
+                        <img
+                          src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/256/Tether-USDT-icon.png"
+                          style="width: 100%; height: 100%" alt="" />
+                      </div>
+                      <div class="service-content">
+                        <h6 class="d-blue bold" style="font-size: 11px;">USDT(TRC20)</h6>
+                      </div>
+                    </label>
+                  </div>
+
+
+
+                  <div class="col-md-3 col-6">
+                    <input class="checkbox-tools" type="radio" name="spend" value="USDC(BEP20)" id="tool-70" ngModel
+                      required />
+                    <label class="for-checkbox-tools" for="tool-70">
+                      <div class="serv_icon">
+                        <img
+                          src="../../../../assets/icon/usdc.svg"
+                          style="width: 100%; height: 100%" alt="" />
+                      </div>
+                      <div class="service-content">
+                        <h6 class="d-blue bold" style="font-size: 11px;">USDC(BEP20)</h6>
+                      </div>
+                    </label>
+                  </div>
+
+
+
+                  <div class="col-md-3 col-6">
+                    <input class="checkbox-tools" type="radio" name="spend" value="USDT(BEP20)" id="tool-55" ngModel
+                      required />
+                    <label class="for-checkbox-tools" for="tool-55">
+                      <div class="serv_icon">
+                        <img
+                          src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/256/Tether-USDT-icon.png"
+                          style="width: 100%; height: 100%" alt="" />
+                      </div>
+                      <div class="service-content">
+                        <h6 class="d-blue bold" style="font-size: 11px;">USDT(BEP20)</h6>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="col-md-3 col-6">
+                    <input
+                      class="checkbox-tools"
+                      type="radio"
+                      name="spend"
+                      ngModel
+                      required
+                      id="tool-7"
+                      value="Account"
+                    />
+                    <label class="for-checkbox-tools" for="tool-7">
+                      <div class="serv_icon">
+                        <img
+                          src="https://img.freepik.com/free-vector/brown-leather-wallet-with-lots-money_68708-304.jpg?size=626&ext=jpg"
+                          style="width: 100%; height: 100%"
+                          alt=""
+                        />
+                      </div>
+                      <div class="service-content">
+                        <h6 class="d-blue bold" style="font-size: 11px">
+                          Balance
+                        </h6>
+                      </div>
+                    </label>
+                  </div>
+
+
+
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-round btn-block"
+                    [disabled]="!so.valid"
+                  >
+                    Proceed
+                  </button>
+                </div>
               </div>
 
-
-              <div class="form-group" [ngClass]="money >= 1 ? 'd-none' : 'd-block'">
-                <label class="mr-sm-2">Enter your amount in $ Only</label>
+              <div
+                class="form-group"
+                [ngClass]="money >= 1 ? 'd-none' : 'd-block'"
+              >
+                <label class="mr-sm-2">Enter your amount</label>
                 <div class="input-group">
-                  <input type="number" ngModel name="deposit" required (change)="atLeastOneRadio()"
-                    class="form-control form-control-amount form-control-lg blue-light-background" id="custom-amount"
-                    value="0" placeholder="Enter amount in $ Only" />
+                  <input
+                    type="number"
+                    ngModel
+                    name="deposit"
+                    required
+                    (change)="atLeastOneRadio()"
+                    class="form-control form-control-amount form-control-lg blue-light-background"
+                    id="custom-amount"
+                    value="0"
+                    placeholder="30.00"
+                  />
                 </div>
               </div>
 
               <div class="form-group">
-                <div class="d-flex justify-content-between mt-3" *ngIf="display == 1">
+                <div
+                  class="d-flex justify-content-between mt-3"
+                  *ngIf="display == 1"
+                >
                   <p class="mb-0">Invest: {{ ammethod | currency }}</p>
                   <h6 class="mb-0">Earn: {{ profit | currency }}</h6>
                 </div>
               </div>
 
-
-              <div class="" *ngIf="money == 0">
-                <button type="button" class="btn btn-lg btn-block btn-primary" *ngIf="display == 0" (click)="money = 1"
-                  [disabled]="!chek()">
+              <div class="col-md-12 col-sm-12 col-xs-12" *ngIf="money == 0">
+                <button
+                  type="button"
+                  class="btn btn-success btn-round btn-block"
+                  *ngIf="display == 0"
+                  (click)="money = 1"
+                  [disabled]="!chek()"
+                >
                   Pay Now
                 </button>
               </div>
-
-
-              <div class="nk-pps-field form-action text-center">
-                <div class="nk-pps-action">
-                  <button type="button" name="submit" class="btn btn-lg btn-block btn-primary" id="proceed-dp"
-                    *ngIf="display == 1" (click)="Deposit()">
-                    <span>Deposit Now</span>
-                  </button>
-                </div>
-              </div>
+              <button
+                type="button"
+                name="submit"
+                class="btn btn-success btn-block"
+                *ngIf="display == 1"
+                (click)="Deposit()"
+              >
+                Invest Now
+              </button>
             </form>
           </div>
         </div>
@@ -401,69 +441,38 @@
     </div>
   </div>
 
-
-  <div *ngIf="bank == '2' && paymethod != 'UPI'">
+  <div *ngIf="bank == '2'">
     <div class="container">
       <div class="row">
         <div class="col-xl-12 col-lg-12 col-md-12">
           <div class="row justify-content-center">
             <div class="col-md-12 mb-3">
-              <div class="nk-pps-apps">
-                <div class="nk-pps-title text-center">
-                  <h3 class="title">Make Your Payment</h3>
-                  <p class="caption-text">Your order has been placed
-                    successfully. To complete, please send the exact amount of <strong class="text-dark">{{amountTopay}}
-                      USD
-                      via {{tic}}</strong> to the address below.</p>
-                </div>
-                <div class="nk-pps-card card card-bordered popup-inside">
-                  <div class="card-inner-group">
-                    <div class="card-inner card-inner-sm">
-                      <div class="card-head mb-0">
-                        <h6 class="title mb-0">Pay {{tic}}</h6>
-                      </div>
-                    </div>
-                    <div class="card-inner">
-                      <div class="pay-info text-center">
-                        <h5 class="title text-dark mb-0 clipboard-init" data-clipboard-text="0.0015">
-                          ${{amountTopay}} USD <em class="click-to-copy icon ni ni-copy-fill nk-tooltip" title=""
-                            data-original-title="Click to Copy"></em>
-                        </h5>
-                        <p class="text-soft">{{tic}}</p>
-                      </div>
-                      <div class="form-group">
-                        <div class="form-label overline-title-alt lg text-center">{{tic}} Address</div>
-                        <div class="form-control-wrap">
-                          <div class="form-clip clipboard-init nk-tooltip" data-clipboard-target="#wallet-address"
-                            title="" data-original-title="Copy">
-                            <em class="click-to-copy icon ni ni-copy"></em>
-                          </div>
-                          <div class="form-icon"><em class="icon ni ni-sign-btc-alt"></em></div>
-                          <input readonly="" type="text" class="form-control form-control-lg" id="refUrl"
-                            (click)="copy()" [value]="addressTopay">
-                        </div>
-                      </div>
-
-                      <div class="nk-pps-action">
-                        <a (click)="copy()" class="btn btn-block btn-primary popup-open"><span>Copy
-                            {{tic}}</span></a>
-                      </div>
-
-                    </div>
-                    <div class="card-inner bg-lighter">
-                      <ul>
-                        <li class="alert-note is-plain text-danger">
-                          <em class="icon ni ni-alert-circle"></em>
-                          <p> Please send
-                            {{ amountTopay }} dollar worth of {{ tic }}
-                            with gas fee depending on your personal wallet. </p>
-                        </li>
-                        <li class="alert-note is-plain">
-                          <em class="icon ni ni-info"></em>
-                          <p>Account will credited once we received your payment.</p>
-                        </li>
-                      </ul>
-                    </div>
+              <div class="card shadow-lg">
+                <div class="rounded-bottom card-body text-white">
+                  <p class="opacity-75 text-center">
+                    Pay ${{ amountTopay }} Send {{ tic }}to address
+                  </p>
+                  <input
+                    type="text"
+                    id="address"
+                    class="form-control form-control-lg mt-2 mb-2"
+                    [value]="addressTopay"
+                    id="refUrl"
+                    readonly=""
+                  />
+                  <button
+                    class="btn btn-primary btn-block btn-lg my-link-copy mb-2"
+                    data-clipboard-target="#my-link-m"
+                    (click)="copy()"
+                  >
+                    COPY
+                  </button>
+                  <div class="rounded p-3 bg-white-translucent">
+                    <p class="font-size-sm mb-0" style="color: black">
+                      <span class="text-primary">ATTENTION</span> - Please send
+                      {{ amountTopay }} dollar worth of {{ tic }}
+                      with gas fee depending on your personal wallet.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -473,48 +482,6 @@
       </div>
     </div>
   </div>
-
-  <div class="row justify-content-center" *ngIf="country == 'India' && paymethod == 'UPI' && bank == '2'">
-    <div class="col-sm-6 mb-3">
-      <div class="nk-pps-apps">
-        <div class="nk-pps-title">
-          <h3 class="title text-center">Transfer your Money</h3>
-          <p class="caption-text">Your order has been placed successfully. To complete your deposit, please
-            send the payment of <strong class="text-dark">₹{{ amountTopay * 85 | number }}</strong> through {{tic}}.</p>
-        </div>
-        <div class="nk-pps-data">
-          <h5 class="overline-title-alt mt-4">Payment Information:</h5>
-          <ul class="nk-olist nk-olist-flat is-aligned is-compact">
-            <li class="nk-olist-item">
-              <div class="label lead-text">Payment Amount </div>
-              <div class="data">₹{{ amountTopay * 85 | number }}</div>
-            </li>
-          </ul>
-
-          <h5 class="overline-title-alt mt-4">UPI Information:</h5>
-          <ul class="nk-olist nk-olist-flat is-aligned is-compact">
-            <li class="nk-olist-item">
-              <div class="label lead-text">Account ID</div>
-              <div class="data">{{upU}}</div>
-            </li>
-            <li class="nk-olist-item">
-              <div class="label lead-text">Username</div>
-              <div class="data">{{upID}}</div>
-            </li>
-          </ul>
-        </div>
-        <div class="nk-pps-notes">
-          <ul>
-            <li class="alert-note is-plain">
-              <em class="icon ni ni-alert-circle text-primary"></em>
-              <p>Your account will credited once we confirm that payment has been received.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
   <div *ngIf="bank == '1' && country == 'India'">
     <div class="container">
@@ -523,63 +490,68 @@
           <div *ngFor="let item of banks">
             <div class="row justify-content-center">
               <div class="col-md-12 mb-3">
-                <div class="nk-pps-apps">
-                  <div class="nk-pps-title">
-                    <h3 class="title text-center">Transfer your Money</h3>
-                    <p class="caption-text">Your order has been placed successfully. To complete your
-                      deposit, please send the payment of <strong class="text-dark">{{amm}}</strong> through bank.
-                    </p>
-                  </div>
-                  <div class="nk-pps-data" *ngFor="let item of banks">
+                <div class="card shadow-lg">
+                  <div class="rounded-bottom card-body text-white">
+                    <label for="">Bank name</label>
+                    <input
+                      type="text"
+                      id="address"
+                      class="form-control form-control-lg mt-2 mb-2"
+                      [value]="item.Bank"
+                      readonly=""
+                    />
+                    <label for="">Account number</label>
+                    <input
+                      type="text"
+                      id="address"
+                      class="form-control form-control-lg mt-2 mb-2"
+                      [value]="item.Account"
+                      readonly=""
+                    />
+                    <label for="">Account name</label>
+                    <input
+                      type="text"
+                      id="address"
+                      class="form-control form-control-lg mt-2 mb-2"
+                      [value]="item.Accountname"
+                      readonly=""
+                    />
+                    <label for="">IFSC CODE</label>
+                    <input
+                      type="text"
+                      id="address"
+                      class="form-control form-control-lg mt-2 mb-2"
+                      [value]="item.branch"
+                      readonly=""
+                    />
+                    <label for="">Amount</label>
+                    <input
+                      type="text"
+                      id="address"
+                      class="form-control form-control-lg mt-2 mb-2"
+                      [value]="amm"
+                      readonly=""
+                    />
 
-                    <h5 class="overline-title-alt mt-4">Payment Information:</h5>
-                    <ul class="nk-olist nk-olist-flat is-aligned is-compact">
-                      <li class="nk-olist-item">
-                        <div class="label lead-text">Payment Amount </div>
-                        <div class="data">{{amm}}</div>
-                      </li>
-                      <li class="nk-olist-item">
-                        <div class="label lead-text">Reference</div>
-                        <div class="data">{{rand}}</div>
-                      </li>
-                    </ul>
+                    <div class="rounded p-3 bg-white-translucent">
+                      <!--    <p class="font-size-sm mb-0" style="background-color: black;">
+                        <span class="text-primary">ATTENTION</span> -After Payment, contact the adminstrator with your
+                        proof
+                        of payment or<b><a style="text-decoration: underline;"
+                            href="javascript:void(Tawk_API.toggle())">Live
+                            Chat</a></b> for
+                        quick response
+                      </p> -->
 
-                    <h5 class="overline-title-alt mt-4">Account Information:</h5>
-                    <ul class="nk-olist nk-olist-flat is-aligned is-compact">
-                      <li class="nk-olist-item">
-                        <div class="label lead-text">Account Name</div>
-                        <div class="data">{{item.Accountname}}</div>
-                      </li>
-                      <li class="nk-olist-item">
-                        <div class="label lead-text">Account Number</div>
-                        <div class="data">{{item.Account}}</div>
-                      </li>
-                    </ul>
-
-                    <h5 class="overline-title-alt mt-4">Our Bank Details:</h5>
-                    <ul class="nk-olist nk-olist-flat is-plain is-aligned">
-                      <li class="nk-olist-item">
-                        <div class="label lead-text">Bank Name</div>
-                        <div class="data">{{item.Bank}}</div>
-                      </li>
-                      <!-- <li class="nk-olist-item">
-                        <div class="label lead-text">Bank Branch</div>
-                        <div class="data">{{item.branch}}</div>
-                      </li> -->
-                      <li class="nk-olist-item">
-                        <div class="label lead-text">IFSC CODE</div>
-                        <div class="data">{{item.branch}}</div>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="nk-pps-notes">
-                    <ul>
-                      <li class="alert-note is-plain">
-                        <em class="icon ni ni-alert-circle text-primary"></em>
-                        <p>Your account will credited once we confirm that payment has been received.</p>
-                      </li>
-                    </ul>
+                      <p style="background-color: black">
+                        * For easy confirmation make payments with this
+                        paymentID
+                        <b
+                          ><em style="color: white">{{ rand }}</em></b
+                        >
+                        on your bank teller
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

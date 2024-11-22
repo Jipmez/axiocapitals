@@ -48,6 +48,11 @@ export class DepositComponent implements OnInit {
   upID: any;
   upU: any;
   upi: any;
+  emrd: any;
+  ruby: any;
+  dmd: any;
+  roct: any;
+  cip: any;
 
   constructor(
     private server: DataService,
@@ -57,10 +62,9 @@ export class DepositComponent implements OnInit {
     private activate: ActivatedRoute
   ) {
     route.events.subscribe((_: NavigationEnd) => (this.currentUrl = _.url));
-    if ($('.sidebar-toggled')?.[0]) {
-      $('#tog').click();
+    if ($(".toggled")) {
+      $("#tog").click();
     }
-
     $('.app-wrap').removeClass('sidebar-toggled');
     this.duration = 1;
 
@@ -95,7 +99,20 @@ export class DepositComponent implements OnInit {
     this.display = 0;
     this.bank = 0;
 
-    console.log(data['news'].his['plann']);
+
+    // this.plans = data['news'].allIn['message'];
+
+
+
+if(data['news'].allIn['message'].length > 0){
+   this.emrd =  data['news'].allIn['message'].filter(plan => plan.plan === 'EMRD').length
+   this.ruby =  data['news'].allIn['message'].filter(plan => plan.plan === 'RUBY').length
+   this.dmd =  data['news'].allIn['message'].filter(plan => plan.plan === 'DMD').length
+   this.roct =  data['news'].allIn['message'].filter(plan => plan.plan === 'ROCT').length
+   this.cip =  data['news'].allIn['message'].filter(plan => plan.plan === 'CIPs').length
+}
+
+
     this.tra = data['news'].his['plann'].filter(
       (word) => word.type == 'Invest'
     );
@@ -105,10 +122,10 @@ export class DepositComponent implements OnInit {
     this.options = this.options;
     let Deposit = parseFloat(x.value.deposit);
     let spendFrom = x.value.spend;
-    if (this.options == 'PRFM') {
+    if (this.options == 'EMRD') {
       this.term = 1;
 
-      if (Deposit >= 30 && Deposit <= 249) {
+      if (Deposit >= 25 && Deposit <= 249) {
         this.profit = Math.floor(Deposit * 1.12);
         this.percent = 1.12;
       } else {
@@ -119,7 +136,7 @@ export class DepositComponent implements OnInit {
         // this.percent = 1.12;
       }
     }
-    if (this.options == 'INSD') {
+    if (this.options == 'RUBY') {
       this.term = 4;
       if (Deposit >= 250 && Deposit <= 999) {
         this.profit = Math.floor(Deposit * 1.35);
@@ -132,7 +149,7 @@ export class DepositComponent implements OnInit {
         // this.percent = 1.35;
       }
     }
-    if (this.options == 'MAFD') {
+    if (this.options == 'DMD') {
       this.term = 6;
       if (Deposit >= 1000 && Deposit <= 9999) {
         this.profit = Math.floor(Deposit * 2.2);
@@ -146,7 +163,7 @@ export class DepositComponent implements OnInit {
       }
     }
 
-    if (this.options == 'MASD') {
+    if (this.options == 'ROCT') {
       this.term = 8;
       if (Deposit >= 10000) {
         this.profit = Math.floor(Deposit * 3.0);
@@ -325,6 +342,7 @@ export class DepositComponent implements OnInit {
       this.paymethod == 'USDT(ERC20)' ||
       this.paymethod == 'USDT(TRC20)' ||
       this.paymethod == 'USDT(BEP20)' ||
+      this.paymethod == 'USDC(BEP20)' ||
       this.paymethod == 'UPI' ||
       (this.paymethod == 'ETH' && this.netprofit && this.ammethod && this.plan)
     ) {

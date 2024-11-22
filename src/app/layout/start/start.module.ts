@@ -20,6 +20,7 @@ import { FaqComponent } from './faq/faq.component';
 import { PromoComponent } from './promo/promo.component';
 import { StartingComponent } from './starting/starting.component';
 import { CitizenComponent } from './citizen/citizen.component';
+import { OnboardComponent } from './onboard/onboard.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CitizenComponent } from './citizen/citizen.component';
     PromoComponent,
     StartingComponent,
     CitizenComponent,
+    OnboardComponent,
   ],
   imports: [
     CommonModule,

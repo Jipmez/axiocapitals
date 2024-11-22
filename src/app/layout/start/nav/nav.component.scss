@@ -1,1 +1,47 @@
-@import "../../../../assets/css/farther.scss";
+@import "../../../../assets/css/cbre.css";
+@import "../../../../assets/css/respon.css";
+
+.certificate {
+  display: block;
+  height: 160px;
+  margin-left: 20px;
+  color: bluef;
+  position: relative;
+}
+.certificate div {
+  position: relative;
+  z-index: 10;
+  padding-left: 80px;
+}
+.certificate div p {
+  font-size: 13px;
+  color: #1a1e66;
+}
+.certificate div h4 {
+  display: inline-block;
+  font-size: 24px;
+  width: auto;
+  color: #1a1e66;
+  position: relative;
+  text-align: left;
+  padding: 0;
+  vertical-align: top;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-style: normal;
+  font-family: "Conv_etna";
+  padding: 10px 0 5px 0;
+  text-transform: uppercase;
+}
+.certificate a {
+  float: left;
+  position: absolute;
+  left: -30px;
+  top: 15px;
+  border: 3px solid #395877;
+}
+.certificate img {
+  height: 80px;
+}

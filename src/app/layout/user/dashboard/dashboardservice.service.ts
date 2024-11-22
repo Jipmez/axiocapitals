@@ -64,12 +64,18 @@ export class DashboardserviceService implements Resolve<any> {
       key: 'upi',
     };
 
+
+    let allIn = {
+      key: 'allIn',
+    };
+
     return forkJoin([
       this.httpClient.post(this.path, load),
       this.httpClient.post(this.path, me),
       this.httpClient.post(this.path, promo),
       this.httpClient.post(this.path, ref),
       this.httpClient.post(this.path, mte),
+      this.httpClient.post(this.path, allIn),
       this.httpClient.post(this.path, upis).catch((error) => {
         return Observable.throw(error);
       }),
@@ -80,7 +86,8 @@ export class DashboardserviceService implements Resolve<any> {
         promo: result[2],
         ref: result[3],
         his: result[4],
-        upi: result[5],
+        allIn: result[5],
+        upi: result[6],
       };
     });
   }

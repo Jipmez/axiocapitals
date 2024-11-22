@@ -1,40 +1,43 @@
-import { Component, OnInit } from '@angular/core';
-import { CookieService } from 'ngx-cookie-service';
-import { NgForm } from '@angular/forms';
-import { ToastrManager } from 'ng6-toastr-notifications';
-import { DataService } from '../../../data.service';
-import { Router, ActivatedRoute } from '@angular/router';
-import { NgxSpinnerService } from 'ngx-spinner';
+import { Component, OnInit, Inject } from "@angular/core";
+import { CookieService } from "ngx-cookie-service";
+import { NgForm } from "@angular/forms";
+import { ToastrManager } from "ng6-toastr-notifications";
+import { DataService } from "../../../data.service";
+import { Router, ActivatedRoute } from "@angular/router";
 
 declare let $;
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss'],
+  selector: "app-register",
+  templateUrl: "./register.component.html",
+  styleUrls: ["./register.component.scss"],
 })
 export class RegisterComponent implements OnInit {
   login = [];
   order: any;
-  plan: string;
-  referal: any;
-  get: any;
-  radioValue: any;
-  amount: any;
+  captcha = new Array();
   constructor(
     private server: DataService,
     private toastr: ToastrManager,
+
     public cookieService: CookieService,
-    private spinner: NgxSpinnerService,
     private route: Router,
     private router: ActivatedRoute
   ) {
-    $('meta[name=viewport]').attr(
-      'content',
-      'width=device-width,height=device-height,initial-scale=1,maximum-scale=1'
-    );
+    $("meta[name=viewport]").attr("content", "width=device-width");
+
+    for (let q = 0; q < 6; q++) {
+      if (q % 2 == 0) {
+        this.captcha[q] = Math.floor(Math.random() * 6);
+      } else {
+        this.captcha[q] = Math.floor(Math.random() * 10 + 0);
+      }
+    }
   }
 
   ngOnInit() {
+    var element = document.getElementById("na");
+    element.classList.remove("mobile-menu-visible");
+
     this.router.queryParams
       .filter((params) => params.ref)
       .subscribe((params) => {
@@ -44,61 +47,49 @@ export class RegisterComponent implements OnInit {
         console.log(this.order); // popular
       });
 
-    $('#warn').click();
-    if (localStorage.getItem('plan') === null) {
-      //this.route.navigate(['/']);
-    } else {
-      this.get = JSON.parse(localStorage.getItem('plan'));
-
-      if (this.get) {
-        this.plan = this.get.plan;
-      }
-    }
-
-    $('.js-example-basic-single').select2();
-
-    this.router.queryParams
-      .filter((params) => params.ref)
-      .subscribe((params) => {
-        this.order = params.ref;
-        this.referal = this.order; // popular
-      });
-
-    $('.toggle-password').click(function () {
-      $(this).toggleClass('fa-eye fa-eye-slash');
-      var input = $('#id_pass');
-      if (input.attr('type') == 'password') {
-        input.attr('type', 'text');
+    $(".toggle-password").click(function () {
+      $(this).toggleClass("fa-eye fa-eye-slash");
+      var input = $("#id_pass");
+      if (input.attr("type") == "password") {
+        input.attr("type", "text");
       } else {
-        input.attr('type', 'password');
+        input.attr("type", "password");
       }
     });
   }
 
   show() {
-    $('.toggle-pasword').toggleClass('fa-eye fa-eye-slash');
-    var input = $('#c_pass');
-    if (input.attr('type') == 'password') {
-      input.attr('type', 'text');
+    $(".toggle-pasword").toggleClass("fa-eye fa-eye-slash");
+    var input = $("#c_pass");
+    if (input.attr("type") == "password") {
+      input.attr("type", "text");
     } else {
-      input.attr('type', 'password');
+      input.attr("type", "password");
     }
   }
+
+  /*  analyzeFullname(x) {
+    if (x.length < 2) {
+      document.getElementById('id_full').style.borderBottom = '2px solid red';
+    } else {
+      document.getElementById('id_full').style.borderBottom = '2px solid green';
+    }
+  } */
 
   analyzeUsername(x) {
     var nameRe = /^[A-Z \'.-]{2,40}$/i;
     if (!x.match(nameRe)) {
-      document.getElementById('id_user').style.borderBottom = '2px solid red';
+      document.getElementById("id_user").style.borderBottom = "2px solid red";
     } else {
-      document.getElementById('id_user').style.borderBottom = '2px solid green';
+      document.getElementById("id_user").style.borderBottom = "2px solid green";
     }
   }
 
   checkAdress(x) {
     if (x.length < 2) {
-      document.getElementById('id_add').style.borderBottom = '2px solid red';
+      document.getElementById("id_add").style.borderBottom = "2px solid red";
     } else {
-      document.getElementById('id_add').style.borderBottom = '2px solid green';
+      document.getElementById("id_add").style.borderBottom = "2px solid green";
     }
   }
 
@@ -106,47 +97,44 @@ export class RegisterComponent implements OnInit {
     var strongEmail = /^.+@.+..{2,4}$/;
 
     if (x.match(strongEmail)) {
-      document.getElementById('id_email').style.borderBottom =
-        '2px solid green';
+      document.getElementById("id_email").style.borderBottom =
+        "2px solid green";
     } else {
-      document.getElementById('id_email').style.borderBottom = '2px solid red';
+      document.getElementById("id_email").style.borderBottom = "2px solid red";
     }
   }
 
   analyze(x) {
     var strongRegex = new RegExp(
-      '^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})'
+      "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})"
     );
     var mediumRegex = new RegExp(
-      '^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})'
+      "^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})"
     );
     if (strongRegex.test(x)) {
-      document.getElementById('id_pass').style.borderBottom = '2px solid green';
+      document.getElementById("id_pass").style.borderBottom = "2px solid green";
     } else if (mediumRegex.test(x)) {
-      document.getElementById('id_pass').style.borderBottom =
-        '2px solid orange';
+      document.getElementById("id_pass").style.borderBottom =
+        "2px solid orange";
     } else {
-      document.getElementById('id_pass').style.borderBottom = '2px solid red';
-    }
-  }
-
-  sub() {
-    this.radioValue = $("input[name='tools']:checked").val();
-    if (this.radioValue) {
-      $('#submit').click();
+      document.getElementById("id_pass").style.borderBottom = "2px solid red";
     }
   }
 
   Reg(x: NgForm) {
+    if (!x.value.captcha.match(this.captcha.join(""))) {
+      return this.toastr.warningToastr("invalid Captcha");
+    }
+
     var nameRe = /^[A-Z \'.-]{2,40}$/i;
     var emailRe = /^.+@.+\..{2,4}$/;
 
     if (!x.value.email.match(emailRe)) {
-      this.toastr.errorToastr('Please input a correct email');
+      this.toastr.errorToastr("Please input a correct email");
     }
 
     if (!x.value.username.match(nameRe)) {
-      this.toastr.errorToastr('Username error');
+      this.toastr.errorToastr("Username error");
     }
     /*
     if (x.value.password === x.value.cpass) {
@@ -157,13 +145,13 @@ export class RegisterComponent implements OnInit {
 
     if (x.value.email.match(emailRe) && x.value.username.match(nameRe)) {
       let comingUser = [x.value.username, x.value.email, x.value.password];
-      let err = ['fullname', 'username', 'email', 'password'];
+      let err = ["fullname", "username", "email", "password"];
       let p = 0;
       let count = 0;
 
       while (p < comingUser.length) {
         if (comingUser[p].length < 2) {
-          this.toastr.errorToastr(err[p] + 'should be more than two letters');
+          this.toastr.errorToastr(err[p] + "should be more than two letters");
           break;
         } else {
           count++;
@@ -178,23 +166,20 @@ export class RegisterComponent implements OnInit {
             username: x.value.username,
             email: x.value.email,
             password: x.value.password,
-            //ref: this.order,
-            // coin: this.radioValue,
-            //phone: x.value.phone,
-            // plan: this.get == null ? this.amount : this.get,
+            // bitcoin: x.value.bitcoin,
             country: x.value.country,
-            key: 'reg',
+            key: "reg",
           };
-          this.toastr.successToastr('Creating Account');
+          this.toastr.successToastr("Creating Account");
           this.server.Api(msg).subscribe(
             (res) => {
-              if (res['code'] == '1') {
-                this.toastr.successToastr('Account created successfully');
-                if (this.login.push('me')) {
-                  this.route.navigate(['/login']);
+              if (res["code"] == "1") {
+                this.toastr.successToastr("Account created successfully");
+                if (this.login.push("me")) {
+                  this.route.navigate(["/login"]);
                 }
               } else {
-                this.toastr.infoToastr(res['message']);
+                this.toastr.infoToastr(res["message"]);
               }
             },
             () => {},
@@ -205,32 +190,29 @@ export class RegisterComponent implements OnInit {
             username: x.value.username,
             email: x.value.email,
             password: x.value.password,
-            ref: this.order,
-            //phone: x.value.phone,
-            // coin: this.radioValue,
-            // plan: this.get == null ? this.amount : this.get,
+            //bitcoin: x.value.bitcoin,
             country: x.value.country,
-            key: 'regref',
+            ref: this.order,
+            key: "regref",
           };
+          this.toastr.successToastr("Creating Account");
 
-          this.toastr.successToastr('Creating Account');
-          this.spinner.show();
           this.server.Api(msg).subscribe(
             (res) => {
-              if (res['code'] == '1') {
-                this.toastr.successToastr('Account created successfully');
-                if (this.login.push('me')) {
-                  this.route.navigate(['/login']);
+              if (res["code"] == "1") {
+                this.toastr.successToastr("Account created successfully");
+                if (this.login.push("me")) {
+                  this.route.navigate(["/login"]);
                 }
               } else {
-                this.toastr.infoToastr(res['message']);
+                this.toastr.infoToastr(res["message"]);
               }
             },
             () => {
-              this.spinner.hide();
+
             },
             () => {
-              this.spinner.hide();
+
             }
           );
         }
@@ -239,6 +221,6 @@ export class RegisterComponent implements OnInit {
   }
 
   tog() {
-    $('#met').toggleClass('show');
+    $("#met").toggleClass("show");
   }
 }

@@ -15,7 +15,6 @@ import { CaptureComponent } from '../user/capture/capture.component';
 
 const routes: Routes = [
   // { path: "dashboard", redirectTo: "morr", pathMatch: "full" },
-
   {
     path: '',
     component: DashboardComponent,

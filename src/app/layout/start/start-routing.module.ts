@@ -18,6 +18,10 @@ import { StartingComponent } from './starting/starting.component';
 import { PromoComponent } from './promo/promo.component';
 import { CitizenComponent } from './citizen/citizen.component';
 
+import { OnboardComponent } from "./onboard/onboard.component";
+
+import { DashboardserviceService } from "../user/dashboard/dashboardservice.service";
+
 const routes: Routes = [
   {
     path: '',
@@ -38,6 +42,14 @@ const routes: Routes = [
   { path: 'verify', component: VerifyComponent },
 
   { path: 'reset_pass', component: ResetComponent },
+
+  {
+    path: "onboarding",
+    component: OnboardComponent,
+    resolve: {
+      news: DashboardserviceService,
+    },
+  },
 
   /*  {
     path: "**",

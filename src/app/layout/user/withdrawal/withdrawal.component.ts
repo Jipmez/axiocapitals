@@ -41,8 +41,8 @@ export class WithdrawalComponent implements OnInit {
     private toastr: ToastrManager,
     public session: SessionStorageService
   ) {
-    if ($('.sidebar-enable')[0]) {
-      $('#tog').click();
+    if ($(".toggled")) {
+      $("#tog").click();
     }
 
     $('.app-wrap').removeClass('sidebar-toggled');

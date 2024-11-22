@@ -16,8 +16,8 @@ export class HistoryComponent implements OnInit {
     private server: DataService,
     public session: SessionStorageService
   ) {
-    if ($('.app-wrap')[0]) {
-      $('#tog').click();
+    if ($(".toggled")) {
+      $("#tog").click();
     }
     $('.app-wrap').removeClass('sidebar-toggled');
     this.Id = this.session.get('sessionID');
