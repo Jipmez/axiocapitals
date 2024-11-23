@@ -48,10 +48,10 @@ export class DepositComponent implements OnInit {
   upID: any;
   upU: any;
   upi: any;
-  emrd: any;
-  ruby: any;
-  dmd: any;
-  roct: any;
+  aqui: any;
+  oron: any;
+  bela: any;
+  siri: any;
   cip: any;
 
   constructor(
@@ -105,10 +105,10 @@ export class DepositComponent implements OnInit {
 
 
 if(data['news'].allIn['message'].length > 0){
-   this.emrd =  data['news'].allIn['message'].filter(plan => plan.plan === 'EMRD').length
-   this.ruby =  data['news'].allIn['message'].filter(plan => plan.plan === 'RUBY').length
-   this.dmd =  data['news'].allIn['message'].filter(plan => plan.plan === 'DMD').length
-   this.roct =  data['news'].allIn['message'].filter(plan => plan.plan === 'ROCT').length
+   this.aqui =  data['news'].allIn['message'].filter(plan => plan.plan === 'AQUI').length
+   this.oron =  data['news'].allIn['message'].filter(plan => plan.plan === 'ORON').length
+   this.bela =  data['news'].allIn['message'].filter(plan => plan.plan === 'BELA').length
+   this.siri =  data['news'].allIn['message'].filter(plan => plan.plan === 'SIRI').length
    this.cip =  data['news'].allIn['message'].filter(plan => plan.plan === 'CIPs').length
 }
 
