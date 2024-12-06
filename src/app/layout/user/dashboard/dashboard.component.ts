@@ -43,7 +43,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.cookieValue = this.session.get("sessionID");
-    $(".win").trigger("play");
+    // $(".win").trigger("play");
     let data = this.activate.snapshot.data;
     this.user = data["news"].dep["message"][0]["username"];
     this.profileId = data["news"].dep["message"][0]["profileId"];
@@ -51,7 +51,7 @@ export class DashboardComponent implements OnInit {
   ngAfterViewInit() {
     // The audio element is now available
     // this.ensureVideoPlays()
-    this.playAudio()
+  
   }
 
 

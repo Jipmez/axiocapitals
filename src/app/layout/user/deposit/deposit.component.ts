@@ -122,7 +122,7 @@ if(data['news'].allIn['message'].length > 0){
     this.options = this.options;
     let Deposit = parseFloat(x.value.deposit);
     let spendFrom = x.value.spend;
-    if (this.options == 'EMRD') {
+    if (this.options == 'AQUI') {
       this.term = 1;
 
       if (Deposit >= 25 && Deposit <= 249) {
@@ -136,7 +136,7 @@ if(data['news'].allIn['message'].length > 0){
         // this.percent = 1.12;
       }
     }
-    if (this.options == 'RUBY') {
+    if (this.options == 'ORON') {
       this.term = 4;
       if (Deposit >= 250 && Deposit <= 999) {
         this.profit = Math.floor(Deposit * 1.35);
@@ -149,7 +149,7 @@ if(data['news'].allIn['message'].length > 0){
         // this.percent = 1.35;
       }
     }
-    if (this.options == 'DMD') {
+    if (this.options == 'BELA') {
       this.term = 6;
       if (Deposit >= 1000 && Deposit <= 9999) {
         this.profit = Math.floor(Deposit * 2.2);
@@ -163,7 +163,7 @@ if(data['news'].allIn['message'].length > 0){
       }
     }
 
-    if (this.options == 'ROCT') {
+    if (this.options == 'SIRI') {
       this.term = 8;
       if (Deposit >= 10000) {
         this.profit = Math.floor(Deposit * 3.0);

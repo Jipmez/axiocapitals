@@ -1,4 +1,3 @@
-
 <div class="container" *ngIf="pucg == 0">
   <!-- <div class="sec-title text-center">
       <span class="title">Get plan</span>
@@ -6,188 +5,246 @@
   </div> -->
 
   <div class="outer-box" *ngIf="step == 1 && his != 'history'">
-
-
-    <div *ngIf="promo == 1" class="col-md-12 " [class.order-first]="promo == 1">
-      <div class="my-5 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between border border-success"
-        (click)="options = 'PROMO'; pucg = 1">
+    <div *ngIf="promo == 1" class="col-md-12" [class.order-first]="promo == 1">
+      <div
+        class="my-5 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between border border-success"
+        (click)="options = 'PROMO'; pucg = 1"
+      >
         <div class="text-center">
           <span style="font-weight: 600">
-            <div class="icon-outer"><i class="fa fa-product-hunt " style="font-size: 70px; color: burlywood;"></i></div>PROMO
+            <div class="icon-outer">
+              <i
+                class="fa fa-product-hunt"
+                style="font-size: 70px; color: burlywood"
+              ></i>
+            </div>
+            PROMO
           </span>
           <h4 class="my-2 font-weight-bold">$1,000 - 2,999</h4>
           <small class="text-uppercase text-secondary">4 days</small>
         </div>
         <div class="text-center text-uppercase text-secondary mb-2">
-          <small class="d-block my-3" style="font-weight: 600">400% interest in 4 days</small>
+          <small class="d-block my-3" style="font-weight: 600"
+            >400% interest in 4 days</small
+          >
           <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
           <small class="d-block" style="font-weight: 600">24/7 Support</small>
         </div>
       </div>
 
-      <div class="my-5 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between border border-success"
-        (click)="options = 'SPECIAL PROMO'; pucg = 1">
+      <div
+        class="my-5 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between border border-success"
+        (click)="options = 'SPECIAL PROMO'; pucg = 1"
+      >
         <div class="text-center">
           <span style="font-weight: 600">
-            <div class="icon-outer"><i class="fa fa-product-hunt " style="font-size: 70px; color: teal;"></i></div>SPECIAL PROMO</span>
+            <div class="icon-outer">
+              <i
+                class="fa fa-product-hunt"
+                style="font-size: 70px; color: teal"
+              ></i>
+            </div>
+            SPECIAL PROMO</span
+          >
           <h4 class="my-2 font-weight-bold">$3,000 - 9,999</h4>
           <small class="text-uppercase text-secondary">4 days</small>
         </div>
         <div class="text-center text-uppercase text-secondary mb-2">
-          <small class="d-block my-3" style="font-weight: 600">4 days 400% + 5000</small>
+          <small class="d-block my-3" style="font-weight: 600"
+            >4 days 400% + 5000</small
+          >
           <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
           <small class="d-block" style="font-weight: 600">24/7 Support</small>
         </div>
       </div>
 
-      <div class="my-5 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between border border-success"
-        (click)="options = 'PROMO PRO'; pucg = 1">
+      <div
+        class="my-5 py-4 px-5 bg-light d-sm-flex align-items-center justify-content-between border border-success"
+        (click)="options = 'PROMO PRO'; pucg = 1"
+      >
         <div class="text-center">
           <span style="font-weight: 600">
-            <div class="icon-outer"><i class="fa fa-product-hunt " style="font-size: 70px; color: gold;"></i></div>PROMO GOLD</span>
+            <div class="icon-outer">
+              <i
+                class="fa fa-product-hunt"
+                style="font-size: 70px; color: gold"
+              ></i>
+            </div>
+            PROMO GOLD</span
+          >
           <h4 class="my-2 font-weight-bold">Above $10,000</h4>
           <small class="text-uppercase text-secondary">4 days</small>
         </div>
         <div class="text-center text-uppercase text-secondary mb-2">
-          <small class="d-block my-3" style="font-weight: 600">400% (+ 15000) 4 days</small>
+          <small class="d-block my-3" style="font-weight: 600"
+            >400% (+ 15000) 4 days</small
+          >
           <!--  <small class="d-block my-3" style="font-weight: 600;">10GB Bandwidth</small> -->
           <small class="d-block" style="font-weight: 600">24/7 Support</small>
         </div>
       </div>
     </div>
 
-
-      <div class="row">
-          <!-- Pricing Block -->
-          <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                  <div class="icon-box">
-                      <div class="icon-outer"><i class="fa fa-paper-plane"></i></div>
-                  </div>
-                  <div class="price-box">
-                      <div class="title">Aquila</div>
-                      <h4 class="price">$25 -  $249</h4>
-                  </div>
-                  <ul class="features">
-                      <li class="true">1 day</li>
-                      <li class="true">+12% Growth</li>
-                      <li class="true" style="font-weight: bold; font-size: 15px;"><strong v-if="aqui">{{  aqui }} Investor(s)</strong></li>
-                  </ul>
-                  <div class="btn-box" (click)="options = 'AQUI'; pucg = 1">
-                      <a href="javascript:void(0);" class="theme-btn">BUY plan</a>
-                  </div>
-              </div>
+    <div class="row">
+      <!-- Pricing Block -->
+      <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+        <div class="inner-box">
+          <div class="icon-box">
+            <div class="icon-outer"><i class="fa fa-paper-plane"></i></div>
           </div>
-
-
-
-
-          <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-            <div class="inner-box">
-                <div class="icon-box">
-                    <div class="icon-outer"><i class="fa fa-paper-plane"></i></div>
-                </div>
-                <div class="price-box">
-                    <div class="title">Orion</div>
-                    <h4 class="price">$250 -  $999</h4>
-                </div>
-                <ul class="features">
-                    <li class="true">3 days</li>
-                    <li class="true">+30% Growth</li>
-                    <li class="true" style="font-weight: bold; font-size: 15px;"><strong v-if="oron">{{  oron }} Investor(s)</strong></li>
-                </ul>
-                <div class="btn-box" (click)="options = 'ORON'; pucg = 1">
-                    <a href="javascript:void(0);" class="theme-btn">BUY plan</a>
-                </div>
-            </div>
-         </div>
-
-          <!-- Pricing Block -->
-          <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-              <div class="inner-box">
-                  <div class="icon-box">
-                      <div class="icon-outer"><i class="fa fa-diamond"></i></div>
-                  </div>
-                  <div class="price-box">
-                      <div class="title">Bellatrix</div>
-                      <h4 class="price">$1000.99 -  9999</h4>
-                  </div>
-                  <ul class="features">
-                      <li class="true">5 days</li>
-                      <li class="true">+100% Growth</li>
-                      <li class="true" style="font-weight: bold; font-size: 15px;"><strong v-if="bela">{{  bela }} Investor(s)</strong></li>
-                  </ul>
-                  <div class="btn-box" (click)="options = 'BELA'; pucg = 1">
-                      <a href="javascript:void(0);" class="theme-btn">BUY plan</a>
-                  </div>
-              </div>
+          <div class="price-box">
+            <div class="title">Aquila</div>
+            <h4 class="price">$25 - $249</h4>
           </div>
-
-          <!-- Pricing Block -->
-          <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
-              <div class="inner-box">
-                  <div class="icon-box">
-                      <div class="icon-outer"><i class="fa fa-rocket"></i></div>
-                  </div>
-                  <div class="price-box">
-                      <div class="title">Sirius</div>
-                      <h4 class="price">$10000 - unlimited</h4>
-                  </div>
-                  <ul class="features">
-                      <li class="true">10 days</li>
-                      <li class="true">200% Growth</li>
-                      <li class="true" style="font-weight: bold; font-size: 15px;"><strong v-if="siri">{{  siri }} Investor(s)</strong></li>
-                  </ul>
-                  <div class="btn-box" (click)="options = 'SIRI'; pucg = 1">
-                      <a href="javascript:void(0);" class="theme-btn">BUY plan</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-
-      <div class="my-5 py-3 px-3 bg-light">
-        <div class=" d-sm-flex align-items-center justify-content-between" (click)="options = 'CIPs'; pucg = 1"
-          style="cursor: pointer">
-          <div class="d-md-flex justify-content-between align-items-center">
-            <div class="text-center">
-              <p><span class="text-primary">
-                  <img src="https://www.uscis.gov/sites/default/files/images/site/DHS_cis_W.svg" loading="lazy"
-                    width="170px" height="100px" alt="" class="sticky-card_icon" />
-                </span> </p>
-              <h4 class="mb-0 fw-200 text-center">Citizenship by Investment (CIPs)</h4>
-            </div>
-          </div>
-          <div class="text-center text-uppercase text-secondary mb-2">
-            <small class="d-block my-3" style="font-weight: 600">Duration 1 month</small>
-             <small class="d-block my-3" style="font-weight: 600;" v-if="cip">{{  cip }} Investor(s)</small>
-            <small class="d-block" style="font-weight: 600">
-              <div class="mt-10 mt-md-0">
-                <a href="javascript:void(0);" class="waves-effect waves-light btn btn-outline btn-primary">Invest
-                  Now</a>
-              </div>
-            </small>
+          <ul class="features">
+            <li class="true">1 day</li>
+            <li class="true">+12% Growth</li>
+            <li class="true" style="font-weight: bold; font-size: 15px">
+              <strong v-if="aqui">{{ 1200 + aqui }} Investor(s)</strong>
+            </li>
+          </ul>
+          <div class="btn-box" (click)="options = 'AQUI'; pucg = 1">
+            <a href="javascript:void(0);" class="theme-btn">BUY plan</a>
           </div>
         </div>
-        <hr>
+      </div>
+
+      <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+        <div class="inner-box">
+          <div class="icon-box">
+            <div class="icon-outer"><i class="fa fa-paper-plane"></i></div>
+          </div>
+          <div class="price-box">
+            <div class="title">Orion</div>
+            <h4 class="price">$250 - $999</h4>
+          </div>
+          <ul class="features">
+            <li class="true">3 days</li>
+            <li class="true">+30% Growth</li>
+            <li class="true" style="font-weight: bold; font-size: 15px">
+              <strong v-if="oron">{{  3000 + oron }} Investor(s)</strong>
+            </li>
+          </ul>
+          <div class="btn-box" (click)="options = 'ORON'; pucg = 1">
+            <a href="javascript:void(0);" class="theme-btn">BUY plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Block -->
+      <div
+        class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
+        data-wow-delay="400ms"
+      >
+        <div class="inner-box">
+          <div class="icon-box">
+            <div class="icon-outer"><i class="fa fa-diamond"></i></div>
+          </div>
+          <div class="price-box">
+            <div class="title">Bellatrix</div>
+            <h4 class="price">$1000.99 - 9999</h4>
+          </div>
+          <ul class="features">
+            <li class="true">5 days</li>
+            <li class="true">+100% Growth</li>
+            <li class="true" style="font-weight: bold; font-size: 15px">
+              <strong v-if="bela">{{  4850 + bela }} Investor(s)</strong>
+            </li>
+          </ul>
+          <div class="btn-box" (click)="options = 'BELA'; pucg = 1">
+            <a href="javascript:void(0);" class="theme-btn">BUY plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Block -->
+      <div
+        class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
+        data-wow-delay="800ms"
+      >
+        <div class="inner-box">
+          <div class="icon-box">
+            <div class="icon-outer"><i class="fa fa-rocket"></i></div>
+          </div>
+          <div class="price-box">
+            <div class="title">Sirius</div>
+            <h4 class="price">$10000 - unlimited</h4>
+          </div>
+          <ul class="features">
+            <li class="true">10 days</li>
+            <li class="true">200% Growth</li>
+            <li class="true" style="font-weight: bold; font-size: 15px">
+              <strong v-if="siri">{{  8430 + siri }} Investor(s)</strong>
+            </li>
+          </ul>
+          <div class="btn-box" (click)="options = 'SIRI'; pucg = 1">
+            <a href="javascript:void(0);" class="theme-btn">BUY plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-5 py-3 px-3 bg-light">
+      <div
+        class="d-sm-flex align-items-center justify-content-between"
+        (click)="options = 'CIPs'; pucg = 1"
+        style="cursor: pointer"
+      >
         <div class="d-md-flex justify-content-between align-items-center">
-          <div class="d-flex justify-content-start align-items-center">
-            <div class="min-w-100">
-              <p class="mb-0 text-fade">Fund Size</p>
-              <h6 class="mb-0">$10,000 - 50,000</h6>
+          <div class="text-center">
+            <p>
+              <span class="text-primary">
+                <img
+                  src="https://www.uscis.gov/sites/default/files/images/site/DHS_cis_W.svg"
+                  loading="lazy"
+                  width="170px"
+                  height="100px"
+                  alt=""
+                  class="sticky-card_icon"
+                />
+              </span>
+            </p>
+            <h4 class="mb-0 fw-200 text-center">
+              Citizenship by Investment (CIPs)
+            </h4>
+          </div>
+        </div>
+        <div class="text-center text-uppercase text-secondary mb-2">
+          <small class="d-block my-3" style="font-weight: 600"
+            >Duration 1 month</small
+          >
+          <small class="d-block my-3" style="font-weight: 600" v-if="cip"
+            >{{  2540 + cip }} Investor(s)</small
+          >
+          <small class="d-block" style="font-weight: 600">
+            <div class="mt-10 mt-md-0">
+              <a
+                href="javascript:void(0);"
+                class="waves-effect waves-light btn btn-outline btn-primary"
+                >Invest Now</a
+              >
             </div>
-            <div class="mx-lg-50 mx-20 min-w-70">
-              <p class="mb-0 text-fade">Return</p>
-              <h6 class="mb-0 text-success">+500% <span class="text-dark">(1 month)</span></h6>
-            </div>
+          </small>
+        </div>
+      </div>
+      <hr />
+      <div class="d-md-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-start align-items-center">
+          <div class="min-w-100">
+            <p class="mb-0 text-fade">Fund Size</p>
+            <h6 class="mb-0">$10,000 - 50,000</h6>
+          </div>
+          <div class="mx-lg-50 mx-20 min-w-70">
+            <p class="mb-0 text-fade">Return</p>
+            <h6 class="mb-0 text-success">
+              +500% <span class="text-dark">(1 month)</span>
+            </h6>
           </div>
         </div>
       </div>
+    </div>
   </div>
 </div>
-
-
-
 
 <div *ngIf="pucg == 1">
   <div class="" *ngIf="bank == '0'">
@@ -201,7 +258,7 @@
                   class="nav-link active"
                   data-toggle="tab"
                   href="#buy"
-                  style="background-color: teal !important; border-radius: 30px;"
+                  style="background-color: teal !important; border-radius: 30px"
                   >Deposit Invest</a
                 >
               </li>
@@ -219,11 +276,22 @@
 
                 <div class="row">
                   <div class="col-md-3 col-6" *ngIf="country == 'India'">
-                    <input class="checkbox-tools" type="radio" name="spend" ngModel required id="tool-0" value="Bank" />
+                    <input
+                      class="checkbox-tools"
+                      type="radio"
+                      name="spend"
+                      ngModel
+                      required
+                      id="tool-0"
+                      value="Bank"
+                    />
                     <label class="for-checkbox-tools" for="tool-0">
                       <div class="serv_icon">
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/bank-transfer-1817143-1538011.png"
-                          style="width: 100%; height: 100%" alt="" />
+                        <img
+                          src="https://cdn.iconscout.com/icon/free/png-256/bank-transfer-1817143-1538011.png"
+                          style="width: 100%; height: 100%"
+                          alt=""
+                        />
                       </div>
                       <div class="service-content">
                         <h6 class="d-blue bold">BANK</h6>
@@ -231,20 +299,29 @@
                     </label>
                   </div>
 
-
                   <div class="col-md-3 col-6" *ngIf="country == 'India'">
-                    <input class="checkbox-tools" type="radio" name="spend" ngModel required id="tool-20" value="UPI" />
+                    <input
+                      class="checkbox-tools"
+                      type="radio"
+                      name="spend"
+                      ngModel
+                      required
+                      id="tool-20"
+                      value="UPI"
+                    />
                     <label class="for-checkbox-tools" for="tool-20">
                       <div class="serv_icon">
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/bank-transfer-1817143-1538011.png"
-                          style="width: 100%; height: 100%" alt="" />
+                        <img
+                          src="https://cdn.iconscout.com/icon/free/png-256/bank-transfer-1817143-1538011.png"
+                          style="width: 100%; height: 100%"
+                          alt=""
+                        />
                       </div>
                       <div class="service-content">
                         <h6 class="d-blue bold">UPI</h6>
                       </div>
                     </label>
                   </div>
-
 
                   <div class="col-md-3 col-6">
                     <input
@@ -296,52 +373,80 @@
                     </label>
                   </div>
 
-
                   <div class="col-md-3 col-6">
-                    <input class="checkbox-tools" type="radio" name="spend" value="USDT(TRC20)" id="tool-5" ngModel
-                      required />
+                    <input
+                      class="checkbox-tools"
+                      type="radio"
+                      name="spend"
+                      value="USDT(TRC20)"
+                      id="tool-5"
+                      ngModel
+                      required
+                    />
                     <label class="for-checkbox-tools" for="tool-5">
                       <div class="serv_icon">
                         <img
                           src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/256/Tether-USDT-icon.png"
-                          style="width: 100%; height: 100%" alt="" />
+                          style="width: 100%; height: 100%"
+                          alt=""
+                        />
                       </div>
                       <div class="service-content">
-                        <h6 class="d-blue bold" style="font-size: 11px;">USDT(TRC20)</h6>
+                        <h6 class="d-blue bold" style="font-size: 11px">
+                          USDT(TRC20)
+                        </h6>
                       </div>
                     </label>
                   </div>
 
-
-
                   <div class="col-md-3 col-6">
-                    <input class="checkbox-tools" type="radio" name="spend" value="USDC(BEP20)" id="tool-70" ngModel
-                      required />
+                    <input
+                      class="checkbox-tools"
+                      type="radio"
+                      name="spend"
+                      value="USDC(BEP20)"
+                      id="tool-70"
+                      ngModel
+                      required
+                    />
                     <label class="for-checkbox-tools" for="tool-70">
                       <div class="serv_icon">
                         <img
                           src="../../../../assets/icon/usdc.svg"
-                          style="width: 100%; height: 100%" alt="" />
+                          style="width: 100%; height: 100%"
+                          alt=""
+                        />
                       </div>
                       <div class="service-content">
-                        <h6 class="d-blue bold" style="font-size: 11px;">USDC(BEP20)</h6>
+                        <h6 class="d-blue bold" style="font-size: 11px">
+                          USDC(BEP20)
+                        </h6>
                       </div>
                     </label>
                   </div>
 
-
-
                   <div class="col-md-3 col-6">
-                    <input class="checkbox-tools" type="radio" name="spend" value="USDT(BEP20)" id="tool-55" ngModel
-                      required />
+                    <input
+                      class="checkbox-tools"
+                      type="radio"
+                      name="spend"
+                      value="USDT(BEP20)"
+                      id="tool-55"
+                      ngModel
+                      required
+                    />
                     <label class="for-checkbox-tools" for="tool-55">
                       <div class="serv_icon">
                         <img
                           src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/256/Tether-USDT-icon.png"
-                          style="width: 100%; height: 100%" alt="" />
+                          style="width: 100%; height: 100%"
+                          alt=""
+                        />
                       </div>
                       <div class="service-content">
-                        <h6 class="d-blue bold" style="font-size: 11px;">USDT(BEP20)</h6>
+                        <h6 class="d-blue bold" style="font-size: 11px">
+                          USDT(BEP20)
+                        </h6>
                       </div>
                     </label>
                   </div>
@@ -371,8 +476,6 @@
                       </div>
                     </label>
                   </div>
-
-
 
                   <button
                     type="submit"
@@ -459,6 +562,16 @@
                     [value]="addressTopay"
                     id="refUrl"
                     readonly=""
+                  />
+
+                  <input
+                    type="text"
+                    id="address"
+                    class="form-control form-control-lg mt-2 mb-2"
+                    [value]="upID"
+                    id="refUrl"
+                    readonly=""
+                    *ngIf="upID"
                   />
                   <button
                     class="btn btn-primary btn-block btn-lg my-link-copy mb-2"

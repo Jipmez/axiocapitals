@@ -25,7 +25,7 @@ export class OnboardComponent implements OnInit {
   ngAfterViewInit() {
     // The audio element is now available
     // this.ensureVideoPlays()
-    this.playAudio()
+    // this.playAudio()
   }
 
 
