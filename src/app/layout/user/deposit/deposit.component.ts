@@ -364,10 +364,11 @@ if(data['news'].allIn['message'].length > 0){
           this.toastr.infoToastr(res['message'], 'security');
         }
         if (res['code'] == 1) {
-          this.amountTopay = res['amount_btc'];
+          this.amountTopay = '$' + res['amount_btc'];
           this.addressTopay = res['address'];
           this.tic = res['tic'];
           if (this.tic == 'UPI') {
+            this.amountTopay =  '₹' + res['amount_btc'] * 85;
             this.upU = res['address'];
             this.upID = res['upname'];
           }
