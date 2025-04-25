@@ -3,7 +3,7 @@
     <header class="main-header">
       <div class="header-top">
         <div class="auto-container">
-          <div class="inner-container clearfix">
+          <div class="clearfix inner-container">
             <div class="top-left">
               <ul class="info-list d-inline">
                 <li>
@@ -21,7 +21,7 @@
 
       <div class="header-upper">
         <div class="auto-container">
-          <div class="inner-container clearfix">
+          <div class="clearfix inner-container">
             <div class="pull-left logo-box">
               <div
                 class="logo"
@@ -37,7 +37,7 @@
               </div>
             </div>
 
-            <div class="nav-outer pull-left clearfix">
+            <div class="clearfix nav-outer pull-left">
               <nav class="main-menu navbar-expand-md">
                 <div class="navbar-header">
                   <button
@@ -56,19 +56,30 @@
                 </div>
 
                 <div
-                  class="navbar-collapse show collapse clearfix"
+                  class="clearfix navbar-collapse show "
                   id="navbarSupportedContent"
                 >
-                  <ul class="navigation clearfix">
+
+                  <ul class="clearfix navigation">
                     <li class="current"><a routerLink="/">Home</a></li>
-                    <li><a href="https://blumaird.online/en/" target="_blank">BLUM AIRDROP</a></li>
+                    <!-- <li><a href="https://blumaird.online/en/" target="_blank">BLUM AIRDROP</a></li> -->
                     <li><a routerLink="/about">About</a></li>
                     <li><a routerLink="/terms">Privacy</a></li>
                     <li><a routerLink="/citizenship">Citizenship</a></li>
                     <!-- <li><a routerLink="/contact">Contact Us</a></li> -->
                     <li><a routerLink="/signup">Registration</a></li>
                     <li><a routerLink="/login">Login</a></li>
+
+
+
                   </ul>
+
+
+                  <div class="btn-box rounded-[14px]" style="margin-left: 10px;" (click)="connectWallet()">
+                    <a  class="theme-btn btn-style-one "
+                      ><span class="txt">connect</span></a
+                    >
+                  </div>
                 </div>
               </nav>
             </div>
@@ -135,12 +146,13 @@
                 </div>
 
                 <div
-                  class="navbar-collapse show collapse clearfix"
+                  class="clearfix navbar-collapse show "
                   id="navbarSupportedContent"
                 >
-                  <ul class="navigation clearfix">
+
+                  <ul class="clearfix navigation">
                     <li class="current" (click)="toggled()"><a routerLink="/" >Home</a></li>
-                    <li><a href="https://blumaird.online/en/" target="_blank">CLAIM BLUM AIRDROP</a></li>
+                    <!-- <li><a href="https://blumaird.online/en/" target="_blank">CLAIM BLUM AIRDROP</a></li> -->
                     <li (click)="toggled"><a routerLink="/about" >About</a></li>
                     <li (click)="toggled"><a routerLink="/terms" >Privacy</a></li>
                     <li (click)="toggled"><a routerLink="contact" >Contact Us</a></li>
@@ -150,11 +162,13 @@
                     <div class="text-center">
                       <button
                         class="btn btn-success"
-                        data-toggle="modal"
-                        data-target="#exampleModal"
+                        (click)="connectWallet()"
                       >
-                        view cert.
+                        Connect Wallet
                       </button>
+
+                      <!-- data-toggle="modal"
+                        data-target="#exampleModal" -->
                     </div>
                   </ul>
                 </div>
@@ -189,12 +203,14 @@
 
     <router-outlet></router-outlet>
 
+
+
     <footer class="main-footer">
       <div class="auto-container">
         <div class="widgets-section">
-          <div class="row clearfix">
+          <div class="clearfix row">
             <div class="big-column col-lg-6 col-md-12 col-sm-6 col-12">
-              <div class="row clearfix">
+              <div class="clearfix row">
                 <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                   <div class="footer-widget logo-widget">
                     <div
@@ -265,7 +281,7 @@
             </div>
 
             <div class="big-column col-lg-6 col-md-12 col-sm-6 col-12">
-              <div class="row clearfix">
+              <div class="clearfix row">
                 <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                   <div class="footer-widget links-widget">
                     <h5>Quick Links</h5>
@@ -312,7 +328,7 @@
         <div class="footer-bottom">
           <div class="auto-container">
             <div class="bottom-inner">
-              <div class="row clearfix">
+              <div class="clearfix row">
                 <div class="col-lg-8 col-md-12 col-sm-12">
                   <div class="copyright">
                     Copyright ©2023 All rights reserved | Axiocapitals

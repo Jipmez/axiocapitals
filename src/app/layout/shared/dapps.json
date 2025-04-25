@@ -1,0 +1,2350 @@
+{
+  "records": [
+      {
+          "recordId": "recRtbVSgC3D5pDmE",
+          "name": "MetaMask",
+          "slug": "metamask",
+          "shortDescription": "MetaMask is a popular EVM compatible crypto wallet. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recELIa5sUIULflxx",
+              "rec3Twxr0rhXSFru1"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675689/dapp-store/dapp-logos/MetaMask.png",
+          "eyebrowText": "Web3 30 Winners"
+      },
+
+
+      {
+          "recordId": "recRtbVSgC3D5pDmE",
+          "name": "Binance",
+          "slug": "binance",
+          "shortDescription": "Binance is a popular EVM compatible crypto wallet. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recELIa5sUIULflxx",
+              "rec3Twxr0rhXSFru1"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675689/dapp-store/dapp-logos/binance.png",
+          "eyebrowText": "Web3 30 Winners"
+      },
+
+      {
+          "recordId": "recRtbVSgC3D5pDmE",
+          "name": "Moonpay",
+          "slug": "moonpay",
+          "shortDescription": "A whole world of crypto, in one simple account",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recELIa5sUIULflxx",
+              "rec3Twxr0rhXSFru1"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675689/dapp-store/dapp-logos/moonpay.png",
+          "eyebrowText": "Web3 30 Winners"
+      },
+
+      {
+          "recordId": "recXi2U2UuTATOZ69",
+          "name": "Rainbow",
+          "slug": "rainbow-wallet",
+          "shortDescription": "Rainbow is a user-friendly wallet on Ethereum with bridging and cross-chain swaps to Layer 2s.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recELIa5sUIULflxx",
+              "rec3Twxr0rhXSFru1",
+              "recnWJkTaZ7CGsztG",
+              "rec4mXX6veliGP9mb"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675395/dapp-store/dapp-logos/Rainbow.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recmdRPAEUQfMvSF1",
+          "name": "Zengo",
+          "slug": "zengo",
+          "shortDescription": "Zengo is the most secure self-custodial, Multi-Party Computation (MPC) wallet.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recVNJbI4MfY9h0Pa",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx",
+              "reccKnctE31QrYjxw",
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "recs2tVMaBJij9JeV"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675395/dapp-store/dapp-logos/ZenGo.jpg",
+          "eyebrowText": "Enterprise Customers"
+      },
+      {
+          "recordId": "recowuS6kGEmv6gFh",
+          "name": "Rabby Wallet",
+          "slug": "rabby-wallet",
+          "shortDescription": "Rabby Wallet is a wallet for Ethereum and all EVM chains.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675756/dapp-store/dapp-logos/Rabby%20Wallet.jpg"
+      },
+      {
+          "recordId": "recL2lQtvNOb9XOr0",
+          "name": "Phantom Wallet",
+          "slug": "phantom",
+          "shortDescription": "Phantom is a leading multichain crypto wallet on Solana, Ethereum, and Polygon.\n",
+          "chains": [
+              "recrBjzwDXTYDblUI",
+              "recnWJkTaZ7CGsztG",
+              "recJAGJcYb8lPHMhO"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675398/dapp-store/dapp-logos/Phantom%20Wallet.png",
+          "eyebrowText": "Enterprise Customers"
+      },
+      {
+          "recordId": "recd5MyoXh05vYk7F",
+          "name": "Kraken Wallet",
+          "slug": "kraken-wallet",
+          "shortDescription": "Powerful, self-custody wallet built to connect you to the decentralized web — safely and securely.\n",
+          "chains": [
+              "recpsMuRrcueqNvyv",
+              "recJAGJcYb8lPHMhO",
+              "recrBjzwDXTYDblUI",
+              "reccKnctE31QrYjxw",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "recshthgLOSJOs2U8"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1715007978/dapp-store/dapp-logos/Kraken%20Wallet.png"
+      },
+      {
+          "recordId": "recxBFsdmDwS9k6H4",
+          "name": "Safe",
+          "slug": "gnosis-safe",
+          "shortDescription": "Safe, a smart contract wallet, requires a minimum number of people to approve a transaction.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675401/dapp-store/dapp-logos/Safe.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recQblIPSS4ORyqBY",
+          "name": "Argent",
+          "slug": "argent",
+          "shortDescription": "Argent is an account abstraction wallet on Ethereum. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675878/dapp-store/dapp-logos/Argent.png",
+          "eyebrowText": "Enterprise Customers"
+      },
+      {
+          "recordId": "recIHI7t0AJit2AnH",
+          "name": "Backpack",
+          "slug": "backpack",
+          "shortDescription": "A wallet for xNFTs - the X stands for eXecutable, a new breed of NFTs with state-evolving capabilities.\n",
+          "chains": [
+              "recrBjzwDXTYDblUI",
+              "recJAGJcYb8lPHMhO"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675881/dapp-store/dapp-logos/Backpack.jpg",
+          "eyebrowText": "Web3 30 Nominees"
+      },
+      {
+          "recordId": "recy5zETPg3hUubsD",
+          "name": "Portal",
+          "slug": "Portal",
+          "shortDescription": "Portal provides an embedded MPC wallet SDK and security tools for enterprise and developers.\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "recs2tVMaBJij9JeV"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675748/dapp-store/dapp-logos/Portal.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "rec14YHaLHaUD0Zsz",
+          "name": "OKX Wallet",
+          "slug": "okx-wallet",
+          "shortDescription": "OKX Wallet is the world's most powerful crypto wallet.\n",
+          "chains": [
+              "recpsMuRrcueqNvyv",
+              "recJAGJcYb8lPHMhO",
+              "reccYHBCXr4beeHUn",
+              "recELIa5sUIULflxx",
+              "recp0lfMKVt22e9l3",
+              "recHGCJEC7m8UDkzf",
+              "rec5AdqUSzEDSSi3W",
+              "recmowm3wWn9Tlwf2",
+              "rec2DgpRtOyQ0csxG",
+              "recNCEpD35a7AyGFt",
+              "rech7Le0TOXbUd3Im",
+              "rec5irWdQu6ywZCDk",
+              "rec3Twxr0rhXSFru1",
+              "recv1a9q4TyfoY1Bc",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "recs2tVMaBJij9JeV"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675406/dapp-store/dapp-logos/OKX%20Wallet.jpg",
+          "eyebrowText": "Best-in-Class Apps"
+      },
+      {
+          "recordId": "recmLOK8Fr7x0dRED",
+          "name": "Coinbase Wallet",
+          "slug": "coinbase-wallet",
+          "shortDescription": "Coinbase is an EVM compatible software wallet. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recrBjzwDXTYDblUI",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675406/dapp-store/dapp-logos/Coinbase%20Wallet.jpg",
+          "eyebrowText": "Web3 30 Winners"
+      },
+      {
+          "recordId": "rec7Vp093UrbiLUja",
+          "name": "Lit",
+          "slug": "lit-protocol",
+          "shortDescription": "Lit Protocol is a decentralized key management network powered by threshold cryptography.\n\n",
+          "chains": [
+              "reccYHBCXr4beeHUn",
+              "recJAGJcYb8lPHMhO",
+              "recVNJbI4MfY9h0Pa",
+              "recnWJkTaZ7CGsztG",
+              "recrBjzwDXTYDblUI",
+              "recELIa5sUIULflxx",
+              "recp0lfMKVt22e9l3"
+          ],
+          "vipChildCategory": [
+              "recFdaUgAgFOPizrT"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675406/dapp-store/dapp-logos/Lit.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recxQHfhSxWp9J9oM",
+          "name": "Castle",
+          "slug": "castle",
+          "shortDescription": "Your forever wallet.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675408/dapp-store/dapp-logos/Castle.png",
+          "eyebrowText": "Web3 30 Nominees"
+      },
+      {
+          "recordId": "recU7imtqLtJ2xCVq",
+          "name": "Trezor",
+          "slug": "trezor",
+          "shortDescription": "Trezor is a password protected, hardware wallet.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "reccYHBCXr4beeHUn"
+          ],
+          "vipChildCategory": [
+              "recsSDSI94HW7qVSB"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675839/dapp-store/dapp-logos/Trezor.jpg"
+      },
+      {
+          "recordId": "reciwlxqcgZAnKtCt",
+          "name": "Apex",
+          "slug": "apex-wallet",
+          "shortDescription": "Apex wallet is a new Ethereum digital wallet used to store digital assets.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recELIa5sUIULflxx",
+              "rec3Twxr0rhXSFru1"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675410/dapp-store/dapp-logos/Apex.png",
+          "eyebrowText": "Enterprise Customers"
+      },
+      {
+          "recordId": "recU5QmO6O70xBLvY",
+          "name": "Dfns",
+          "slug": "dfns",
+          "shortDescription": "Wallet infrastructure for web3\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "recmowm3wWn9Tlwf2",
+              "recpsMuRrcueqNvyv",
+              "rec4mXX6veliGP9mb",
+              "recUSmoQBBDEpTlkl",
+              "recPiBMJJsvcbcDMv",
+              "rec2DgpRtOyQ0csxG",
+              "recp0lfMKVt22e9l3",
+              "recshthgLOSJOs2U8",
+              "recJAGJcYb8lPHMhO",
+              "rec5irWdQu6ywZCDk",
+              "rec5m3K2QUA6pVXp3",
+              "recXgFT8FYByj76oW",
+              "recELIa5sUIULflxx",
+              "reck6YCJLNTqydO9S",
+              "recnWJkTaZ7CGsztG",
+              "recx3mBvPzFZ7uPGs",
+              "recrBjzwDXTYDblUI",
+              "rec8xEVvAtshfzZ81",
+              "recaUavZEx2GY0q2Y",
+              "recHGCJEC7m8UDkzf",
+              "recAdl3LKQbZBrjSx"
+          ],
+          "vipChildCategory": [
+              "recs2tVMaBJij9JeV"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1708638694/dapp-store/dapp-logos/Dfns.jpg"
+      },
+      {
+          "recordId": "rec7F9WCKsK4YEiym",
+          "name": "Taho Wallet (Formerly Tally Ho)",
+          "slug": "taho-xyz",
+          "shortDescription": "Building the first and only Open Source & Community Owned Web3 wallet\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "recJAGJcYb8lPHMhO",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "rec4mXX6veliGP9mb"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675420/dapp-store/dapp-logos/Taho%20Wallet%20Formerly%20Tally%20Ho.svg",
+          "eyebrowText": "Enterprise Customers"
+      },
+      {
+          "recordId": "recluTiZDZVjTcPSg",
+          "name": "Candide",
+          "slug": "candide",
+          "shortDescription": "Candide is a smart contract wallet that uses Account Abstraction.\n",
+          "chains": [
+              "recELIa5sUIULflxx"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675424/dapp-store/dapp-logos/Candide.jpg",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recgNmwunElOvRCuo",
+          "name": "Zerion",
+          "slug": "zerion",
+          "shortDescription": "Cryptocurrency wallet that also lets users manage their DeFi and NFT portfolios.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recnWJkTaZ7CGsztG",
+              "recELIa5sUIULflxx",
+              "recrBjzwDXTYDblUI",
+              "rec94zFiOvEKwvVRh",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675426/dapp-store/dapp-logos/Zerion.jpg",
+          "eyebrowText": "Enterprise Customers"
+      },
+      {
+          "recordId": "rec5GzBHl3QjlXU7C",
+          "name": "Solflare",
+          "slug": "solflare",
+          "shortDescription": "Solana software wallet that allows users to send, receive, store, and securely stake SPL tokens.\n\n",
+          "chains": [
+              "recrBjzwDXTYDblUI"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675428/dapp-store/dapp-logos/Solflare.png"
+      },
+      {
+          "recordId": "reciox3QZ4n7EwWv9",
+          "name": "UniPass",
+          "slug": "unipass",
+          "shortDescription": "UniPass is a non-custodial smart contract wallet, with no seed phrases or gas fees.\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recJAGJcYb8lPHMhO",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675433/dapp-store/dapp-logos/UniPass.svg",
+          "eyebrowText": "Growth Customers"
+      },
+      {
+          "recordId": "recLHkM4ZAc9iHfmq",
+          "name": "Soul Wallet",
+          "slug": "soul-wallet",
+          "shortDescription": "The smart contract wallet, backed by the Ethereum community. #ERC4337\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675441/dapp-store/dapp-logos/Soul%20Wallet.jpg"
+      },
+      {
+          "recordId": "rec0FyDQb9YRnA4fL",
+          "name": "Ledger",
+          "slug": "ledger",
+          "shortDescription": "Ledger is a hardware web3 wallet. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recELIa5sUIULflxx",
+              "rec3Twxr0rhXSFru1",
+              "recrBjzwDXTYDblUI"
+          ],
+          "vipChildCategory": [
+              "recsSDSI94HW7qVSB"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675444/dapp-store/dapp-logos/Ledger.svg",
+          "eyebrowText": "Enterprise Customers"
+      },
+      {
+          "recordId": "recvlyBT8ElVpEFvM",
+          "name": "Cashmere",
+          "slug": "cashmere",
+          "shortDescription": "Secure your treasury as a team with multi signature wallet security and Cashmere Vaults.\n",
+          "chains": [
+              "recrBjzwDXTYDblUI"
+          ],
+          "vipChildCategory": [
+              "recgJ5oxBK1er0iDc"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675447/dapp-store/dapp-logos/Cashmere.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "rec4liwYNG90m58S5",
+          "name": "MEW wallet",
+          "slug": "MEW-wallet",
+          "shortDescription": "Buy, manage, swap and control your crypto is the beautiful open source crypto wallet.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "rec4mXX6veliGP9mb",
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675449/dapp-store/dapp-logos/MEW%20wallet.png"
+      },
+      {
+          "recordId": "recl8Pw2bYpfBY1DQ",
+          "name": "Stackup",
+          "slug": "stackup",
+          "shortDescription": "Open-source platform to build web3 experiences using custom transaction flows & smart contract wallets.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675449/dapp-store/dapp-logos/Stackup.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recgNy6tEzXbDreQD",
+          "name": "Sequence",
+          "slug": "sequence-wallet",
+          "shortDescription": "A plug-and-play web3 suite of tools for easily building user-friendly dapps.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx",
+              "rec4mXX6veliGP9mb",
+              "reccYHBCXr4beeHUn"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675449/dapp-store/dapp-logos/Sequence.jpg",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recClmWeZiKWT5U3k",
+          "name": "BlockWallet",
+          "slug": "block-wallet",
+          "shortDescription": "Self custodial Web3 wallet that streamlines your journey across chains with unbeatable security and UX.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recAdl3LKQbZBrjSx"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675449/dapp-store/dapp-logos/BlockWallet.png",
+          "eyebrowText": "Enterprise Customers"
+      },
+      {
+          "recordId": "rec4o68oADWybEXRc",
+          "name": "Enkrypt",
+          "slug": "Enkrypt",
+          "shortDescription": "A non custodial open source wallet made for the multichain future.\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa",
+              "rec4mXX6veliGP9mb",
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recELIa5sUIULflxx",
+              "rec3Twxr0rhXSFru1",
+              "reccKnctE31QrYjxw",
+              "recpsMuRrcueqNvyv",
+              "recAdl3LKQbZBrjSx",
+              "reccYHBCXr4beeHUn",
+              "rec94zFiOvEKwvVRh",
+              "rec0AkfhLOiByxfkp",
+              "reccNM7GOHKO93rEJ",
+              "rec2DgpRtOyQ0csxG",
+              "reck6YCJLNTqydO9S",
+              "recNCEpD35a7AyGFt",
+              "rech7Le0TOXbUd3Im",
+              "recJuELbLvArcfGg8",
+              "recaoFqwSgqMy5o94",
+              "recshthgLOSJOs2U8",
+              "recx3mBvPzFZ7uPGs",
+              "reclOhlmYWSfQ6vXM",
+              "recojW2rCwhNzJwi5",
+              "reccvNI4ubpMYa7Cf",
+              "rec5irWdQu6ywZCDk",
+              "rec5AdqUSzEDSSi3W",
+              "rec5m3K2QUA6pVXp3",
+              "recXgFT8FYByj76oW",
+              "recy6l8fFIlxGupYG"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675451/dapp-store/dapp-logos/Enkrypt.svg"
+      },
+      {
+          "recordId": "recCs6o1aKTO2oxJm",
+          "name": "Obvious",
+          "slug": "obvious",
+          "shortDescription": "Obvious is a mobile-only smart contract wallet that enables users to transact crypto seamlessly.\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "rec2DgpRtOyQ0csxG",
+              "recv1a9q4TyfoY1Bc",
+              "recJAGJcYb8lPHMhO",
+              "rec5irWdQu6ywZCDk",
+              "rec94zFiOvEKwvVRh",
+              "recNCEpD35a7AyGFt",
+              "recnWJkTaZ7CGsztG",
+              "recmx38AnChfuRPTP",
+              "recELIa5sUIULflxx",
+              "rech7Le0TOXbUd3Im"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675459/dapp-store/dapp-logos/Obvious.png"
+      },
+      {
+          "recordId": "recmOyu9mJoOE8Wmi",
+          "name": "AlphaWallet",
+          "slug": "alphawallet",
+          "shortDescription": "Alpha Wallet is an open-source, 100% self-custody web3 wallet for DeFi and NFTs.\n\n\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675472/dapp-store/dapp-logos/AlphaWallet.png",
+          "eyebrowText": "Amplify Winners"
+      },
+      {
+          "recordId": "recz7fpvbNkrE1bes",
+          "name": "imToken",
+          "slug": "imtoken",
+          "shortDescription": "imToken is a multi-chain and multiple features web3 wallet for DeFi and NFTs.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675832/dapp-store/dapp-logos/imToken.jpg",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recBj6DtppcsCOe2i",
+          "name": "TokenPocket",
+          "slug": "tokenpocket",
+          "shortDescription": "TokenPocket is a secure multichain digital cryptocurrency wallet. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675994/dapp-store/dapp-logos/TokenPocket.jpg",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recEQgAWMXHb6I5Zd",
+          "name": "Multis",
+          "slug": "multis",
+          "shortDescription": "Multisig cryptocurrency wallet that requires the two or more private keys to sign transactions. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675702/dapp-store/dapp-logos/Multis.jpg",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recHgPYLlwV2NDass",
+          "name": "Coin98",
+          "slug": "coin98",
+          "shortDescription": "All-in-one DeFi platform designed to provide the most important wallet features in one app.\n\n\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "rec4mXX6veliGP9mb"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675525/dapp-store/dapp-logos/Coin98.jpg",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recfoFmwJltk5EfdR",
+          "name": "Alfa1",
+          "slug": "alfa1",
+          "shortDescription": "Alfa1 is a customizable and intuitive digital asset management solutions founded in 2018.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recrBjzwDXTYDblUI",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "rec4mXX6veliGP9mb",
+              "reccYHBCXr4beeHUn"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675870/dapp-store/dapp-logos/Alfa1.jpg",
+          "eyebrowText": "Enterprise Customers"
+      },
+      {
+          "recordId": "recj1miyYdONTqp2j",
+          "name": "Venly",
+          "slug": "venly",
+          "shortDescription": "Venly is a Web3 technology provider offering wallet services, NFT tools and marketplace solutions.\n\n",
+          "chains": [
+              "recnWJkTaZ7CGsztG",
+              "rec4mXX6veliGP9mb",
+              "reccYHBCXr4beeHUn",
+              "recJAGJcYb8lPHMhO"
+          ],
+          "vipChildCategory": [
+              "recYtxljCnE6RUcnJ"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694676000/dapp-store/dapp-logos/Venly.jpg"
+      },
+      {
+          "recordId": "recxNl8yFHaIFNoxV",
+          "name": "Frontier Wallet",
+          "slug": "frontier-wallet",
+          "shortDescription": "Frontier is a Crypto, DeFi, and NFT wallet that lets users send, store and invest in 4000+ assets.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "rec4mXX6veliGP9mb"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675593/dapp-store/dapp-logos/Frontier%20Wallet.jpg"
+      },
+      {
+          "recordId": "recf6yrlJofDm4rwD",
+          "name": "Dapp Pocket",
+          "slug": "dapp-pocket",
+          "shortDescription": "A DeFi wallet for interacting with over 2,000 dapps , and storing, sending, and buying crypto.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675906/dapp-store/dapp-logos/Dapp%20Pocket.jpg",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recfZgLN9HhK4dLMN",
+          "name": "Ronin Wallet",
+          "slug": "ronin",
+          "shortDescription": "The Ronin Wallet is a crypto wallet designed for the users of the game Axie Infinity.\n",
+          "chains": [
+              "recan5IELvix9QGaZ"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675858/dapp-store/dapp-logos/Ronin%20Wallet.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "rec6sypXe0fMkjE1r",
+          "name": "SafePal",
+          "slug": "safepal",
+          "shortDescription": "SafePal is a crypto hardware wallet, and wallet manager.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "rec4mXX6veliGP9mb"
+          ],
+          "vipChildCategory": [
+              "recsSDSI94HW7qVSB"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675980/dapp-store/dapp-logos/SafePal.svg",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recnzYMQajy5Jj9Uj",
+          "name": "D’CENT",
+          "slug": "dcent",
+          "shortDescription": "D’CENT offers both biometric and card hardware wallets. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recELIa5sUIULflxx",
+              "rec3Twxr0rhXSFru1"
+          ],
+          "vipChildCategory": [
+              "recsSDSI94HW7qVSB"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675546/dapp-store/dapp-logos/DCENT.png"
+      },
+      {
+          "recordId": "recEgs6EGdaD419jN",
+          "name": "Ellipal",
+          "slug": "ellipal",
+          "shortDescription": "The world's first 100% air-gapped hardware wallet. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recrBjzwDXTYDblUI",
+              "rec4mXX6veliGP9mb"
+          ],
+          "vipChildCategory": [
+              "recsSDSI94HW7qVSB"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675916/dapp-store/dapp-logos/Ellipal.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recYpYEnznNf4AJ91",
+          "name": "Sepior",
+          "slug": "sepior",
+          "shortDescription": "The Sepior MPC wallet is a multi-asset wallet platform powered by Sepior's Advanced MPC™.\n\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO"
+          ],
+          "vipChildCategory": [
+              "recs2tVMaBJij9JeV"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675777/dapp-store/dapp-logos/Sepior.jpg",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "rec8MGG1oP8WKNU46",
+          "name": "Qredo ",
+          "slug": "qredo",
+          "shortDescription": "Qredo Wallet is a web application that makes digital asset portfolio management fast and secure. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recrBjzwDXTYDblUI",
+              "rec4mXX6veliGP9mb"
+          ],
+          "vipChildCategory": [
+              "recs2tVMaBJij9JeV"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675973/dapp-store/dapp-logos/Qredo.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recUEaauiMbyWhXXr",
+          "name": "Snowflake",
+          "slug": "Snowflake",
+          "shortDescription": "Snowflake is multisig platform wallet on Solana.\n",
+          "chains": [
+              "recrBjzwDXTYDblUI"
+          ],
+          "vipChildCategory": [
+              "recgJ5oxBK1er0iDc"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675787/dapp-store/dapp-logos/Snowflake.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "reclr008IAPNuas2a",
+          "name": "Goki",
+          "slug": "Goki",
+          "shortDescription": "Goki provides an interface to create, manage, and audit multisig wallets on Solana.\n\n",
+          "chains": [
+              "recrBjzwDXTYDblUI"
+          ],
+          "vipChildCategory": [
+              "recgJ5oxBK1er0iDc"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675641/dapp-store/dapp-logos/Goki.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "rec7umH0PgcZDLFZf",
+          "name": "TrustWallet",
+          "slug": "trustwallet",
+          "shortDescription": "Trustwallet is one of the most used multi-chain wallets in Web3.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "recrBjzwDXTYDblUI",
+              "rec4mXX6veliGP9mb",
+              "reck6YCJLNTqydO9S",
+              "reccYHBCXr4beeHUn"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675839/dapp-store/dapp-logos/TrustWallet.png",
+          "eyebrowText": "Web3 30 Nominees"
+      },
+      {
+          "recordId": "rec041Axi8yEsBVlP",
+          "name": "openfort",
+          "slug": "openfort",
+          "shortDescription": "Web3 wallet infrastructure with a Web2 user experience (UX).\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675956/dapp-store/dapp-logos/openfort.jpg",
+          "eyebrowText": "Enterprise Customers"
+      },
+      {
+          "recordId": "recz6JqdyrrtV3UyQ",
+          "name": "Arculus",
+          "slug": "arculus",
+          "shortDescription": "An easy-to-use web3 hardware wallet that stores private keys and signs transactions over NFC.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recrBjzwDXTYDblUI",
+              "recUSmoQBBDEpTlkl",
+              "recgVV4AsVQqyBACv",
+              "recaoFqwSgqMy5o94",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "recsSDSI94HW7qVSB"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675923/dapp-store/dapp-logos/Arculus.png",
+          "eyebrowText": "Enterprise Customers"
+      },
+      {
+          "recordId": "rec2tPg0GLsW6rSNZ",
+          "name": "Spot Wallet",
+          "slug": "spot-wallet",
+          "shortDescription": "Spot is a secure & friendly self-custody multi-chain wallet.\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa",
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recrBjzwDXTYDblUI"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675987/dapp-store/dapp-logos/Spot%20Wallet.png"
+      },
+      {
+          "recordId": "recahIvbITjiHTbvS",
+          "name": "pier wallet",
+          "slug": "pier-wallet",
+          "shortDescription": "pier offers an advanced smart contract (account abstraction) wallet on multiple blockchains.\n",
+          "chains": [
+              "recnWJkTaZ7CGsztG",
+              "recJAGJcYb8lPHMhO",
+              "rec5AdqUSzEDSSi3W",
+              "recAdl3LKQbZBrjSx"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675964/dapp-store/dapp-logos/pier%20wallet.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recf78Y5bw2bloSUT",
+          "name": "Mangos Wallet",
+          "slug": "mangos-wallet",
+          "shortDescription": "Multi-chain smart contract wallet that implements account abstraction and social recovery.\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa",
+              "recnWJkTaZ7CGsztG",
+              "rec3Twxr0rhXSFru1"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675940/dapp-store/dapp-logos/Mangos%20Wallet.png",
+          "eyebrowText": "Amplify Winners"
+      },
+      {
+          "recordId": "rec6n64VmHnOdYDAn",
+          "name": "Marble Wallet",
+          "slug": "marble",
+          "shortDescription": "Marble is a secure self-custodial wallet that you can access without seed phrases or extensions.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recELIa5sUIULflxx",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recVNJbI4MfY9h0Pa",
+              "recnWJkTaZ7CGsztG",
+              "rec3Twxr0rhXSFru1"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675680/dapp-store/dapp-logos/Marble%20Wallet.png",
+          "eyebrowText": "Growth Customers"
+      },
+      {
+          "recordId": "rece1DtCmeggFjw4F",
+          "name": "XDEFI Wallet",
+          "slug": "xdefi-wallet",
+          "shortDescription": "XDEFI is a non-custodial wallet that can store crypto across multiple blockchains.\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recJAGJcYb8lPHMhO",
+              "recVNJbI4MfY9h0Pa",
+              "recrBjzwDXTYDblUI",
+              "recnWJkTaZ7CGsztG",
+              "recp0lfMKVt22e9l3"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694676005/dapp-store/dapp-logos/XDEFI%20Wallet.png"
+      },
+      {
+          "recordId": "recClXbOPcNImar31",
+          "name": "Clear EVM Wallet",
+          "slug": "clear-evm-wallet",
+          "shortDescription": "Open source EVM wallet with 0 data collection.\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675604/dapp-store/dapp-logos/Clear%20EVM%20Wallet.png"
+      },
+      {
+          "recordId": "recKIXhwoJBr1E4tM",
+          "name": "myEtherWallet",
+          "slug": "MyEtherWallet",
+          "shortDescription": "MyEtherWallet creates user friendly, noncustodial, open source wallets.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "rec4mXX6veliGP9mb"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675705/dapp-store/dapp-logos/myEtherWallet.png",
+          "eyebrowText": "Enterprise Customers"
+      },
+      {
+          "recordId": "rec5SOMMlIYKBCTbh",
+          "name": "Narval",
+          "slug": "narval",
+          "shortDescription": "Narval is a multi-player web3 wallet platform, for organizations.\n",
+          "chains": [
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675707/dapp-store/dapp-logos/Narval.png",
+          "eyebrowText": "Amplify Winners"
+      },
+      {
+          "recordId": "reclWbJEFUOLEFX78",
+          "name": "Wallet 3",
+          "slug": "wallet3",
+          "shortDescription": "Wallet 3 is an Ethereum-based multi-chain wallet that supports Layer-2 and EVM-compatible chains. \n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "rec4mXX6veliGP9mb",
+              "reccYHBCXr4beeHUn",
+              "recv1a9q4TyfoY1Bc",
+              "recJAGJcYb8lPHMhO",
+              "recVNJbI4MfY9h0Pa",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675858/dapp-store/dapp-logos/Wallet%203.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "rec3FHzHO4AtHJBWN",
+          "name": "Raise Finance",
+          "slug": "raise-finance",
+          "shortDescription": "Raise Finance is a scalable web3 engine to receive payments \n\n\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "recUKwybzdQOrplYP"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675564/dapp-store/dapp-logos/Raise%20Finance.png"
+      },
+      {
+          "recordId": "reczdytOIXt9KbvvJ",
+          "name": "Etherspot SDK",
+          "slug": "etherspot-sdk",
+          "shortDescription": "Etherspot is an account abstraction SDK, delivering frictionless Web3 UX.\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recJAGJcYb8lPHMhO",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675576/dapp-store/dapp-logos/Etherspot%20SDK.jpg"
+      },
+      {
+          "recordId": "rec3rqoxoo8Motruo",
+          "name": "Pillar ",
+          "slug": "pillar",
+          "shortDescription": "Pillar is a self-custody smart wallet with cross-chain and account abstraction superpowers.\n",
+          "chains": [
+              "rec4mXX6veliGP9mb",
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recELIa5sUIULflxx",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675964/dapp-store/dapp-logos/Pillar.png",
+          "eyebrowText": "Free Customers"
+      },
+      {
+          "recordId": "recWMr3oGAKqFf07s",
+          "name": "Ambire Wallet",
+          "slug": "ambire-wallet",
+          "shortDescription": "The wallet that’s making Web3 self-custody easy and secure via Account Abstraction.\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "rec4mXX6veliGP9mb",
+              "reccYHBCXr4beeHUn",
+              "recJAGJcYb8lPHMhO",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "rec94zFiOvEKwvVRh",
+              "rech7Le0TOXbUd3Im",
+              "recJuELbLvArcfGg8",
+              "recNCEpD35a7AyGFt"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675870/dapp-store/dapp-logos/Ambire%20Wallet.jpg",
+          "eyebrowText": "Amplify Winners"
+      },
+      {
+          "recordId": "recpQqden5yWIenIr",
+          "name": "Bitcoin.com Wallet",
+          "slug": "bitcoincom-wallet",
+          "shortDescription": "A multi-chain, web3 wallet that enables you to take control of your crypto and use it how you wish.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "reccYHBCXr4beeHUn",
+              "recnWJkTaZ7CGsztG",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675883/dapp-store/dapp-logos/Bitcoin.com%20Wallet.png"
+      },
+      {
+          "recordId": "rec8tmdW3H74mb0TR",
+          "name": "Cypher Wallet",
+          "slug": "cypher-wallet",
+          "shortDescription": "An all-in-one noncustodial wallet to buy, sell, manage, bridge, or stake crypto across 12+ chains\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "rec4mXX6veliGP9mb",
+              "recp0lfMKVt22e9l3",
+              "reccYHBCXr4beeHUn",
+              "recJAGJcYb8lPHMhO",
+              "rec94zFiOvEKwvVRh",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675541/dapp-store/dapp-logos/Cypher%20Wallet.png",
+          "eyebrowText": "Amplify Winners"
+      },
+      {
+          "recordId": "rec7ctVC88CHApcPq",
+          "name": "BLS Wallet",
+          "slug": "bls-wallet",
+          "shortDescription": "BLS Wallet is a project within the Privacy and Scaling Explorations team of the Ethereum Foundation.\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675506/dapp-store/dapp-logos/BLS%20Wallet.png"
+      },
+      {
+          "recordId": "recacitFL8qt426xs",
+          "name": "Plena Finance ",
+          "slug": "plena-finance",
+          "shortDescription": "Plena Smart Wallet allows you to swap, lend, transfer, bridge, and add liquidity with a single tap!\n",
+          "chains": [
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "rec94zFiOvEKwvVRh",
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675742/dapp-store/dapp-logos/Plena%20Finance.png"
+      },
+      {
+          "recordId": "recc0l5KYjor4ibNS",
+          "name": "Banana Wallet SDK",
+          "slug": "banana-wallet",
+          "shortDescription": "Banana Wallet SDK is a smart contract wallet SDK for wallet integrations.\n",
+          "chains": [
+              "recNCEpD35a7AyGFt",
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675492/dapp-store/dapp-logos/Banana%20Wallet%20SDK.png"
+      },
+      {
+          "recordId": "recmb30CZ1HA4Rrbq",
+          "name": "Bitski Wallet",
+          "slug": "bitski-wallet",
+          "shortDescription": "Bitski is the wallet for everyone – they keep your digital goods physically safe.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675886/dapp-store/dapp-logos/Bitski%20Wallet.png"
+      },
+      {
+          "recordId": "recAzUlBNATuFXtR7",
+          "name": "Fluvi Wallet",
+          "slug": "fluvi-wallet",
+          "shortDescription": "Fluvi Wallet is a full-featured AA smart wallet that works to make the world a Web3 native.\n",
+          "chains": [
+              "rec5irWdQu6ywZCDk",
+              "recJAGJcYb8lPHMhO",
+              "rec4mXX6veliGP9mb",
+              "recnWJkTaZ7CGsztG",
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "rec94zFiOvEKwvVRh",
+              "recv1a9q4TyfoY1Bc",
+              "rec5AdqUSzEDSSi3W",
+              "recELIa5sUIULflxx",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675589/dapp-store/dapp-logos/Fluvi%20Wallet.png",
+          "eyebrowText": "Amplify Winners"
+      },
+      {
+          "recordId": "rec9Q2bpWazUOC3v5",
+          "name": "Squads",
+          "slug": "squads",
+          "shortDescription": "Squads is the multi-sig standard of Solana.\n",
+          "chains": [
+              "recrBjzwDXTYDblUI"
+          ],
+          "vipChildCategory": [
+              "recgJ5oxBK1er0iDc"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675806/dapp-store/dapp-logos/Squads.png"
+      },
+      {
+          "recordId": "recBNbMHsW0fJXVHN",
+          "name": "MPCVault",
+          "slug": "mpcvault",
+          "shortDescription": "MPCVault is a non-custodial Web3 wallet for teams. It is multi-chain, multi-asset, and multi-sig.\n",
+          "chains": [
+              "recnWJkTaZ7CGsztG",
+              "rec3Twxr0rhXSFru1",
+              "recmowm3wWn9Tlwf2",
+              "recJAGJcYb8lPHMhO",
+              "reccYHBCXr4beeHUn",
+              "recELIa5sUIULflxx",
+              "rec4mXX6veliGP9mb",
+              "recVNJbI4MfY9h0Pa",
+              "recrBjzwDXTYDblUI",
+              "reccKnctE31QrYjxw",
+              "rec8xEVvAtshfzZ81",
+              "recpsMuRrcueqNvyv",
+              "recHGCJEC7m8UDkzf",
+              "recpdqVG3QveupWbb"
+          ],
+          "vipChildCategory": [
+              "recgJ5oxBK1er0iDc"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675699/dapp-store/dapp-logos/MPCVault.png",
+          "eyebrowText": "Amplify Winners"
+      },
+      {
+          "recordId": "recKRU5Hefl3b1ERN",
+          "name": "Daedalus Wallet",
+          "slug": "daedalus-wallet",
+          "shortDescription": "Daedalus is the first mobile wallet for the Aptos and Sui Blockchains.\n",
+          "chains": [
+              "rec8xEVvAtshfzZ81",
+              "recmowm3wWn9Tlwf2",
+              "recJAGJcYb8lPHMhO",
+              "reccYHBCXr4beeHUn",
+              "recrBjzwDXTYDblUI",
+              "recnWJkTaZ7CGsztG",
+              "rec4mXX6veliGP9mb"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675858/dapp-store/dapp-logos/Daedalus%20Wallet.jpg"
+      },
+      {
+          "recordId": "recf6AZJohNctozAQ",
+          "name": "Infinity Wallet",
+          "slug": "infinity-wallet",
+          "shortDescription": "Infinity Wallet is an all-in-one non-custodial multi-chain wallet and a Web3 browser for desktop. \n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "recpsMuRrcueqNvyv",
+              "rec4mXX6veliGP9mb",
+              "recv1a9q4TyfoY1Bc",
+              "recJAGJcYb8lPHMhO",
+              "rec5irWdQu6ywZCDk",
+              "rec5AdqUSzEDSSi3W",
+              "recELIa5sUIULflxx",
+              "recaUavZEx2GY0q2Y",
+              "recrBjzwDXTYDblUI",
+              "recnWJkTaZ7CGsztG",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675656/dapp-store/dapp-logos/Infinity%20Wallet.png"
+      },
+      {
+          "recordId": "recMCRJynfE77ENvr",
+          "name": "Itsawallet",
+          "slug": "itsawallet",
+          "shortDescription": "ERC20 Crypto Wallet\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "rec5irWdQu6ywZCDk"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675662/dapp-store/dapp-logos/Itsawallet.png",
+          "eyebrowText": "Amplify Winners"
+      },
+      {
+          "recordId": "rec0L3KB1wexX5ieB",
+          "name": "Wallmer",
+          "slug": "wallmer",
+          "shortDescription": "Wallmer is an all-in-one cryptocurrency platform.\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675858/dapp-store/dapp-logos/Wallmer.png"
+      },
+      {
+          "recordId": "rec4ylavS2ux5nFQq",
+          "name": "Unstoppable Wallet",
+          "slug": "unstoppable-wallet",
+          "shortDescription": "Unstoppable is the world’s leading open-source multi-wallet for Ethereum, Bitcoin, BNB Chain & more!\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "recpsMuRrcueqNvyv",
+              "rec4mXX6veliGP9mb",
+              "recJAGJcYb8lPHMhO",
+              "recNCEpD35a7AyGFt",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675850/dapp-store/dapp-logos/Unstoppable%20Wallet.png"
+      },
+      {
+          "recordId": "recr0ETJGQPbckz9i",
+          "name": "HaHa Wallet",
+          "slug": "haha-wallet",
+          "shortDescription": "HaHa App is a mobile wallet for NFT trading on the go that offers seamless and secure NFT trading.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "rec5irWdQu6ywZCDk",
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675925/dapp-store/dapp-logos/HaHa%20Wallet.jpg"
+      },
+      {
+          "recordId": "recjHO7GwZpuypEvB",
+          "name": "AnCrypto",
+          "slug": "ancrypto",
+          "shortDescription": "AnCrypto is the world's first chat and pay multichain crypto wallet. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "rec4mXX6veliGP9mb",
+              "recHGCJEC7m8UDkzf",
+              "recaUavZEx2GY0q2Y",
+              "recpsMuRrcueqNvyv",
+              "recgVV4AsVQqyBACv",
+              "recaoFqwSgqMy5o94",
+              "recshthgLOSJOs2U8",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675873/dapp-store/dapp-logos/AnCrypto.png"
+      },
+      {
+          "recordId": "recHg19EygUGRK7ja",
+          "name": "KryptoGO Wallet",
+          "slug": "kryptogo-wallet",
+          "shortDescription": "KryptoGO is an ecosystem of interconnected apps and services built for a decentralized future.\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "recpsMuRrcueqNvyv",
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recrBjzwDXTYDblUI",
+              "rec4mXX6veliGP9mb",
+              "recHGCJEC7m8UDkzf",
+              "recan5IELvix9QGaZ"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675934/dapp-store/dapp-logos/KryptoGO%20Wallet.png"
+      },
+      {
+          "recordId": "recBVCCuscFXUvMnd",
+          "name": "Sender",
+          "slug": "sender",
+          "shortDescription": "Sender Labs Inc. is a blockchain software development company. \n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "recJAGJcYb8lPHMhO",
+              "rec4mXX6veliGP9mb",
+              "recobbAOyr1oIrcQN",
+              "recnWJkTaZ7CGsztG",
+              "reccYHBCXr4beeHUn",
+              "recELIa5sUIULflxx"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675775/dapp-store/dapp-logos/Sender.png"
+      },
+      {
+          "recordId": "recMUgMtMfwkbd5aL",
+          "name": "Dawn",
+          "slug": "dawn-wallet",
+          "shortDescription": "Dawn is the fastest Ethereum wallet for iOS enabling you to use dapps straight from Safari.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recELIa5sUIULflxx",
+              "rec3Twxr0rhXSFru1",
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675906/dapp-store/dapp-logos/Dawn.png",
+          "eyebrowText": "Amplify Winners"
+      },
+      {
+          "recordId": "rece3L0ADHKGag44y",
+          "name": "Blocto",
+          "slug": "blocto",
+          "shortDescription": "Blocto is a beginner-friendly account abstraction wallet. \n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx",
+              "recmowm3wWn9Tlwf2",
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "rec4mXX6veliGP9mb",
+              "reccYHBCXr4beeHUn",
+              "recxtP5xv3EmvUwn9",
+              "recrBjzwDXTYDblUI",
+              "recHGCJEC7m8UDkzf"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675504/dapp-store/dapp-logos/Blocto.png"
+      },
+      {
+          "recordId": "reckO1uWJK5xmsWN8",
+          "name": "Kuma Wallet",
+          "slug": "kuma-wallet",
+          "shortDescription": "Kuma Wallet is a one-stop solution for all cross-chain asset management needs.\n",
+          "chains": [
+              "reccNM7GOHKO93rEJ",
+              "rech7Le0TOXbUd3Im",
+              "rec5irWdQu6ywZCDk",
+              "reck6YCJLNTqydO9S",
+              "rec4mXX6veliGP9mb",
+              "recnWJkTaZ7CGsztG",
+              "recJAGJcYb8lPHMhO",
+              "recXgFT8FYByj76oW"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675668/dapp-store/dapp-logos/Kuma%20Wallet.jpg"
+      },
+      {
+          "recordId": "recO2UrEYJavN4RTO",
+          "name": "YaspFi",
+          "slug": "yaspfi",
+          "shortDescription": "YaspFi is an all-in-one next-generation non-custodial wallet focused on DeFi.\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recJAGJcYb8lPHMhO",
+              "rec94zFiOvEKwvVRh",
+              "rech7Le0TOXbUd3Im",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "recAdl3LKQbZBrjSx"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694676010/dapp-store/dapp-logos/YaspFi.png",
+          "eyebrowText": "Amplify Winners"
+      },
+      {
+          "recordId": "recETTJw3Bi8bMBXx",
+          "name": "Ultimate",
+          "slug": "ultimate",
+          "shortDescription": "Ultimate is a multi-chain non-custodial wallet that makes DeFi trading accessible to the masses. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recrBjzwDXTYDblUI",
+              "recELIa5sUIULflxx",
+              "rec3Twxr0rhXSFru1",
+              "recpsMuRrcueqNvyv",
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675844/dapp-store/dapp-logos/Ultimate.png"
+      },
+      {
+          "recordId": "recxFf4KIoS88m4OK",
+          "name": "Martian Wallet",
+          "slug": "martian-wallet",
+          "shortDescription": "Martian Wallet is a self-custodial wallet for Aptos & Sui. \n",
+          "chains": [
+              "recmowm3wWn9Tlwf2",
+              "rec8xEVvAtshfzZ81"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675682/dapp-store/dapp-logos/Martian%20Wallet.jpg"
+      },
+      {
+          "recordId": "rec1vLTf7ZhCe4vPI",
+          "name": "MoWallet",
+          "slug": "mowallet",
+          "shortDescription": "MoWallet is a simple and safe crypto wallet that supports ERC20, ERC721, and ERC875 natively. \n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "rec4mXX6veliGP9mb",
+              "reccYHBCXr4beeHUn",
+              "recnWJkTaZ7CGsztG",
+              "rec94zFiOvEKwvVRh",
+              "rec3Twxr0rhXSFru1",
+              "rec2DgpRtOyQ0csxG",
+              "rech7Le0TOXbUd3Im",
+              "rec5AdqUSzEDSSi3W",
+              "rec5m3K2QUA6pVXp3",
+              "recv1a9q4TyfoY1Bc",
+              "rec5irWdQu6ywZCDk"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675699/dapp-store/dapp-logos/MoWallet.png",
+          "eyebrowText": "Amplify Winners"
+      },
+      {
+          "recordId": "recehqqTPnHfPFfvs",
+          "name": "Gem Wallet",
+          "slug": "gem-wallet",
+          "shortDescription": "Gem Wallet is an open-source crypto wallet for cryptocurrencies like BTC, ETH, SOL, BNB, and more. \n",
+          "chains": [
+              "recmowm3wWn9Tlwf2",
+              "recpsMuRrcueqNvyv",
+              "recJAGJcYb8lPHMhO",
+              "rec4mXX6veliGP9mb",
+              "recaoFqwSgqMy5o94",
+              "reccYHBCXr4beeHUn",
+              "recp0lfMKVt22e9l3",
+              "rec94zFiOvEKwvVRh",
+              "recnWJkTaZ7CGsztG",
+              "recHGCJEC7m8UDkzf",
+              "rec8xEVvAtshfzZ81",
+              "recrBjzwDXTYDblUI",
+              "recVNJbI4MfY9h0Pa",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx",
+              "recAdl3LKQbZBrjSx",
+              "reccKnctE31QrYjxw"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675598/dapp-store/dapp-logos/Gem%20Wallet.png"
+      },
+      {
+          "recordId": "recWoFJi9oqTqOuXn",
+          "name": "zkBob Private Wallet",
+          "slug": "zkbob",
+          "shortDescription": "zkBob - Your Web3 Wallet With Privacy Option!\n",
+          "chains": [
+              "recnWJkTaZ7CGsztG",
+              "recELIa5sUIULflxx"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694676015/dapp-store/dapp-logos/zkBob.png"
+      },
+      {
+          "recordId": "rec0xX5BVWzRgcDgr",
+          "name": "Holdstation",
+          "slug": "holdstation",
+          "shortDescription": "Smart Contract Wallet for futures trading, and one of the first to embrace native AA on zkSync Era.\n",
+          "chains": [
+              "rec5irWdQu6ywZCDk",
+              "recAdl3LKQbZBrjSx",
+              "recJAGJcYb8lPHMhO",
+              "rec4mXX6veliGP9mb",
+              "reccYHBCXr4beeHUn",
+              "rec94zFiOvEKwvVRh",
+              "recnWJkTaZ7CGsztG",
+              "recmx38AnChfuRPTP",
+              "recshthgLOSJOs2U8",
+              "rec5AdqUSzEDSSi3W",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675650/dapp-store/dapp-logos/Holdstation.png"
+      },
+      {
+          "recordId": "recGRM9q8YOYsuQzG",
+          "name": "Brume Wallet",
+          "slug": "brume-wallet",
+          "shortDescription": "The private Ethereum wallet with built-in Tor 😶‍🌫️\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675496/dapp-store/dapp-logos/Brume%20Wallet.png"
+      },
+      {
+          "recordId": "recERYz8o6TYwYNQw",
+          "name": "SINOHOPE",
+          "slug": "sinohope",
+          "shortDescription": "With Sinohope, you can create an exclusive digital asset self-custody platform for each institution.\n",
+          "chains": [
+              "recpsMuRrcueqNvyv",
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recHGCJEC7m8UDkzf",
+              "rec4mXX6veliGP9mb",
+              "reccYHBCXr4beeHUn",
+              "recELIa5sUIULflxx",
+              "rec3Twxr0rhXSFru1",
+              "recobbAOyr1oIrcQN",
+              "recRaFMmMI3vYe1wH",
+              "recp0lfMKVt22e9l3"
+          ],
+          "vipChildCategory": [
+              "recs2tVMaBJij9JeV"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675983/dapp-store/dapp-logos/SINOHOPE.png"
+      },
+      {
+          "recordId": "rec0Qy5R79ovejBos",
+          "name": "Desig",
+          "slug": "desig ",
+          "shortDescription": "Experience the first omnichain Smart Multisig wallet that streamlines treasury ops.\n",
+          "chains": [
+              "recmowm3wWn9Tlwf2",
+              "rec3Twxr0rhXSFru1",
+              "rec4mXX6veliGP9mb",
+              "recJAGJcYb8lPHMhO",
+              "rec5irWdQu6ywZCDk",
+              "rech7Le0TOXbUd3Im",
+              "rec8xEVvAtshfzZ81",
+              "recVNJbI4MfY9h0Pa",
+              "recrBjzwDXTYDblUI",
+              "recmx38AnChfuRPTP",
+              "reculCGsIaLBh3JOS"
+          ],
+          "vipChildCategory": [
+              "recgJ5oxBK1er0iDc"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675553/dapp-store/dapp-logos/Desig.jpg"
+      },
+      {
+          "recordId": "recX2wNJTOg8ENBOE",
+          "name": "Linen",
+          "slug": "linen",
+          "shortDescription": "Linen offers secure, multi-signature crypto asset protection, powered by Safe\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recNCEpD35a7AyGFt"
+          ],
+          "vipChildCategory": [
+              "recgJ5oxBK1er0iDc"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675675/dapp-store/dapp-logos/Linen.png"
+      },
+      {
+          "recordId": "rec47ilF2RSCKTfcD",
+          "name": "Cobo",
+          "slug": "cobo",
+          "shortDescription": "Cobo is a leading global digital asset custody solutions provider.\n",
+          "chains": [
+              "recpsMuRrcueqNvyv",
+              "recJAGJcYb8lPHMhO",
+              "rec8Pj07U9NRMydLt",
+              "recmowm3wWn9Tlwf2",
+              "recojW2rCwhNzJwi5",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "rec94zFiOvEKwvVRh",
+              "recaoFqwSgqMy5o94",
+              "recnWJkTaZ7CGsztG",
+              "recobbAOyr1oIrcQN",
+              "recy6l8fFIlxGupYG",
+              "recELIa5sUIULflxx",
+              "recrBjzwDXTYDblUI",
+              "recHGCJEC7m8UDkzf",
+              "recp0lfMKVt22e9l3",
+              "recUSmoQBBDEpTlkl",
+              "recshthgLOSJOs2U8",
+              "reck6YCJLNTqydO9S",
+              "rec5AdqUSzEDSSi3W",
+              "recXgFT8FYByj76oW",
+              "recaUavZEx2GY0q2Y",
+              "recRaFMmMI3vYe1wH"
+          ],
+          "vipChildCategory": [
+              "receikVcmxbmOVqZ6"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675523/dapp-store/dapp-logos/Cobo.jpg"
+      },
+      {
+          "recordId": "receV8icIiSY1NlXK",
+          "name": "Locksmith Wallet",
+          "slug": "locksmith-wallet",
+          "shortDescription": "Locksmith is a smart contract wallet that introduces a fully on-chain approach to account abstraction\n",
+          "chains": [
+              "reccKnctE31QrYjxw"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675938/dapp-store/dapp-logos/Locksmith%20Wallet.png"
+      },
+      {
+          "recordId": "recA7UKJUzcHwW7Hk",
+          "name": "Bizzllet",
+          "slug": "bizzllet",
+          "shortDescription": "Manage business crypto payments, expenses and invoices.\n\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "recs2tVMaBJij9JeV"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1694675499/dapp-store/dapp-logos/Bizzllet.jpg"
+      },
+      {
+          "recordId": "rec5mqSYw5Pi8jBtg",
+          "name": "Myrkle",
+          "slug": "myrkle",
+          "shortDescription": "Myrkle is a hub for all primary features on the XRP Ledger.\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1697959505/dapp-store/dapp-logos/Myrkle.png"
+      },
+      {
+          "recordId": "reczVzniomFSbwY1D",
+          "name": "Rainmaker",
+          "slug": "rainmaker",
+          "shortDescription": "The next-gen DeFi wallet. No seedphrases, no gas fees, 1-click entry into advanced DeFi strategies.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "reccKnctE31QrYjxw",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1697959504/dapp-store/dapp-logos/Rainmaker.png"
+      },
+      {
+          "recordId": "recz1aTlZ7EmdhDDb",
+          "name": "Guarda Wallet",
+          "slug": "guarda-wallet",
+          "shortDescription": "Guarda Wallet offers secure, multi-currency crypto management for both beginners and experts.\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1697462015/dapp-store/dapp-logos/Guarda%20Wallet.png"
+      },
+      {
+          "recordId": "recrceGPMJJ0GMacP",
+          "name": "Gridlock",
+          "slug": "gridlock",
+          "shortDescription": "Gridlock is the safest and easiest crypto wallet, ensuring secure and stress-free crypto ownership.\n",
+          "chains": [
+              "recpsMuRrcueqNvyv",
+              "recJAGJcYb8lPHMhO",
+              "recrBjzwDXTYDblUI",
+              "recp0lfMKVt22e9l3",
+              "reck6YCJLNTqydO9S",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "recs2tVMaBJij9JeV"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1700154317/dapp-store/dapp-logos/Gridlock.png"
+      },
+      {
+          "recordId": "reco9LF6MrSOQOLOU",
+          "name": "Rivo.xyz",
+          "slug": "rivo-xyz",
+          "shortDescription": "Multichain smart-contract wallet with a DeFi marketplace, making it easy to earn with DeFi in 1 click.\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recELIa5sUIULflxx",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1699867857/dapp-store/dapp-logos/Rivo.xyz.jpg"
+      },
+      {
+          "recordId": "recuq0q0hFJGiqFls",
+          "name": "Bitget Wallet",
+          "slug": "bitget-wallet",
+          "shortDescription": "Asia's largest and one of the world's leading all-in-one Web3 trading wallets.\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa",
+              "reculCGsIaLBh3JOS"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1702376925/dapp-store/dapp-logos/Bitget%20Wallet.png"
+      },
+      {
+          "recordId": "recEfyLb7SQa7bYZh",
+          "name": "Biconomy",
+          "slug": "biconomy-io",
+          "shortDescription": "Biconomy simplifies transaction solutions and developer tools for blockchain applications.\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "recB0Ql308PNUVHbK"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1704634014/dapp-store/dapp-logos/Biconomy.png"
+      },
+      {
+          "recordId": "reca8ZOUOS62oZ53u",
+          "name": "Aarc",
+          "slug": "aarc",
+          "shortDescription": "Simplifying Account Abstraction with a Smart Transactions Toolkit.\n",
+          "chains": [
+              "recnWJkTaZ7CGsztG",
+              "recJAGJcYb8lPHMhO",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx",
+              "reccKnctE31QrYjxw"
+          ],
+          "vipChildCategory": [
+              "rec1maHfXH2z15X3q"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1705525611/dapp-store/dapp-logos/Aarc.png",
+          "eyebrowText": "Ecosystem Partners"
+      },
+      {
+          "recordId": "recIecAex4yLLFJlq",
+          "name": "Web3asy",
+          "slug": "custonomy-web3asy",
+          "shortDescription": "Web3asy enables easy non-custodial Web3 wallet launch for businesses.\n",
+          "chains": [
+              "rec5irWdQu6ywZCDk"
+          ],
+          "vipChildCategory": [
+              "recs2tVMaBJij9JeV"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1707012258/dapp-store/dapp-logos/Web3asy.jpg"
+      },
+      {
+          "recordId": "recsB37vfsIyVzmha",
+          "name": "Wigwam",
+          "slug": "wigwam",
+          "shortDescription": "​​Wigwam - best crypto wallet for the Web3 ecosystem.\n",
+          "chains": [
+              "rec5irWdQu6ywZCDk",
+              "recJAGJcYb8lPHMhO",
+              "rec4mXX6veliGP9mb",
+              "reccYHBCXr4beeHUn",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "recmx38AnChfuRPTP",
+              "reccKnctE31QrYjxw",
+              "rec94zFiOvEKwvVRh",
+              "rec5AdqUSzEDSSi3W",
+              "rech7Le0TOXbUd3Im",
+              "recv1a9q4TyfoY1Bc",
+              "recJuELbLvArcfGg8"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1706954852/dapp-store/dapp-logos/Wigwam.png"
+      },
+      {
+          "recordId": "rec0lXoqIPzWEtF6y",
+          "name": "Atomic Wallet",
+          "slug": "atomic-wallet",
+          "shortDescription": "Manage your Bitcoin, Ethereum, XRP, Litecoin, USDT, and over 1000+ other coins and tokens.\n\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1709563591/dapp-store/dapp-logos/Atomic%20Wallet.png"
+      },
+      {
+          "recordId": "recprppij9p4KErEi",
+          "name": "DataCurve",
+          "slug": "logicware",
+          "shortDescription": "Unlocking new revenue streams for enterprises by tapping into digital native ecosystems powered by Web3.\n",
+          "chains": [
+              "reccYHBCXr4beeHUn",
+              "reccKnctE31QrYjxw",
+              "recpsMuRrcueqNvyv",
+              "recJAGJcYb8lPHMhO",
+              "rec5irWdQu6ywZCDk",
+              "recobbAOyr1oIrcQN",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "recmx38AnChfuRPTP",
+              "recrBjzwDXTYDblUI"
+          ],
+          "vipChildCategory": [
+              "rec1maHfXH2z15X3q"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1727739194/dapp-store/dapp-logos/DataCurve.png",
+          "eyebrowText": "Ecosystem Partners"
+      },
+      {
+          "recordId": "rechajOx2I2ExOmKs",
+          "name": "Sorted Wallet ",
+          "slug": "sorted-wallet",
+          "shortDescription": "The first and only crypto wallet for feature phones, enabling crypto for everyone.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recnWJkTaZ7CGsztG",
+              "recrBjzwDXTYDblUI",
+              "rec4mXX6veliGP9mb",
+              "rec3Twxr0rhXSFru1",
+              "recELIa5sUIULflxx"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1710574230/dapp-store/dapp-logos/Sorted%20Wallet.png"
+      },
+      {
+          "recordId": "recZSuQT4RcFIYMOq",
+          "name": "WalletKit",
+          "slug": "walletkit",
+          "shortDescription": "WalletKit is an all-in-one platform for adding smart, gasless wallets to your app.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "reccKnctE31QrYjxw",
+              "recnWJkTaZ7CGsztG",
+              "reccYHBCXr4beeHUn",
+              "recELIa5sUIULflxx",
+              "recrBjzwDXTYDblUI",
+              "rec3Twxr0rhXSFru1",
+              "reck6YCJLNTqydO9S"
+          ],
+          "vipChildCategory": [
+              "recYtxljCnE6RUcnJ"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1711133860/dapp-store/dapp-logos/WalletKit.png"
+      },
+      {
+          "recordId": "recJi0Xu55SsZYOqk",
+          "name": "Virgo Wallet",
+          "slug": "virgo-wallet",
+          "shortDescription": "The crypto wallet that rewards its users, easily and securely. \n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "reccKnctE31QrYjxw",
+              "rec4mXX6veliGP9mb",
+              "rec2DgpRtOyQ0csxG",
+              "recv1a9q4TyfoY1Bc",
+              "recJAGJcYb8lPHMhO",
+              "rec94zFiOvEKwvVRh",
+              "recLwGRJhx2tGkSfv",
+              "recnWJkTaZ7CGsztG",
+              "recELIa5sUIULflxx"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1713014680/dapp-store/dapp-logos/Virgo%20Wallet.png"
+      },
+      {
+          "recordId": "recwqNLfbUtKyyAsF",
+          "name": "Bitpowr",
+          "slug": "bitpowr",
+          "shortDescription": "Blockchain wallet and digital asset custody for businesses.\n",
+          "chains": [
+              "recpsMuRrcueqNvyv",
+              "rec8Pj07U9NRMydLt",
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "reccKnctE31QrYjxw",
+              "recgVV4AsVQqyBACv",
+              "rec4mXX6veliGP9mb",
+              "recUSmoQBBDEpTlkl",
+              "rec2DgpRtOyQ0csxG",
+              "recJAGJcYb8lPHMhO",
+              "rec5irWdQu6ywZCDk",
+              "recobbAOyr1oIrcQN",
+              "recp0lfMKVt22e9l3",
+              "recaUavZEx2GY0q2Y",
+              "recrBjzwDXTYDblUI",
+              "recnWJkTaZ7CGsztG",
+              "recdDzQEK0yZR63RF",
+              "recHGCJEC7m8UDkzf",
+              "recELIa5sUIULflxx",
+              "reck6YCJLNTqydO9S",
+              "recTZWalzaTX1bsil",
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "recs2tVMaBJij9JeV"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1714011503/dapp-store/dapp-logos/Bitpowr.jpg"
+      },
+      {
+          "recordId": "recFUqxmiI7dqcRDX",
+          "name": "Ownbit",
+          "slug": "ownbit",
+          "shortDescription": "BITBILL company was founded in 2013 and is one of the first teams to develop Bitcoin wallets.\n",
+          "chains": [
+              "recpsMuRrcueqNvyv",
+              "recgVV4AsVQqyBACv",
+              "recJAGJcYb8lPHMhO",
+              "recHGCJEC7m8UDkzf",
+              "recrBjzwDXTYDblUI",
+              "rec3Twxr0rhXSFru1",
+              "rec4mXX6veliGP9mb",
+              "recUSmoQBBDEpTlkl",
+              "recshthgLOSJOs2U8",
+              "recRaFMmMI3vYe1wH",
+              "recaoFqwSgqMy5o94",
+              "reck6YCJLNTqydO9S",
+              "recnWJkTaZ7CGsztG",
+              "recELIa5sUIULflxx",
+              "recTZWalzaTX1bsil"
+          ],
+          "vipChildCategory": [
+              "recgJ5oxBK1er0iDc"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1713919535/dapp-store/dapp-logos/Ownbit.png"
+      },
+      {
+          "recordId": "recWAKDRqu7dyU5Nb",
+          "name": "Fordefi",
+          "slug": "fordefi",
+          "shortDescription": "​Fordefi’s MPC wallet is an all-in-one solution for digital assets management. \n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccKnctE31QrYjxw",
+              "recpsMuRrcueqNvyv",
+              "reccYHBCXr4beeHUn",
+              "rec4mXX6veliGP9mb",
+              "recJAGJcYb8lPHMhO",
+              "rec94zFiOvEKwvVRh",
+              "recNCEpD35a7AyGFt",
+              "recXhsuEnf6KTblSN",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "recmx38AnChfuRPTP",
+              "recAdl3LKQbZBrjSx",
+              "recrBjzwDXTYDblUI",
+              "recp0lfMKVt22e9l3",
+              "recPiBMJJsvcbcDMv"
+          ],
+          "vipChildCategory": [
+              "recs2tVMaBJij9JeV"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1715703261/dapp-store/dapp-logos/Fordefi.jpg"
+      },
+      {
+          "recordId": "recFggsjjGRZ6b2GC",
+          "name": "Fintopio",
+          "slug": "fintopio",
+          "shortDescription": "Fintopio simplifies payments within Telegram, enabling easy, in-chat cryptocurrency transactions.\n",
+          "chains": [
+              "recVNJbI4MfY9h0Pa"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1715323888/dapp-store/dapp-logos/Fintopio.png"
+      },
+      {
+          "recordId": "rec1t1o8HCQU9Ja7f",
+          "name": "Saakuru",
+          "slug": "saakuru",
+          "shortDescription": "Saakuru Labs offers an all-in-one crypto app and unique L2 protocol with zero transaction fees.\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "rec5AdqUSzEDSSi3W",
+              "recpsMuRrcueqNvyv",
+              "recgVV4AsVQqyBACv",
+              "rec3Twxr0rhXSFru1",
+              "recUSmoQBBDEpTlkl",
+              "reccYHBCXr4beeHUn",
+              "recELIa5sUIULflxx",
+              "recaoFqwSgqMy5o94",
+              "recshthgLOSJOs2U8",
+              "rec4mXX6veliGP9mb",
+              "rec2DgpRtOyQ0csxG",
+              "recVNJbI4MfY9h0Pa",
+              "recnWJkTaZ7CGsztG",
+              "recLwGRJhx2tGkSfv"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1716778364/dapp-store/dapp-logos/Saakuru.png"
+      },
+      {
+          "recordId": "recDucR2ZO9CHpMuU",
+          "name": "Coinbase Smart Wallet",
+          "slug": "coinbase-smart-wallet",
+          "shortDescription": "Smart contract account by Coinbase\n",
+          "chains": [
+              "recJAGJcYb8lPHMhO",
+              "recELIa5sUIULflxx",
+              "reccKnctE31QrYjxw"
+          ],
+          "vipChildCategory": [
+              "recvsjqHiasMNXqVl"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1717093288/dapp-store/dapp-logos/Coinbase%20Smart%20Wallet.png"
+      },
+      {
+          "recordId": "recZms61tKax9aw7F",
+          "name": "ECOIN Wallet",
+          "slug": "ecoinwallet",
+          "shortDescription": "ECOIN Wallet is an innovative crypto wallet recognized as a worldwide pioneer in security.\n",
+          "chains": [
+              "rec4mXX6veliGP9mb",
+              "recJAGJcYb8lPHMhO",
+              "recpsMuRrcueqNvyv",
+              "recnWJkTaZ7CGsztG",
+              "reculCGsIaLBh3JOS"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1721147881/dapp-store/dapp-logos/ECOIN%20Wallet.png"
+      },
+      {
+          "recordId": "recapnq3UHV9qS2Yb",
+          "name": "Timeless X",
+          "slug": "timelessx",
+          "shortDescription": "A non-custodial wallet powered by account abstraction, open social graphs, and censorship-resistant communication.\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccYHBCXr4beeHUn",
+              "reccKnctE31QrYjxw",
+              "rec4mXX6veliGP9mb",
+              "recJAGJcYb8lPHMhO",
+              "rec5irWdQu6ywZCDk",
+              "rec94zFiOvEKwvVRh",
+              "recNCEpD35a7AyGFt",
+              "rec5AdqUSzEDSSi3W",
+              "recVNJbI4MfY9h0Pa",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG",
+              "recAdl3LKQbZBrjSx"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1718511968/dapp-store/dapp-logos/Timeless%20X.png"
+      },
+      {
+          "recordId": "recZzPLxJmbKXjtU8",
+          "name": "Degen Wallet",
+          "slug": "degen-wallet",
+          "shortDescription": "Degen Wallet: \"Your Bank, Your Crypto, Your Freedom\"\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "recJAGJcYb8lPHMhO",
+              "rec5irWdQu6ywZCDk",
+              "recnWJkTaZ7CGsztG",
+              "reccKnctE31QrYjxw",
+              "recELIa5sUIULflxx"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1720969333/dapp-store/dapp-logos/Degen%20Wallet.jpg"
+      },
+      {
+          "recordId": "recTW0Q6uWYMq6TBG",
+          "name": "Mass",
+          "slug": "mass",
+          "shortDescription": "Mass is DeFi but mobile: trade, on-ramp, off-ramp, set limit orders, and access on-chain/off-chain data!\n",
+          "chains": [
+              "rec3Twxr0rhXSFru1",
+              "reccKnctE31QrYjxw",
+              "recELIa5sUIULflxx",
+              "recnWJkTaZ7CGsztG"
+          ],
+          "vipChildCategory": [
+              "recq8Ol4GOq7fms62"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1720795692/dapp-store/dapp-logos/Mass.png"
+      },
+      {
+          "recordId": "recQCy8o4MTvC5aAF",
+          "name": "MiniPay",
+          "slug": "minipay",
+          "shortDescription": "MiniPay is a non-custodial stablecoin wallet built on Celo and integrated into the Opera Mini mobile browser.\n",
+          "chains": [
+              "rec2DgpRtOyQ0csxG"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1722864656/dapp-store/dapp-logos/MiniPay.png"
+      },
+      {
+          "recordId": "recv4qZY3i2naoR1K",
+          "name": "Xverse",
+          "slug": "xverse",
+          "shortDescription": "Xverse is the leading Bitcoin wallet for Ordinals, Runes, BRC20, Stacks (STX) and Rare Sats.\n",
+          "chains": [
+              "recpsMuRrcueqNvyv"
+          ],
+          "vipChildCategory": [
+              "reccgTuvsltrXB1Vy"
+          ],
+          "logoCdnUrl": "https://res.cloudinary.com/alchemy-website/image/upload/v1724045854/dapp-store/dapp-logos/Xverse%20Wallet.jpg"
+      }
+  ]
+}

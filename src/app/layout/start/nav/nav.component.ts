@@ -4,6 +4,7 @@ import { NgForm } from "@angular/forms";
 import { DataService } from "../../../data.service";
 import { Router } from "@angular/router";
 import { SessionStorageService } from "angular-web-storage";
+import { showModal } from '../../../utils/helper';
 declare let $;
 
 @Component({
@@ -150,6 +151,10 @@ export class NavComponent implements OnInit {
       }
     } else {
     }
+  }
+
+  connectWallet(){
+    showModal('wallet');
   }
 
   tog(e) {

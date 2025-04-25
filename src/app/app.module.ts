@@ -23,6 +23,8 @@ import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './layout/user/profile/profile.component';
 import { CaptureComponent } from './layout/user/capture/capture.component';
 import { HistoryComponent } from './layout/user/history/history.component';
+import { SharedModule } from './layout/shared/shared.module';
+
 
 
 
@@ -51,6 +53,7 @@ import { HistoryComponent } from './layout/user/history/history.component';
     HttpClientModule,
     AngularWebStorageModule,
     FormsModule,
+    SharedModule,
   ],
   providers: [
     CookieService,

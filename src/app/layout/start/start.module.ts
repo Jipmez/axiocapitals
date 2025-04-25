@@ -21,6 +21,7 @@ import { PromoComponent } from './promo/promo.component';
 import { StartingComponent } from './starting/starting.component';
 import { CitizenComponent } from './citizen/citizen.component';
 import { OnboardComponent } from './onboard/onboard.component';
+import { SharedModule } from '../../layout/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { OnboardComponent } from './onboard/onboard.component';
     HttpClientModule,
     AngularWebStorageModule,
     FormsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [StartModule],

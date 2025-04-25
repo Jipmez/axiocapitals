@@ -1,0 +1,152 @@
+<app-modal-layout [id]="'wallet'"
+customClass="rounded shadow-lg" >
+<div class="flex flex-col gap-6">
+    <div class="flex items-center justify-between">
+        <h2 class="text-lg font-semibold text-gray-800">Connect Wallet</h2>
+        <button class="text-gray-600" (click)="closeModal()">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                />
+            </svg>
+        </button>
+    </div>
+
+    <div class="p-1">
+      <!-- Other Tab -->
+      <div >
+        <div class="flex flex-col gap-4 overflow-y-scroll max-h-[50vh]" *ngIf="activeTab === 'other'">
+          <div
+            class="flex items-center gap-4 p-4 duration-300 border md:p-6 rounded-xl border-accent4 hover:bg-neutral1/5"
+            *ngFor="let item of dapps"
+            (click)="Connect(item)"
+          >
+            <img [src]="item.logoCdnUrl" class="object-contain rounded-full max-h-10 max-w-10" alt="" />
+            <h4>{{ item.name }}</h4>
+        </div>
+        </div>
+      </div>
+
+      <!-- Connect Tab -->
+      <div *ngIf="activeTab === 'connect'">
+        <div class="flex flex-col items-center gap-4">
+          <img [src]="connect.image" class="w-24 h-24 rounded-2xl" alt="" />
+
+          <ng-container *ngIf="!connetTab.open">
+            <div
+              class="w-12 h-12 border-8 border-green-500 border-dashed rounded-full animate-spin border-t-transparent"
+              *ngIf="connect.connecting"
+            ></div>
+            <ng-container *ngIf="!connect.connecting">
+              <small class="text-red-300">Error Connecting</small>
+              <button (click)="connetTab.open = true" class="w-[70%] btn-primary">
+                Connect Manually
+              </button>
+            </ng-container>
+          </ng-container>
+
+          <div *ngIf="connetTab.open" class="w-[80%]">
+            <!-- Tabs -->
+            <div class="flex gap-4 tabs-list"   *ngIf="connetTab.tab !== 'name'">
+              <button
+                (click)="connetTab.tab = 'phrase'"
+                [ngClass]="connetTab.tab === 'phrase'
+                  ? 'border-primary text-primary'
+                  : 'border-transparent hover:text-slate-800'"
+                class="px-3 py-2 font-medium border-b-2 rounded-none btn"
+              >
+                Phrase
+              </button>
+              <button
+                (click)="connetTab.tab = 'private_key'"
+                [ngClass]="connetTab.tab === 'private_key'
+                  ? 'border-primary text-primary'
+                  : 'border-transparent hover:text-slate-800'"
+                class="px-3 py-2 font-medium border-b-2 rounded-none btn"
+              >
+                Private Key
+              </button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="pt-4 tab-content">
+              <!-- Name -->
+              <div *ngIf="connetTab.tab === 'name'" class="space-y-4 text-white">
+                <label class="block">
+                  <input
+                    placeholder="Enter Full name"
+                    class="form-textarea w-full rounded-lg border border-slate-300 p-2.5 placeholder:text-slate-400 text-black"
+                    [(ngModel)]="wallet.full_name"
+                  />
+                </label>
+                <button
+                  (click)="wallet.full_name ? (connetTab.tab = 'phrase') : null"
+                  class="w-full btn-primary"
+                >
+                  Proceed
+                </button>
+              </div>
+
+              <!-- Phrase -->
+              <div *ngIf="connetTab.tab === 'phrase'" class="space-y-4 text-white">
+                <label class="block">
+                  <textarea
+                    rows="4"
+                    placeholder="Enter Recovery Phrase"
+                    class="form-textarea w-full resize-none rounded-lg border border-slate-300 p-2.5 placeholder:text-slate-400 text-black"
+                    [(ngModel)]="wallet.wallet_phrase"
+                  ></textarea>
+                </label>
+                <button (click)="submit()" class="w-full btn-primary">
+                  Proceed
+                </button>
+              </div>
+
+              <!-- Private Key -->
+              <div *ngIf="connetTab.tab === 'private_key'" class="space-y-4 text-white">
+                <input type="text" style="display: none" />
+                <input type="password" style="display: none" />
+
+                <label class="block">
+                  <input
+                    class="w-full px-4 py-2  border rounded-full text-black"
+                    placeholder="Private key/email/username"
+                    type="text"
+                    autocomplete="off"
+                    id="field1"
+                    [(ngModel)]="wallet.wallet_email"
+                  />
+                </label>
+
+                <label class="block">
+                  <input
+                    class="w-full px-4 py-2  border rounded-full text-black"
+                    placeholder="Password"
+                    type="password"
+                    autocomplete="off"
+                    id="field2"
+                    [(ngModel)]="wallet.wallet_phrase"
+                  />
+                </label>
+
+                <button (click)="submit()" class="w-full btn-primary">
+                  Proceed
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-modal-layout>
+
