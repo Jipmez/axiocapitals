@@ -14,8 +14,8 @@ export class DataService {
     public session: SessionStorageService,
     private nav: Router
   ) {}
-  Coinpath: string = 'https://starnovateminers.com/streetits/generate.php';
-  path: string = 'https://starnovateminers.com/street/baseApi.php';
+  Coinpath: string = 'https://Axiocapitals.com/streetits/generate.php';
+  path: string = 'https://Axiocapitals.com/street/baseApi.php';
   stock: string =
     'https://financialmodelingprep.com/api/v3/profile/AAPL,YELP?apikey=78860d8e8216c2d4c543065759b604de';
 
