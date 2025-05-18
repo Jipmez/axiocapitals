@@ -94,7 +94,7 @@ export class DepositComponent implements OnInit {
     this.acc = data['news'].dep['message']?.[0]['mainaccountbal'];
     this.country = data['news'].dep['message']?.[0]['country'];
     this.promo = data['news'].promo['message']?.[0]['status'];
-    this.upi = data['news'].upi['message']?.[0]['status'];
+    // this.upi = data['news'].upi['message']?.[0]['status'];
     this.users = data['news'].dep['message']?.[0]['username'];
     this.display = 0;
     this.bank = 0;
@@ -152,8 +152,8 @@ if(data['news'].allIn['message'].length > 0){
     if (this.options == 'BELA') {
       this.term = 6;
       if (Deposit >= 1000 && Deposit <= 9999) {
-        this.profit = Math.floor(Deposit * 2.2);
-        this.percent = 2.2;
+        this.profit = Math.floor(Deposit * 1.45);
+        this.percent = 1.45;
       } else {
         return this.toastr.warningToastr(
           `$${Deposit} not avalable for this plan`
@@ -166,8 +166,8 @@ if(data['news'].allIn['message'].length > 0){
     if (this.options == 'SIRI') {
       this.term = 8;
       if (Deposit >= 10000) {
-        this.profit = Math.floor(Deposit * 3.0);
-        this.percent = 3.0;
+        this.profit = Math.floor(Deposit * 1.5);
+        this.percent = 1.5;
       } else if (Deposit < 10000) {
         return this.toastr.warningToastr(
           `$${Deposit} not avalable for this plan`
@@ -179,8 +179,8 @@ if(data['news'].allIn['message'].length > 0){
     if (this.options == 'CIPs') {
       this.term = 6;
       if (Deposit >= 10000 && Deposit <= 50000) {
-        this.profit = Math.floor(Deposit * 6.0);
-        this.percent = 6.0;
+        this.profit = Math.floor(Deposit * 2.0);
+        this.percent = 2.0;
       } else {
         return this.toastr.warningToastr(
           `$${Deposit} not avalable for this plan`
